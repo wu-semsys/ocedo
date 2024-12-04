@@ -1,0 +1,5 @@
+object1_class,object2_class,object1_type,object2_type,ocedd_relation
+"ocedd:TeamMember","ocedd:Location","org:resource","resource country","ocedd:located_in"
+"ocedd:TeamMember","ocedd:SupportTeam","org:resource","org:group","ocedd:part_of"
+"ocedd:SupportTeam","ocedd:ServiceCenter","org:group","organization involved","ocedd:part_of"
+"ocedd:ServiceCenter","ocedd:Location","organization involved","organization country","ocedd:located_in"
