@@ -1,9 +1,23 @@
-# XES to OCED-JSON to OCEDO
+# OCEDO Transformer
+A toolkit to transform traces in XES form into a Knowledge Graphs based on the OCED Ontology. 
 
-Cleaning up source code into readable documentation as Git code.
+The toolkit contains the following files: 
+* [the OCED ontology](files/oced_ontology_v4.ttl)
+* [an RML mapping](files/rml_oced_ontology_v4.ttl)
+* two domain-specific enrichment document (as CSV files)
 
-## Changelog
+... and three jupyter notebook scripts: 
+1. [XES to JSON](1_xes_to_json.ipynb): transforming the original XES traces into intermediary JSON OCED representation;
+2. [JSON to KG](2_json_to_ttl.ipynb): transforming the JSON OCED representation into OCED KG in turtle (TTL) serialization in accordance to [the OCED ontology](files/oced_ontology_v4.ttl).
+3. [KG enrichment](3_ttl_to_enhanced.ipynb): enrichment of the OCED KG with domain specific knowledge manually extracted and stored as CSV files (see example files in the input folder).
 
+Users can configure the input, output, and other part of the transformation process through the [config](config.ini) file.
+
+More details about the repository and how to use it will be available in our paper (in-progress) entitled "A Semantic Encoding of the Object Centric Event Data Meta-model", written by Saba Latif, Maxim Vidgof, Fajar J. Ekaputra, Sabrina Kirrane, and Claudio di Ciccio.
+
+
+
+<!-- 
 
 You can download the necessary input files for this project from the following link:
 - [Download Input from Google Drive](https://drive.google.com/file/d/1itPGc6ZxQe0_UqYxgNZyBBc6CGtEOqY-/view?usp=sharing)
@@ -24,4 +38,4 @@ You can download the necessary input files for this project from the following l
     * The 3rd script will use these templates to "produce" new triples accordingly.  
     * for EVENT-OBJECT relations, an accompanying csv file (`files/2013_event-object_mapping.csv`), providing the information about "object_type,ocedd_class,ocedd_relation" is needed. it will add new relations based on the EVENT-OBJECT instances. 
     * for OBJECT-OBJECT relations, an accompanying csv file (`files/2013_object-object_mapping.csv`), providing the information about "object1_class,object2_class,object1_type,object2_type,ocedd_relation" is needed. it will add new relations based on the OBJECT-OBJECT instances. 
-    * The enhanced TTL result (also integrating the ontology and the original TTL file) is stored as `input/2013_full-integrated.ttl` and ready to be given to the users :).
+    * The enhanced TTL result (also integrating the ontology and the original TTL file) is stored as `input/2013_full-integrated.ttl` and ready to be given to the users :). -->
