@@ -1,0 +1,172 @@
+@prefix ocedo: <https://w3id.org/ocedo/core#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+# *** OCED Ontology *** 
+<https://w3id.org/semsys/ns/ocedo/core> rdf:type owl:Ontology ;
+                                     <http://purl.org/dc/terms/contributor> "Sabrina Kirrane" ,
+                                                                            "Claudio di Ciccio" ,
+                                                                            "Maxim Vidgof" ;
+                                     <http://purl.org/dc/terms/created> "2024-08-20" ;
+                                     <http://purl.org/dc/terms/creator> "Saba Latif" ,
+                                                                        "Fajar J. Ekaputra" ;
+                                     <http://purl.org/dc/terms/description> """An ontology to describe Object-Centric Event Data (OCED) for Process Mining. 
+                                        The current name of class and property is based on the second version of OCED specification (published at BPM2024).
+                                        Additionally, we add skos:altLabel for documenting the class/property label from the first version of OCED. 
+                                        The classes and properties are based on previous OCED meta-model(https://www.tf-pm.org/upload/1678694478319.pdf). 
+                                        But this ontology includes alt labels which reflect the new ontology version(https://arxiv.org/pdf/2410.14495)"""@en ;
+                                     <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0> ;
+                                     <http://purl.org/dc/terms/modified> "2024-08-20" ;
+                                     <http://purl.org/dc/terms/title> "The OCED Ontology"@en ;
+                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "ocedo" ;
+                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/semsys/ns/ocedo/core#" .
+
+
+# Event representation in OCED
+ocedo:Event a owl:Class ;
+    rdfs:label "Event" ;
+    rdfs:comment "Representation of the Event class/concept" .
+
+ocedo:observed_at a owl:DatatypeProperty ;
+    rdfs:label "observed_at" ;
+    skos:altLabel "time" ;
+    rdfs:comment "ocedo:observed_at relates event and timestamp. (skos:altLabeL: 'observed_at')" ;
+    rdfs:domain ocedo:Event ;
+    rdfs:range xsd:dateTime .
+
+ocedo:instance_of_event a owl:DatatypeProperty ;
+    rdfs:label "instance_of" ;
+    skos:altLabel "event_type" ;
+    rdfs:domain ocedo:Event ;
+    rdfs:range xsd:string ;
+    rdfs:comment "instance_of represents the type of an event. (skos:altLabeL: 'event_type')" .
+
+ocedo:has_event_attribute a owl:ObjectProperty ;
+    rdfs:label "has_event_attribute" ;
+    skos:altLabel "event_attribute" ;
+    rdfs:domain ocedo:Event ;
+    rdfs:range ocedo:EventAttribute ;
+    rdfs:comment """Link between Event and EventAttribute. In the OCED spec v2, the original property name is 'has'.
+        However, since there are several 'has' specified in OCED spec v2, we renamed it into 'has_event_attribute' avoid confusion.
+        (skos:altLabeL: 'event_attribute')""" .
+
+
+# Event Attribute representation in OCED
+ocedo:EventAttribute a owl:Class ;
+    rdfs:label "EventAttribute" ;
+    rdfs:comment "Representation of the EventAttribute class/concept" .
+
+ocedo:value_of_event a owl:DatatypeProperty ;
+    rdfs:label "value_of" ;
+    skos:altLabel "event_attribute_name" ;
+    rdfs:domain ocedo:EventAttribute ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Stores information about event attribute name. (skos:altLabeL: 'event_attribute_name')" .
+
+ocedo:event_attribute_value a owl:DatatypeProperty ;
+    rdfs:label "event_attribute_value" ;
+    rdfs:domain ocedo:EventAttribute ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Stores information about event attribute values" .
+
+
+# Object representation in OCED
+ocedo:Object a owl:Class ;
+    rdfs:label "Object" ;
+    rdfs:comment "Representation of the Object class/concept" .
+
+ocedo:instance_of_object a owl:DatatypeProperty ;
+    rdfs:label "instance_of" ;
+    skos:altLabel "object_type" ;
+    rdfs:domain ocedo:Object ;
+    rdfs:range xsd:string ;
+    rdfs:comment "instance_of represents the type of an object. (skos:altLabeL: 'object_type')" .
+
+ocedo:has_object_attribute a owl:ObjectProperty ;
+    rdfs:label "has_object_attribute" ;
+    skos:altLabel "object_attribute" ;
+    rdfs:domain ocedo:Object ;
+    rdfs:range ocedo:ObjectAttribute ;
+    rdfs:comment """Link between Object and ObjectAttribute. In the OCED spec v2, the original property name is 'has'.
+        However, since there are several 'has' specified in OCED spec v2, we renamed it into 'has_object_attribute' avoid confusion.
+        (skos:altLabeL: 'object_attribute')""" .
+
+
+# Object Attribute representation in OCED
+ocedo:ObjectAttribute a owl:Class ;
+    rdfs:label "ObjectAttribute" ;
+    rdfs:comment "Representation of the ObjectAttribute class/concept" .
+
+ocedo:value_of_object a owl:DatatypeProperty ;
+    rdfs:label "value_of" ;
+    skos:altLabel "object_attribute_name" ;
+    rdfs:domain ocedo:ObjectAttribute ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Stores information about object attribute name. (skos:altLabeL: 'object_attribute_name')" .
+
+ocedo:object_attribute_value a owl:DatatypeProperty ;
+    rdfs:label "object_attribute_value" ;
+    rdfs:domain ocedo:ObjectAttribute ;
+    rdfs:range xsd:string ;
+    rdfs:comment """Stores information about object attribute values. In the OCED spec v2, the original property name is 'has'.
+        However, since there are several 'has' specified in OCED spec v2, we renamed it into 'object_attribute_value' avoid confusion.
+        (skos:altLabeL: 'object_attribute_value')""" .
+
+
+# EventObject
+ocedo:EventObject a owl:Class ;
+    rdfs:label "EventObject" ;
+    rdfs:comment "Representation of the relation between Event and Object" .
+
+ocedo:observes a owl:DatatypeProperty ;
+    rdfs:label "observes" ;
+    skos:altLabel "classifier" ;
+    rdfs:domain ocedo:EventObject ;
+    rdfs:range xsd:string ;
+    rdfs:comment "EventObject classifier. (skos:altLabeL: 'observes')" .
+
+ocedo:eo_event a owl:ObjectProperty ;
+    rdfs:label "EventObject_event" ;
+    rdfs:domain ocedo:EventObject ;
+    rdfs:range ocedo:Event ;
+    rdfs:comment "Relation between EventObject and relevant Event" .
+
+ocedo:eo_object a owl:ObjectProperty ;
+    rdfs:label "EventObject_object" ;
+    rdfs:domain ocedo:EventObject ;
+    rdfs:range ocedo:Object ;
+    rdfs:comment "Relation between EventObject and relevant Object" .
+
+
+# ObjectRelation
+ocedo:ObjectRelation a owl:Class ;
+    rdfs:label "ObjectRelation" ;
+    rdfs:comment "representation of the relation between two Objects" .
+
+ocedo:relation_type a owl:DatatypeProperty ;
+    rdfs:label "relation_type" ;
+    rdfs:domain ocedo:ObjectRelation ;
+    rdfs:range xsd:string ;
+    rdfs:comment "shows type of an ObjectRelation" .
+
+ocedo:from a owl:ObjectProperty ;
+    rdfs:label "from" ;
+    rdfs:domain ocedo:ObjectRelation ;
+    rdfs:range ocedo:Object ;
+    rdfs:comment "source Object" .
+
+ocedo:to a owl:ObjectProperty ;
+    rdfs:label "to" ;
+    rdfs:domain ocedo:ObjectRelation ;
+    rdfs:range ocedo:Object ;
+    rdfs:comment "target Object" .
+
+
+## end of ontology
+
+
+
