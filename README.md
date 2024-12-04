@@ -4,7 +4,7 @@ A toolkit to transform traces in XES form into a Knowledge Graphs based on the O
 The toolkit contains the following files: 
 * [the OCED ontology](files/oced_ontology_v4.ttl)
 * [an RML mapping](files/rml_oced_ontology_v4.ttl)
-* two domain-specific enrichment document (as CSV files)
+* two domain-specific enrichment document for BPIC 2013 (as CSV files)
 
 ... and three jupyter notebook scripts: 
 1. [XES to JSON](1_xes_to_json.ipynb): transforming the original XES traces into intermediary JSON OCED representation;
@@ -13,7 +13,9 @@ The toolkit contains the following files:
 
 Users can configure the input, output, and other part of the transformation process through the [config](config.ini) file.
 
-More details about the repository and how to use it will be available in our paper (in-progress) entitled "A Semantic Encoding of the Object Centric Event Data Meta-model", written by Saba Latif, Maxim Vidgof, Fajar J. Ekaputra, Sabrina Kirrane, and Claudio di Ciccio.
+More details about the repository and how to use it will be available in our paper (in-progress) entitled 
+
+_"A Semantic Encoding of the Object Centric Event Data Meta-model", written by Saba Latif, Maxim Vidgof, Fajar J. Ekaputra, Sabrina Kirrane, and Claudio di Ciccio._
 
 
 
