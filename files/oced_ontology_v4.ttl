@@ -50,9 +50,8 @@ ocedo:has_event_attribute a owl:ObjectProperty ;
     skos:altLabel "event_attribute" ;
     rdfs:domain ocedo:Event ;
     rdfs:range ocedo:EventAttribute ;
-    rdfs:comment """Link between Event and EventAttribute. In the OCED spec v2, the original property name is 'has'.
-        However, since there are several 'has' specified in OCED spec v2, we renamed it into 'has_event_attribute' avoid confusion.
-        (skos:altLabeL: 'event_attribute')""" .
+    rdfs:comment """Link between Event and EventAttribute. The link name is 'has_event_attribute'.
+    (skos:altLabeL: 'event_attribute')""" .
 
 
 # Event Attribute representation in OCED
@@ -91,8 +90,7 @@ ocedo:has_object_attribute a owl:ObjectProperty ;
     skos:altLabel "object_attribute" ;
     rdfs:domain ocedo:Object ;
     rdfs:range ocedo:ObjectAttribute ;
-    rdfs:comment """Link between Object and ObjectAttribute. In the OCED spec v2, the original property name is 'has'.
-        However, since there are several 'has' specified in OCED spec v2, we renamed it into 'has_object_attribute' avoid confusion.
+    rdfs:comment """Link between Object and ObjectAttribute.  The link name is 'has_object_attribute'.
         (skos:altLabeL: 'object_attribute')""" .
 
 
@@ -112,8 +110,7 @@ ocedo:object_attribute_value a owl:DatatypeProperty ;
     rdfs:label "object_attribute_value" ;
     rdfs:domain ocedo:ObjectAttribute ;
     rdfs:range xsd:string ;
-    rdfs:comment """Stores information about object attribute values. In the OCED spec v2, the original property name is 'has'.
-        However, since there are several 'has' specified in OCED spec v2, we renamed it into 'object_attribute_value' avoid confusion.
+    rdfs:comment """Stores information about object attribute values as 'object_attribute_value'.
         (skos:altLabeL: 'object_attribute_value')""" .
 
 
