@@ -1,0 +1,10 @@
+object1_class,object2_class,object1_type,object2_type,ocedd_relation
+ocedd:ActivityName,ocedd:Case,activityNameNL,case,ocedd:is_part_of_case
+ocedd:ActivityName,ocedd:Resource,activityNameEN,org:resource,ocedd:performed_by_resource
+ocedd:Case,ocedd:SumLeges,case,SUMleges,ocedd:has_associated_cost
+ocedd:Resource,ocedd:MonitoringResource,org:resource,monitoringResource,ocedd:monitored_by
+ocedd:ResponsibleActor,ocedd:Case,Responsible_actor,case,ocedd:responsible_for_case
+ocedd:ActivityName,ocedd:DateFinished,activityNameNL,dateFinished,ocedd:completed_on
+ocedd:Resource,ocedd:ActivityName,org:resource,activityNameEN,ocedd:performed_action
+ocedd:PlannedDate,ocedd:EndDate,planned,endDate,ocedd:planned_to_finish_on
+ocedd:Resource,ocedd:ResponsibleActor,org:resource,Responsible_actor,ocedd:works_under
