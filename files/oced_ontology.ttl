@@ -1,0 +1,157 @@
+@prefix oced: <https://w3id.org/ocedo/core#> .
+@prefix aux: <https://w3id.org/ocedo/aux#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+# *** OCED Ontology *** 
+
+<https://w3id.org/semsys/ns/ocedo/core> rdf:type owl:Ontology ;
+    <http://purl.org/dc/terms/contributor> "Sabrina Kirrane" ,
+                                        "Claudio di Ciccio" ,
+                                        "Maxim Vidgof" ;
+    <http://purl.org/dc/terms/created> "2024-08-20" ;
+    <http://purl.org/dc/terms/creator> "Saba Latif" ,
+                                    "Fajar J. Ekaputra" ;
+    <http://purl.org/dc/terms/description> """
+    An ontology to describe Object-Centric Event Data (OCED) for Process Mining. 
+    The ontology consists of 
+    (a) OCED core part (prefix "oced") - describing core classes and properties, and 
+    (b) OCED auxilary part (prefix "aux:") - describing additional context 
+        information that will be replaced by use-case specific classes and 
+        properties in the implementation
+    """@en ;
+    <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0> ;
+    <http://purl.org/dc/terms/modified> "2025-03-18" ;
+    <http://purl.org/dc/terms/title> "The OCED Ontology"@en ;
+    <http://purl.org/vocab/vann/preferredNamespacePrefix> "oced" ;
+    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/semsys/ns/ocedo/core#" .
+
+
+
+### -------- OCED core -------- ### 
+
+# OCED core - classes
+oced:Event a owl:Class ;
+    rdfs:label "Event" ;
+    rdfs:comment "Representation of the Event class/concept" .
+oced:Object a owl:Class ;
+    rdfs:label "Object" ;
+    rdfs:comment "Representation of the Object class/concept" .
+
+# OCED core - data properties
+oced:observed_at a owl:DatatypeProperty ;
+    rdfs:label "observed_at" ;
+    rdfs:comment "timestamp of an event" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:dateTime .
+
+oced:event_attribute a owl:DatatypeProperty ;
+    rdfs:label "event_attribute" ;
+    rdfs:comment "the super-property for all use-case specific event attributes" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:string .
+
+oced:object_attribute a owl:DatatypeProperty ;
+    rdfs:label "object_attribute" ;
+    rdfs:comment "the super-property for all use-case specific object attributes" ;
+    rdfs:domain oced:Object ;
+    rdfs:range xsd:string .
+
+# OCED core - object properties
+oced:observes a owl:ObjectProperty ;
+    rdfs:label "observes" ;
+    rdfs:comment "the super-property for all use-case specific relations Event and Object" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:Object .
+oced:object_relation a owl:ObjectProperty ;
+    rdfs:label "observes" ;
+    rdfs:comment "the super-property for all use-case specific relations between two Objects" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:Object .
+
+
+
+### -------- OCED auxilary -------- ### 
+
+# OCED auxilary - classes
+aux:EventType a owl:Class ;
+    rdfs:label "Event Type" .
+aux:EventAttribute a owl:Class ;
+    rdfs:label "Event Attribute" .
+aux:ObjectType a owl:Class ;
+    rdfs:label "Object Type" .
+aux:ObjectAttribute a owl:Class ;
+    rdfs:label "Object Attribute" .
+aux:Observe a owl:Class ;
+    rdfs:label "Observe" .
+aux:ObjectRelation a owl:Class ;
+    rdfs:label "Object Relation" .
+
+# OCED auxilary - data properties
+aux:event_attribute a owl:DatatypeProperty ;
+    rdfs:label "event_attribute" ;
+    rdfs:domain oced:EventAttribute ;
+    rdfs:range xsd:string .
+aux:event_attribute_value a owl:DatatypeProperty ;
+    rdfs:label "event_attribute_value" ;
+    rdfs:domain oced:EventAttribute ;
+    rdfs:range xsd:string .
+aux:object_attribute a owl:DatatypeProperty ;
+    rdfs:label "object_attribute" ;
+    rdfs:domain aux:ObjectAttribute ;
+    rdfs:range xsd:string .
+aux:object_attribute_value a owl:DatatypeProperty ;
+    rdfs:label "object_attribute_value" ;
+    rdfs:domain aux:ObjectAttribute ;
+    rdfs:range xsd:string .
+aux:qualifier a owl:DatatypeProperty ;
+    rdfs:label "qualifier" ;
+    rdfs:domain aux:Observe ;
+    rdfs:range xsd:string .
+aux:relation_type a owl:DatatypeProperty ;
+    rdfs:label "relation_type" ;
+    rdfs:domain aux:ObjectRelation ;
+    rdfs:range xsd:string .
+
+
+# OCED auxilary - object properties
+aux:instance_of a owl:ObjectProperty ;
+    rdfs:label "instance_of" ;
+    rdfs:comment "instance_of represents the type of an event OR object in OCED metamodel" .
+aux:has_event_attribute a owl:ObjectProperty ;
+    rdfs:label "has_event_attribute" ;
+    rdfs:domain oced:Event ;
+    rdfs:range aux:EventAttribute .
+aux:observe_event a owl:ObjectProperty ;
+    rdfs:label "observe_event" ;
+    rdfs:domain aux:Observe ;
+    rdfs:range oced:Event ;
+    rdfs:comment "Relation between Observe and relevant Event" .
+aux:observe_object a owl:ObjectProperty ;
+    rdfs:label "observe_object" ;
+    rdfs:domain aux:Observe ;
+    rdfs:range oced:Object ;
+    rdfs:comment "Relation between Observe and relevant Object" .
+aux:has_object_attribute a owl:ObjectProperty ;
+    rdfs:label "has_object_attribute" ;
+    rdfs:domain oced:Object ;
+    rdfs:range aux:ObjectAttribute .
+aux:from a owl:ObjectProperty ;
+    rdfs:label "from" ;
+    rdfs:domain aux:ObjectRelation ;
+    rdfs:range oced:Object ;
+    rdfs:comment "source Object" .
+aux:to a owl:ObjectProperty ;
+    rdfs:label "to" ;
+    rdfs:domain aux:ObjectRelation ;
+    rdfs:range oced:Object ;
+    rdfs:comment "target Object" .
+
+## end of ontology
+
+
+

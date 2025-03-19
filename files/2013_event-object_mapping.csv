@@ -1,8 +1,8 @@
-object_type,ocedd_class,ocedd_relation
-"product","ocedd:Product","ocedd:is_about_product"
-"org:role","ocedd:ProductFunction","ocedd:is_about_function"
-"impact","ocedd:Impact","ocedd:has_impact"
-"org:resource","ocedd:TeamMember","ocedd:handled_by_team_member"
-"org:group","ocedd:SupportTeam","ocedd:handled_by_support_team"
-"organization involved","ocedd:ServiceCenter","ocedd:handled_in_service_center"
-"case","ocedd:Case","ocedd:event_case"
+object_type,ext_class,ext_relation
+"product","ext:Product","ext:is_about_product"
+"org:role","ext:ProductFunction","ext:is_about_function"
+"impact","ext:Impact","ext:has_impact"
+"org:resource","ext:TeamMember","ext:handled_by_team_member"
+"org:group","ext:SupportTeam","ext:handled_by_support_team"
+"organization involved","ext:ServiceCenter","ext:handled_in_service_center"
+"case","ext:Case","ext:event_case"

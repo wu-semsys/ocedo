@@ -6,10 +6,11 @@
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix map: <http://mapping.example.com/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ocedo: <https://w3id.org/ocedo/core#> .
-@prefix ocedr: <https://w3id.org/ocedo/resource/> .
+@prefix oced: <https://w3id.org/ocedo/core#> .
+@prefix aux: <https://w3id.org/ocedo/aux#> .
+@prefix res: <https://w3id.org/ocedo/resource/> .
 
-## Event Mapping (FJE-OK)
+## Event
 map:event rdf:type rr:TriplesMap ;
     rdfs:label "event map" ;
     rml:logicalSource [
@@ -22,22 +23,44 @@ map:event rdf:type rr:TriplesMap ;
     ] ;
     rr:predicateObjectMap [
         rr:predicate rdf:type ;
-        rr:object ocedo:Event ;
+        rr:object oced:Event ;
     ] , [
-        rr:predicate ocedo:instance_of_event ;
+        rr:predicate aux:instance_of ;
         rr:objectMap [
-            rml:reference "instance_of" ;
-            rr:datatype xsd:string ;
+            rr:template "https://w3id.org/ocedo/resource/etype-{instance_of}" ;
+            rr:termType rr:IRI ;
         ] ;
     ] , [
-        rr:predicate ocedo:observed_at ;
+        rr:predicate oced:observed_at ;
         rr:objectMap [
             rml:reference "observed_at" ;
             rr:datatype xsd:dateTime ;
         ] ;
     ] .
 
-## Event to EventAttribute Mapping
+## Event Type
+map:event_type rdf:type rr:TriplesMap ;
+    rdfs:label "event type" ;
+    rml:logicalSource [
+        rml:iterator "$.events[*]" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rdf:type rml:LogicalSource 
+    ] ;
+    rr:subjectMap [
+        rr:template "https://w3id.org/ocedo/resource/etype-{instance_of}" 
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:object aux:EventType ;
+    ] , [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rml:reference "instance_of" ;
+            rr:datatype xsd:string ;
+        ] ;
+    ] .
+
+## Event to EventAttribute
 map:has_event_attribute rdf:type rr:TriplesMap ;
     rdfs:label "has event attribute" ;
     rml:logicalSource [
@@ -49,14 +72,14 @@ map:has_event_attribute rdf:type rr:TriplesMap ;
         rr:template "https://w3id.org/ocedo/resource/event-{id}" 
     ] ;
     rr:predicateObjectMap [
-        rr:predicate ocedo:event_attribute ;
+        rr:predicate aux:hasEventAttribute ;
         rr:objectMap [
             rr:template "https://w3id.org/ocedo/resource/ea-{value_of}-{event_attribute_value}" ;
             rr:termType rr:IRI ;
         ] ;
     ] .
 
-## Event Attribute Mapping (FJE-OK)
+## Event Attribute
 map:event_attribute rdf:type rr:TriplesMap ;
     rdfs:label "event attribute" ;
     rml:logicalSource [
@@ -70,23 +93,23 @@ map:event_attribute rdf:type rr:TriplesMap ;
     rr:predicateObjectMap [
         rr:predicate rdf:type ;
         rr:objectMap [
-            rr:constant ocedo:EventAttribute ;
+            rr:constant aux:EventAttribute ;
         ] ;
     ] , [
-        rr:predicate ocedo:value_of_event ;
+        rr:predicate aux:event_attribute ;
         rr:objectMap [
             rml:reference "value_of" ;
             rr:datatype xsd:string ;
         ] ;
     ] , [
-        rr:predicate ocedo:event_attribute_value ;
+        rr:predicate aux:event_attribute_value ;
         rr:objectMap [
             rml:reference "event_attribute_value" ;
             rr:datatype xsd:string ;
         ] ;
     ] .
 
-## Object Mapping (FJE-OK)
+## Object Mapping
 map:object rdf:type rr:TriplesMap ;
     rdfs:label "object map" ;
     rml:logicalSource [
@@ -100,17 +123,39 @@ map:object rdf:type rr:TriplesMap ;
     rr:predicateObjectMap [
         rr:predicate rdf:type ;
         rr:objectMap [
-            rr:constant ocedo:Object ;
+            rr:constant oced:Object ;
         ] ;
     ] , [
-        rr:predicate ocedo:instance_of_object ;
+        rr:predicate aux:instance_of ;
+        rr:objectMap [
+            rr:template "https://w3id.org/ocedo/resource/otype-{instance_of_O}" ;
+            rr:termType rr:IRI ;
+        ] ;
+    ] .
+
+## Object Type
+map:object_type rdf:type rr:TriplesMap ;
+    rdfs:label "object type" ;
+    rml:logicalSource [
+        rml:iterator "$.objects[*]" ;
+        rml:referenceFormulation ql:JSONPath ;
+        rdf:type rml:LogicalSource 
+    ] ;
+    rr:subjectMap [
+        rr:template "https://w3id.org/ocedo/resource/otype-{instance_of_O}" 
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:object aux:ObjectType ;
+    ] , [
+        rr:predicate rdfs:label ;
         rr:objectMap [
             rml:reference "instance_of_O" ;
             rr:datatype xsd:string ;
         ] ;
     ] .
 
-## Object to ObjectAttribute Mapping
+## Object to ObjectAttribute
 map:object_to_object_attribute rdf:type rr:TriplesMap ;
     rdfs:label "object attribute" ;
     rml:logicalSource [
@@ -122,14 +167,14 @@ map:object_to_object_attribute rdf:type rr:TriplesMap ;
         rr:template "https://w3id.org/ocedo/resource/object-{id}" 
     ] ;
     rr:predicateObjectMap [
-        rr:predicate ocedo:object_attribute ;
+        rr:predicate aux:hasObjectAttribute ;
         rr:objectMap [
             rr:template "https://w3id.org/ocedo/resource/oa-{value_of_O}-{object_attribute_value}" ;
             rr:termType rr:IRI ;
         ] ;
     ] .
 
-## Object Attribute Mapping (FJE-OK)
+## Object Attribute Mapping
 map:object_attribute rdf:type rr:TriplesMap ;
     rdfs:label "object attribute" ;
     rml:logicalSource [
@@ -143,23 +188,23 @@ map:object_attribute rdf:type rr:TriplesMap ;
     rr:predicateObjectMap [
         rr:predicate rdf:type ;
         rr:objectMap [
-            rr:constant ocedo:ObjectAttribute ;
+            rr:constant aux:ObjectAttribute ;
         ] ;
     ] , [
-        rr:predicate ocedo:value_of_object ;
+        rr:predicate aux:object_attribute ;
         rr:objectMap [
             rml:reference "value_of_O" ;
             rr:datatype xsd:string ;
         ] ;
     ] , [
-        rr:predicate ocedo:object_attribute_value ;
+        rr:predicate aux:object_attribute_value ;
         rr:objectMap [
             rml:reference "object_attribute_value" ;
             rr:datatype xsd:string ;
         ] ;
     ] .
 
-## Event-Object Relation Mapping (FJE-OK)
+## Observe
 map:event_object rdf:type rr:TriplesMap ;
     rdfs:label "event object relation" ;
     rml:logicalSource [
@@ -168,34 +213,34 @@ map:event_object rdf:type rr:TriplesMap ;
         rdf:type rml:LogicalSource 
     ] ;
     rr:subjectMap [
-        rr:template "https://w3id.org/ocedo/resource/event_object-{eventID}-{objectID}" 
+        rr:template "https://w3id.org/ocedo/resource/observe-{eventID}-{objectID}" 
     ] ;
     rr:predicateObjectMap [
         rr:predicate rdf:type ;
         rr:objectMap [
-            rr:constant ocedo:EventObject ;
+            rr:constant aux:Observe ;
         ] ;
     ] , [
-        rr:predicate ocedo:qualifier ;
+        rr:predicate aux:qualifier ;
         rr:objectMap [
             rml:reference "qualifier" ;
             rr:datatype xsd:string ;
         ] ;
     ] , [
-        rr:predicate ocedo:eo_object ;
+        rr:predicate aux:eo_object ;
         rr:objectMap [
             rr:template "https://w3id.org/ocedo/resource/object-{objectID}" ;
             rr:termType rr:IRI ;
         ] ;
     ] , [
-        rr:predicate ocedo:eo_event ;
+        rr:predicate aux:eo_event ;
         rr:objectMap [
             rr:template "https://w3id.org/ocedo/resource/event-{eventID}" ;
             rr:termType rr:IRI ;
         ] ;
     ] .
 
-## Object-Object Relation Mapping (FJE-OK)
+## ObjectRelation
 map:object_relation rdf:type rr:TriplesMap ;
     rdfs:label "object relation" ;
     rml:logicalSource [
@@ -209,22 +254,22 @@ map:object_relation rdf:type rr:TriplesMap ;
     rr:predicateObjectMap [
         rr:predicate rdf:type ;
         rr:objectMap [
-            rr:constant ocedo:ObjectRelation ;
+            rr:constant aux:ObjectRelation ;
         ] ;
     ] , [
-        rr:predicate ocedo:relation_type ;
+        rr:predicate aux:relation_type ;
         rr:objectMap [
             rml:reference "relation_type" ;
             rr:datatype xsd:string ;
         ] ;
     ] , [
-        rr:predicate ocedo:from ;
+        rr:predicate aux:from ;
         rr:objectMap [
             rr:template "https://w3id.org/ocedo/resource/object-{from}" ;
             rr:termType rr:IRI ;
         ] ;
     ] , [
-        rr:predicate ocedo:to ;
+        rr:predicate aux:to ;
         rr:objectMap [
             rr:template "https://w3id.org/ocedo/resource/event-{to}" ;
             rr:termType rr:IRI ;
