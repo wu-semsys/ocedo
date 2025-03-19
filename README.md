@@ -2,22 +2,22 @@
 A toolkit to transform traces in XES form into a Knowledge Graphs based on the OCED Ontology. 
 
 The toolkit contains the following files: 
-* [the OCED ontology](files/oced_ontology_v4.ttl)
-* [an RML mapping](files/rml_oced_ontology_v4.ttl)
+* [the OCED ontology](files/oced_ontology.ttl)
+* [an RML mapping](files/oced_ontology_rml.ttl)
 * two domain-specific enrichment document for BPIC 2013 (as CSV files)
 
 ... and three jupyter notebook scripts: 
 1. [XES to JSON](1_xes_to_json.ipynb): transforming the original XES traces into intermediary JSON OCED representation;
-2. [JSON to KG](2_json_to_ttl.ipynb): transforming the JSON OCED representation into OCED KG in turtle (TTL) serialization in accordance to [the OCED ontology](files/oced_ontology_v4.ttl).
-3. [KG enrichment](3_ttl_to_enhanced.ipynb): enrichment of the OCED KG with domain specific knowledge manually extracted and stored as CSV files (see example files in the input folder).
+2. [JSON to KG](2_json_to_ttl.ipynb): transforming the JSON OCED representation into OCED KG in turtle (TTL) serialization in accordance to [the OCED ontology](files/oced_ontology.ttl). In the figure below, the result of Step 2 is instances of OCED Core and OCED Auxilary.
+3. [KG enrichment](3_ttl_to_enhanced.ipynb): enrichment of the OCED KG with domain specific knowledge manually extracted and stored as CSV files (see example files in the input folder). As the result of this step, OCED auxilary ontology and instances are removed, and replaced by domain-specific ontology (in the example below coming from BPIC 2013), based on a given configuration (see the two excel files on the input folder).
 
 Users can configure the input, output, and other part of the transformation process through the [config](config.ini) file.
 
 More details about the repository and how to use it will be available in our paper (in-progress) entitled 
 
-_"A Semantic Encoding of the Object Centric Event Data Meta-model", written by Saba Latif, Maxim Vidgof, Fajar J. Ekaputra, Sabrina Kirrane, and Claudio di Ciccio._
+_"A Semantic Encoding of the Object Centric Event Data Meta-model", written by Saba Latif, Fajar J. Ekaputra, Maxim Vidgof, Sabrina Kirrane, and Claudio di Ciccio._
 
-
+![Image](images/oced-ontology.png)
 
 <!-- 
 
