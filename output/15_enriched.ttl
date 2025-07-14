@@ -1,0 +1,2671 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ext: <https://w3id.org/ocedo/ext#> .
+@prefix oced: <https://w3id.org/ocedo/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://w3id.org/ocedo/resource/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+oced:object_relation a owl:ObjectProperty ;
+    rdfs:label "observes" ;
+    rdfs:comment "the super-property for all use-case specific relations between two Objects" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:Object .
+
+oced:observed_at a owl:DatatypeProperty ;
+    rdfs:label "observed_at" ;
+    rdfs:comment "timestamp of an event" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:dateTime .
+
+oced:observes a owl:ObjectProperty ;
+    rdfs:label "observes" ;
+    rdfs:comment "the super-property for all use-case specific relations Event and Object" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:Object .
+
+ext:IDofConceptCase a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:MainProcess_Subprocess_Step a owl:ObjectProperty ;
+    rdfs:label "ext:MainProcess_Subprocess_Step" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:ActionCode .
+
+ext:MainProcess_Subprocess_Step_objects a owl:ObjectProperty ;
+    rdfs:label "ext:MainProcess_Subprocess_Step_objects" ;
+    rdfs:domain ext:ActivityName ;
+    rdfs:range ext:ActionCode .
+
+ext:Responsible_actor a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:SUMleges a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:action_code a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:activityNameEN a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:activityNameNL a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:caseStatus a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:case_type a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:completed_on a owl:ObjectProperty ;
+    rdfs:label "ext:completed_on" ;
+    rdfs:domain ext:ActivityName ;
+    rdfs:range ext:DateFinished .
+
+ext:concept_name a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:event_attribute,
+        oced:object_attribute .
+
+ext:dateFinished a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:dueDate a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:handled_by_resource a owl:ObjectProperty ;
+    rdfs:label "ext:handled_by_resource" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:Resource .
+
+ext:has_activity_name a owl:ObjectProperty ;
+    rdfs:label "ext:has_activity_name" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:ActivityName .
+
+ext:has_associated_cost a owl:ObjectProperty ;
+    rdfs:label "ext:has_associated_cost" ;
+    rdfs:domain ext:Case ;
+    rdfs:range ext:SumLeges .
+
+ext:has_case a owl:ObjectProperty ;
+    rdfs:label "ext:has_case" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:Case .
+
+ext:has_case_procedure a owl:ObjectProperty ;
+    rdfs:label "ext:has_case_procedure" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:CaseProcedure .
+
+ext:has_case_status a owl:ObjectProperty ;
+    rdfs:label "ext:has_case_status" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:CaseStatus .
+
+ext:has_case_type a owl:ObjectProperty ;
+    rdfs:label "ext:has_case_type" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:CaseType .
+
+ext:has_date_finished a owl:ObjectProperty ;
+    rdfs:label "ext:has_date_finished" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:DateFinished .
+
+ext:has_date_stop a owl:ObjectProperty ;
+    rdfs:label "ext:has_date_stop" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:DateStop .
+
+ext:has_due_date a owl:ObjectProperty ;
+    rdfs:label "ext:has_due_date" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:DueDate .
+
+ext:has_end_date a owl:ObjectProperty ;
+    rdfs:label "ext:has_end_date" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:EndDate .
+
+ext:has_id_of_concept_case a owl:ObjectProperty ;
+    rdfs:label "ext:has_id_of_concept_case" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:ConceptCaseID .
+
+ext:has_land_register_id a owl:ObjectProperty ;
+    rdfs:label "ext:has_land_register_id" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:LandRegisterID .
+
+ext:has_last_phase a owl:ObjectProperty ;
+    rdfs:label "ext:has_last_phase" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:LastPhase .
+
+ext:has_monitoring_resource a owl:ObjectProperty ;
+    rdfs:label "ext:has_monitoring_resource" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:MonitoringResource .
+
+ext:has_parts a owl:ObjectProperty ;
+    rdfs:label "ext:has_parts" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:Parts .
+
+ext:has_planned_date a owl:ObjectProperty ;
+    rdfs:label "ext:has_planned_date" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:PlannedDate .
+
+ext:has_planned_end_date a owl:ObjectProperty ;
+    rdfs:label "ext:has_planned_end_date" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:PlannedEndDate .
+
+ext:has_question a owl:ObjectProperty ;
+    rdfs:label "ext:has_question" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:Question .
+
+ext:has_request_complete a owl:ObjectProperty ;
+    rdfs:label "ext:has_request_complete" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:RequestComplete .
+
+ext:has_responsible_actor a owl:ObjectProperty ;
+    rdfs:label "ext:has_responsible_actor" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:ResponsibleActor .
+
+ext:has_start_date a owl:ObjectProperty ;
+    rdfs:label "ext:has_start_date" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:StartDate .
+
+ext:has_sum_leges a owl:ObjectProperty ;
+    rdfs:label "ext:has_sum_leges" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:SumLeges .
+
+ext:has_term_name a owl:ObjectProperty ;
+    rdfs:label "ext:has_term_name" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:TermName .
+
+ext:includes_sub_cases a owl:ObjectProperty ;
+    rdfs:label "ext:includes_sub_cases" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:IncludesSubCases .
+
+ext:is_part_of_case a owl:ObjectProperty ;
+    rdfs:label "ext:is_part_of_case" ;
+    rdfs:domain ext:ActivityName ;
+    rdfs:range ext:Case .
+
+ext:landRegisterID a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:last_phase a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:lifecycle_transition a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:event_attribute .
+
+ext:monitored_by a owl:ObjectProperty ;
+    rdfs:label "ext:monitored_by" ;
+    rdfs:domain ext:Resource ;
+    rdfs:range ext:MonitoringResource .
+
+ext:monitoringResource a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:org_resource a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:parts a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:performed_action a owl:ObjectProperty ;
+    rdfs:label "ext:performed_action" ;
+    rdfs:domain ext:Resource ;
+    rdfs:range ext:ActivityName .
+
+ext:performed_by_resource a owl:ObjectProperty ;
+    rdfs:label "ext:performed_by_resource" ;
+    rdfs:domain ext:ActivityName ;
+    rdfs:range ext:Resource .
+
+ext:planned a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:planned_to_finish_on a owl:ObjectProperty ;
+    rdfs:label "ext:planned_to_finish_on" ;
+    rdfs:domain ext:PlannedDate ;
+    rdfs:range ext:EndDate .
+
+ext:question a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:requestComplete a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:responsible_for_case a owl:ObjectProperty ;
+    rdfs:label "ext:responsible_for_case" ;
+    rdfs:domain ext:ResponsibleActor ;
+    rdfs:range ext:Case .
+
+ext:startDate a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:termName a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:works_under a owl:ObjectProperty ;
+    rdfs:label "ext:works_under" ;
+    rdfs:domain ext:Resource ;
+    rdfs:range ext:ResponsibleActor .
+
+res:event-e_0f6912af0a9473d1e54c5a941410b898aa8a8577 a oced:Event,
+        ext:08_AWB45_051_0_complete ;
+    oced:observed_at "2014-07-10T12:08:06+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_2f22511a5a02eec0d6bcead57fdff9e248d9545a ;
+    ext:concept_name "08_AWB45_051_0" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_2196a9bfc58470ccd2aab1d031ffe0e5d56f49cf,
+        res:object-o_652524c10eff98e60a197ebd5b563a932da4d9d9 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_b58377ad15732ed0af4d7a98355176dc845dab72 ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_10aa00e3d9196a4523edba000891e7dfc4f6c101 a oced:Event,
+        ext:08_AWB45_020_2_complete ;
+    oced:observed_at "2014-05-23T16:24:18+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_5c4135b0437b703cdb362cedf1b92e36dbe88a9e ;
+    ext:concept_name "08_AWB45_020_2" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_7d403b7653f3aa2b34e5574828842ad54dad9593,
+        res:object-o_f7c775502668e23de615b16941cd81e13bc91315 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_1af019e9b8b5c19a05d142074f0b5f6015b06287 ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_cb5256e38f9af0f57746161609b6620bd1de3675 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_153c46687e8ce5242cfe97597b9fd3d5f03dcac2 a oced:Event,
+        ext:01_HOOFD_375_complete ;
+    oced:observed_at "2014-07-10T15:32:45+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_5e34b5006dadfe348f89a4dad6ca0485e8aa5d10 ;
+    ext:concept_name "01_HOOFD_375" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_0dcab9aacaa0f9c9cf7e5410e89cfe743cdac0af,
+        res:object-o_88046de5a2529ba2a1e29f71a4d9716f3cbb7601 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_b871b2243e0ec45136566298c165e47d37a3c1f6 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_1f48d25a62339657badf341a478dfe6f9835b585 a oced:Event,
+        ext:01_HOOFD_200_complete ;
+    oced:observed_at "2014-07-10T15:32:33+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_591689e89c54c14f7b1cbf63a0b89549712604d5 ;
+    ext:concept_name "01_HOOFD_200" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_2ea6f83d958f753c7c05662a37ae5d43f510f0ba,
+        res:object-o_fa601b7b6972df77acc3dba0f068ddcaf399e4ed ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_ef4e433600bb72b405782aa994b89c98b760d896 ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_2077da9738ef4e1ae909aab312b7d9e603ca2308 a oced:Event,
+        ext:01_HOOFD_490_5a_complete ;
+    oced:observed_at "2014-07-14T10:14:12+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_a52fbf12741eba598f0d8dfe62542bcd77a0208b ;
+    ext:concept_name "01_HOOFD_490_5a" ;
+    ext:handled_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 ;
+    ext:has_activity_name res:object-o_7576f2d2db7ad79d513037743ff60576432b6bb4,
+        res:object-o_ed1ce05687b370df657ff34f56d6ea564d82891a ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:has_monitoring_resource res:object-o_df27d53cbf0fbb9e12cc6b261d181a85215e7f64 ;
+    ext:has_planned_date res:object-o_1d8768ffe1d513dcdf78b076cc4281aea2077aa1 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_22108d3fe66922d16ac7a2000131b2e81e388bd7 a oced:Event,
+        ext:08_AWB45_005_complete ;
+    oced:observed_at "2014-05-23T16:16:59+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_e46f36dbeee85f1e2fe7b87b184e50ce12e6a161 ;
+    ext:concept_name "08_AWB45_005" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_5e5d38e82538d50c7102bd76075fe3f4f48e22b9,
+        res:object-o_9641e56a92ab0acc5c94a3501882b1274f181e5c ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_1af019e9b8b5c19a05d142074f0b5f6015b06287 ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_6aaab67eedb08ba00fb40a7471903fd70be6a8de ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_24ceb597753b14a38b83fa5aaeda1ceaa8b3aed0 a oced:Event,
+        ext:09_AH_I_010_complete ;
+    oced:observed_at "2014-07-10T15:32:43+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_c45010b4381168fa6484e0d7800bafd3e85ca824 ;
+    ext:concept_name "09_AH_I_010" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_297f52aa96c52720b5be36a6b8a7997caf136215,
+        res:object-o_8320e6e6b225158261d13f6e0dddfb0db65b64cb ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_827192945a84f501b5c5f2d62ccf7c8672b27da3 ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_2a4014134ede3c2bf967e5358d050ab4cbe516f4 a oced:Event,
+        ext:01_HOOFD_515_complete ;
+    oced:observed_at "2014-07-14T10:17:58+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_71309d568c6334adaa6838d454a804d17364a2fb ;
+    ext:concept_name "01_HOOFD_515" ;
+    ext:handled_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 ;
+    ext:has_activity_name res:object-o_8cad1202446126e8800d19755bd855ba84e9ecff,
+        res:object-o_92abd3b925080b84f30032b45794837360c3a278 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:has_monitoring_resource res:object-o_df27d53cbf0fbb9e12cc6b261d181a85215e7f64 ;
+    ext:has_planned_date res:object-o_432f7bea2698955383fd20b7434d29f7f9e09428 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_2ac7a6c7b65d3ce80043126b1e6aa1a15982e597 a oced:Event,
+        ext:01_HOOFD_015_complete ;
+    oced:observed_at "2014-04-14T11:29:20+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_9c07900950db064fdba1505646495267ad7e383c ;
+    ext:concept_name "01_HOOFD_015" ;
+    ext:handled_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 ;
+    ext:has_activity_name res:object-o_81f37e75db81087c824f9d07985af1662a117a37,
+        res:object-o_9b3b41de8b0c8f57d96f547e0ac9cc2984a9f314 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_4a4da4602d75eddb780cd3d885aa304e045588c2 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_333b4456249b94787284136212c970ace5233045 a oced:Event,
+        ext:01_HOOFD_500_complete ;
+    oced:observed_at "2014-07-14T10:14:15+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_094397a460523732708a8729370a1dd8eb43170b ;
+    ext:concept_name "01_HOOFD_500" ;
+    ext:handled_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 ;
+    ext:has_activity_name res:object-o_c4c114becf55a953f03e913abc9c556ae742bb45,
+        res:object-o_f71cf4f40df837a5aa4c2f649e8f0f1e4e4385c3 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:has_monitoring_resource res:object-o_df27d53cbf0fbb9e12cc6b261d181a85215e7f64 ;
+    ext:has_planned_date res:object-o_af6a0592084f41253ad233e1591c91947c2aee2f ;
+    ext:has_question res:object-o_efddc886db37f2bef996a2cf866c63fda8ec416b ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_354651224b66a71af1adc3cf52c5417521d6b44d a oced:Event,
+        ext:08_AWB45_030_complete ;
+    oced:observed_at "2014-05-23T16:24:26+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_aa90c3d9928c77d4bd7946d3d393021bc57cdac2 ;
+    ext:concept_name "08_AWB45_030" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_d6a6d72b0599626b5a409390b91bb9f42c80b108,
+        res:object-o_f28981d87a5562a5cd5b7ebe0ebe3c68769d3f80 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_c4e6f01784d740aa7cb51b6bb8341aa8f7c6dcb0 ;
+    ext:has_question res:object-o_7eeb8bc46e3a7da425375afd2a81e49e975d25f4 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_3aa7bdb64a4d4451bce940b695ed0689613e2115 a oced:Event,
+        ext:04_BPT_005_complete ;
+    oced:observed_at "2014-04-14T11:34:20+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_74092cbd31f83e681b36e83cf5dd35ce6eff100e ;
+    ext:concept_name "04_BPT_005" ;
+    ext:handled_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 ;
+    ext:has_activity_name res:object-o_7e9e3b0a9591598a6f6cdc1f758f8bf03633a04b,
+        res:object-o_817328907b998013f2146d381b3673093f280491 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_73ab4082c6a1892f8f160724bef58862a83aa631 ;
+    ext:has_question res:object-o_7eeb8bc46e3a7da425375afd2a81e49e975d25f4 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_3e75f6aacd9e5d45c4ba7df67dc0b6cb3ce039da a oced:Event,
+        ext:01_HOOFD_180_complete ;
+    oced:observed_at "2014-04-14T11:35:43+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_8f64dbde8c1abf4446e646abf60537452fc77752 ;
+    ext:concept_name "01_HOOFD_180" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_2d06ac5129cb2966f86619fd6fe1bbca33ab6ef4,
+        res:object-o_6f3baacf8c43ce9102c84e04a402661daa41c630 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_1af019e9b8b5c19a05d142074f0b5f6015b06287 ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_40fa7abbc77830ef30690e8070be82660b363266 ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_41f6962d9e277bd477b58b1b0de6ccfd0df77152 a oced:Event,
+        ext:01_HOOFD_510_2a_complete ;
+    oced:observed_at "2014-07-14T10:17:55+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_a2bd5b62c98d7dbc6c9a195b30c0d4d6c3e81641 ;
+    ext:concept_name "01_HOOFD_510_2a" ;
+    ext:handled_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 ;
+    ext:has_activity_name res:object-o_0ec0aa33aaa6e472a3e51a2c050a7321340db281,
+        res:object-o_1765c0c1a68c3ded7c037d3e93ef7e4bf511b0ff ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:has_monitoring_resource res:object-o_df27d53cbf0fbb9e12cc6b261d181a85215e7f64 ;
+    ext:has_planned_date res:object-o_974d8852f17a33137ee5e08ab894f327cddc34cc ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_497ec90cbb847fec47370d5f29c03ed665dfe211 a oced:Event,
+        ext:01_HOOFD_065_0_complete ;
+    oced:observed_at "2014-04-14T11:34:25+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_675a7bfa76f70e2636be9f0e9872b7dd9e747f0e ;
+    ext:concept_name "01_HOOFD_065_0" ;
+    ext:handled_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 ;
+    ext:has_activity_name res:object-o_99f8a9b767bc084f578fdf59e90a727cfff079ad,
+        res:object-o_d35c91e181728a90b9e66047862d0d90f2e6942d ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_60df7f7d0011d74d724d92352dca7c87812ab1af ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_4c37655e9527c232a8fb671aec3a6d6a5680159c a oced:Event,
+        ext:01_HOOFD_195_complete ;
+    oced:observed_at "2014-07-10T15:32:31+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_0adb98e9aada4fc1e9af5d205c1940b972a0c885 ;
+    ext:concept_name "01_HOOFD_195" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_998551bd249af64014003dd8de8267026a522a52,
+        res:object-o_e4e6de762b42de585b4607c9ddb20f71f48ca091 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_0e189cdfc4616bff6c06556c44f066161d16d3cc ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_4f9a463708b8b9e60b0afe414e1a7a6db9904542 a oced:Event,
+        ext:01_HOOFD_011_complete ;
+    oced:observed_at "2014-04-14T11:29:20+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_99e920b71c52cd18bf0e94c923cebfd98e168cb0 ;
+    ext:concept_name "01_HOOFD_011" ;
+    ext:handled_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 ;
+    ext:has_activity_name res:object-o_4cc9da29c37d64b98d646aa7960ae3f20caf6df4,
+        res:object-o_a1c14a5e506e37b771d362e5e088c3f94a8b0eed ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_4a4da4602d75eddb780cd3d885aa304e045588c2 ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_5ce18808161d3439adb6d88c8914bc19f82bdc66 a oced:Event,
+        ext:11_AH_II_010_complete ;
+    oced:observed_at "2014-07-10T15:32:48+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_cf3942b3eba1126c072f8ea57c7b17c11b9768cc ;
+    ext:concept_name "11_AH_II_010" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_385c6d4cadd93e2f3bee53ee629405ac9b8222c0,
+        res:object-o_f01309abdd31fa9a940154df0b9eb90a75c6995e ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_bb8f5503ab569acdf452665995eb34b893f074d8 ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_5da9a27c3bf6f20c61b4874f203e2a029b810212 a oced:Event,
+        ext:01_HOOFD_196_complete ;
+    oced:observed_at "2014-07-10T15:32:31+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_df9efa19712fd4af038eddf120bad7cdf6aee9f9 ;
+    ext:concept_name "01_HOOFD_196" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_8a0482119726a12ab19235976578d8a01e2941fa,
+        res:object-o_9d713d1d76f3ad5859376bb7cc5cec72c060c43e ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_0e189cdfc4616bff6c06556c44f066161d16d3cc ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_5e38e86274ca3e2cac1f2c436dbd0f7d68fe5500 a oced:Event,
+        ext:08_AWB45_040_complete ;
+    oced:observed_at "2014-07-10T12:07:58+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_3d8cc1b5041cefd74e055c67772d5ec58603fae6 ;
+    ext:concept_name "08_AWB45_040" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_27cf698e081d4a9ae8047f392197ef0e1ff28f99,
+        res:object-o_bdf6621ea52ab95c2c88cab47ac9837c33d9c1c3 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_6656c116a7b9321b2e6c8993e4d56ccd6d644d46 ;
+    ext:has_question res:object-o_f4f06184e0755e192f7759fc0449552e83f695da ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_676682d1e3421e1cb60569284ca053f384f51091 a oced:Event,
+        ext:01_HOOFD_494a_complete ;
+    oced:observed_at "2014-07-10T15:50:01+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_9c254f4f507abc47e4a6f2ed22d91dc3ff62dead ;
+    ext:concept_name "01_HOOFD_494a" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_41d5c96851695a9d063fd6b8413b069cd15738ec,
+        res:object-o_42fcff1eeb106cef22f68ebfb54d3105fdbf0de0 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_550147e0aafb9b997f10f3d6d30546b89f149cc2 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_69264fa48189e6dd9dd6be3c662fed3f1530c578 a oced:Event,
+        ext:01_HOOFD_370_complete ;
+    oced:observed_at "2014-07-10T15:32:44+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_890a1a2fa6c8d4947ed40fc6881ecd3660a72ef5 ;
+    ext:concept_name "01_HOOFD_370" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_2d3aa0566b131d521647a222fb54707a7c773103,
+        res:object-o_ba611d937292c19f88a2cdc388984beea85c8f70 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_09bdac65e4e7e133c9dfed04d7b6b7add1d2e277 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_6aa3e7ca31034292f554306e8223624ade1693b3 a oced:Event,
+        ext:01_HOOFD_193_complete ;
+    oced:observed_at "2014-07-10T15:32:27+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_92d203ad7f69f8772758ed9aa329aa97c078b6c4 ;
+    ext:concept_name "01_HOOFD_193" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_27e83b0a6d56a771e30e3b2b4c9cb6b0e129b3d4,
+        res:object-o_367317b52f6ff4fa0628c45f8731f7d3fdceca61 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_84bd3df20a707c6f2db37b300d0a0f034bb97f07 ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_6d4652344dc5b4be5c5355e819641e799c2a2564 a oced:Event,
+        ext:02_DRZ_010_complete ;
+    oced:observed_at "2014-04-18T11:34:17+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_9c00afea866a0dcbaae4fa66d95d1ce606f0bce0 ;
+    ext:concept_name "02_DRZ_010" ;
+    ext:handled_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 ;
+    ext:has_activity_name res:object-o_8d8419879906726bd3996eda7854242a4219c65a,
+        res:object-o_a0693304119184d44f647ecc152b2c4bd3361cfa ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:has_due_date res:object-o_7be7a5e7268472bac548ffce93b8e918e09bc40f ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_6baf4003776b7f75d8986df28954bebfcde9b08a ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_7455a98c2a297c5e38b23151500983853bdb3798 a oced:Event,
+        ext:01_HOOFD_510_2_complete ;
+    oced:observed_at "2014-07-14T10:17:51+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_81efb067cd4c9513e08a5df85289d066177a08b7 ;
+    ext:concept_name "01_HOOFD_510_2" ;
+    ext:handled_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 ;
+    ext:has_activity_name res:object-o_510cd65aa895672b57536af1e69084cd2b5f5de2,
+        res:object-o_7e676ee924fdd7327025a8935e9a990732b483a0 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:has_monitoring_resource res:object-o_df27d53cbf0fbb9e12cc6b261d181a85215e7f64 ;
+    ext:has_planned_date res:object-o_f0d6e5410feb260478e54f28dca21e0fab2bd490 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_7914368fb9c8a034d5b6d04684b6e287a5e59fbb a oced:Event,
+        ext:01_HOOFD_030_1_complete ;
+    oced:observed_at "2014-04-14T11:29:21+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_736f4b9e0563bdf0870bd92c1c68f88a4f441d24 ;
+    ext:concept_name "01_HOOFD_030_1" ;
+    ext:handled_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 ;
+    ext:has_activity_name res:object-o_00bf5a23a5d4f39a4829c9193919853be6b07520,
+        res:object-o_b42cf781e0c3d317e5e8807e96079f1c17c093f1 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_c8fec6e64a179b8df97ac6a71ba1798b5b65933d ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_83b0fd9db7027f0433bb7ee6d68dd293a1d83c7d a oced:Event,
+        ext:01_HOOFD_491_complete ;
+    oced:observed_at "2014-07-10T15:49:58+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_333ae1e92372c0c42df424c02a8b6f4726526e3b ;
+    ext:concept_name "01_HOOFD_491" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_453c8bc4aefab7263d56f851f35cd9b40f2deec3,
+        res:object-o_80e079bdf26c6ed272952b1a6dd08ad082022975 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_ec93bcc159c61628216832de75c9683b1c5b9146 ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_88dbf5438dbc8f5d11b84371e6bbc3819be5d043 a oced:Event,
+        ext:01_HOOFD_110_0_complete ;
+    oced:observed_at "2014-04-14T11:34:27+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_8a411e26e5b5d9c620c1604484ebf28ede680873 ;
+    ext:concept_name "01_HOOFD_110_0" ;
+    ext:handled_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 ;
+    ext:has_activity_name res:object-o_04e5505f43f73b41a38108441cce1c575c91ba95,
+        res:object-o_2b5892be5fdea9a7c3532d9d53cae963236dd0f2 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_f621146e9d061759bc5b7f0ea9226badf7f92d83 ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_8986394f4f0b6f77774d5e8acde15644b4c4bd7a a oced:Event,
+        ext:01_HOOFD_480_complete ;
+    oced:observed_at "2014-07-10T15:32:53+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_c53145d111a1a1c5fe25c8777d87a4ef2c5f32e5 ;
+    ext:concept_name "01_HOOFD_480" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_0b1978c4644ef10b49f0c22198133c0cc18e9858,
+        res:object-o_71e5f95fe95440830b39e91a372df60f7370769a ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_8d6381754e9595faddd0758add74deab84671f1f ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_8a0a43243cd841dab60a47650ced8a5c25b62953 a oced:Event,
+        ext:01_HOOFD_510_3_complete ;
+    oced:observed_at "2014-07-14T10:17:57+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_463cff6a83b1c797f7d1216a6d845ba69eb7403c ;
+    ext:concept_name "01_HOOFD_510_3" ;
+    ext:handled_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 ;
+    ext:has_activity_name res:object-o_510cd65aa895672b57536af1e69084cd2b5f5de2,
+        res:object-o_7e676ee924fdd7327025a8935e9a990732b483a0 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:has_monitoring_resource res:object-o_df27d53cbf0fbb9e12cc6b261d181a85215e7f64 ;
+    ext:has_planned_date res:object-o_3a044633edbb0bb1f94f99db266d3df3eb5b4c03 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_8c7bfdc780ae477748d104d3e232c1e4d6446b7b a oced:Event,
+        ext:08_AWB45_020_0_complete ;
+    oced:observed_at "2014-05-23T16:17:03+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_119273a50a9567b5406f8db3e30c29e8d1b3996c ;
+    ext:concept_name "08_AWB45_020_0" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_24d5c8b21f0925e471d25501a85378d60addce33,
+        res:object-o_c2a43000afa5fd8c712a2a82f97113c4e101da82 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_1af019e9b8b5c19a05d142074f0b5f6015b06287 ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_be776c9886ed6d80e8a449aaa98ba3db458a9101 ;
+    ext:has_question res:object-o_7eeb8bc46e3a7da425375afd2a81e49e975d25f4 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_9819745f1c99ac26dd5ae24ad0b41306ae0f4786 a oced:Event,
+        ext:08_AWB45_005_complete ;
+    oced:observed_at "2014-07-10T15:32:28+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_e46f36dbeee85f1e2fe7b87b184e50ce12e6a161 ;
+    ext:concept_name "08_AWB45_005" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_5e5d38e82538d50c7102bd76075fe3f4f48e22b9,
+        res:object-o_9641e56a92ab0acc5c94a3501882b1274f181e5c ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_19345456a5615c49f5fe803831a089a1f5ff99c9 ;
+    ext:has_question res:object-o_7eeb8bc46e3a7da425375afd2a81e49e975d25f4 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_994dcad19f25c2dc1574e296f5fb63438f0b24c0 a oced:Event,
+        ext:01_HOOFD_532_complete ;
+    oced:observed_at "2014-07-14T10:14:15+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_ea4e8d16312badae810de3b809745ed0c5805b51 ;
+    ext:concept_name "01_HOOFD_532" ;
+    ext:handled_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 ;
+    ext:has_activity_name res:object-o_5fca60d09a3ae69589dde2d86191a201777a3fc6,
+        res:object-o_b0ea82ab77c32b95f35bd22b196f7fa4684005d6 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:has_monitoring_resource res:object-o_df27d53cbf0fbb9e12cc6b261d181a85215e7f64 ;
+    ext:has_planned_date res:object-o_af6a0592084f41253ad233e1591c91947c2aee2f ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_9b21fa6b6e8e40c5f72c22f72b0f4a00b848270e a oced:Event,
+        ext:08_AWB45_010_complete ;
+    oced:observed_at "2014-05-23T16:17:01+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_f308617b1ecc39c630b8880195ec39f5ff421836 ;
+    ext:concept_name "08_AWB45_010" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_68a0d8b158d8e3264451c1be59c8e4baee1d7b90,
+        res:object-o_8126821c932c50e48ed76e26f3452ed56b447851 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_1af019e9b8b5c19a05d142074f0b5f6015b06287 ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_c1d80893e1dba8e8a840dcc74aa8db8378f65f59 ;
+    ext:has_question res:object-o_efddc886db37f2bef996a2cf866c63fda8ec416b ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_9fb08b48962c83740a5703a1f3d8cbf691f40d57 a oced:Event,
+        ext:01_HOOFD_510_0_complete ;
+    oced:observed_at "2014-07-14T10:14:43+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_d84c3b81a3eda7f573238dc5dc01214433a20c82 ;
+    ext:concept_name "01_HOOFD_510_0" ;
+    ext:handled_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 ;
+    ext:has_activity_name res:object-o_14ab6dc86030fb50ace712ae3c560e90d17d48f2,
+        res:object-o_e8a867bdd82b4cf7ef0f1354b2342d163b6b3dcc ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:has_monitoring_resource res:object-o_df27d53cbf0fbb9e12cc6b261d181a85215e7f64 ;
+    ext:has_planned_date res:object-o_c36e9b747f7ea50094b2789f595bd78ea04c92d6 ;
+    ext:has_question res:object-o_7eeb8bc46e3a7da425375afd2a81e49e975d25f4 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_a9b0b550d997114f5720665655c945ff21ad8f5e a oced:Event,
+        ext:01_HOOFD_490_1a_complete ;
+    oced:observed_at "2014-07-10T15:32:55+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_cfda8faaa5c37688347dffb5dc27e5400a5d17c7 ;
+    ext:concept_name "01_HOOFD_490_1a" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_6294d71ef0463f906d6e85df1d4cf382047f8254,
+        res:object-o_9c4124f26ad4a4bc7db09330ec58ceef29e4b407 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_401928eaab71885cef5bc978c458321d72e8eadf ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_ad9972d798d86531dddbb28a54f00b22db4d89b8 a oced:Event,
+        ext:01_HOOFD_490_5_complete ;
+    oced:observed_at "2014-07-10T15:50:01+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_6d65a914212a17237c406b1cd3ad6502b9e6859d ;
+    ext:concept_name "01_HOOFD_490_5" ;
+    ext:handled_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 ;
+    ext:has_activity_name res:object-o_a47f4ed094e135adda7868524574ef92537f2ff9,
+        res:object-o_dd941c8091543e79df0bab548159b9b689a425c6 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_550147e0aafb9b997f10f3d6d30546b89f149cc2 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_b111d331c09f7ce297ecc510c3101c06aef8679a a oced:Event,
+        ext:01_HOOFD_020_complete ;
+    oced:observed_at "2014-04-14T11:29:20+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_6fce9919bd21c2df7bec18d19e17930d71008085 ;
+    ext:concept_name "01_HOOFD_020" ;
+    ext:handled_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 ;
+    ext:has_activity_name res:object-o_00bf5a23a5d4f39a4829c9193919853be6b07520,
+        res:object-o_b42cf781e0c3d317e5e8807e96079f1c17c093f1 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_4a4da4602d75eddb780cd3d885aa304e045588c2 ;
+    ext:has_question res:object-o_7eeb8bc46e3a7da425375afd2a81e49e975d25f4 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_bea7815ba1f0e1166c69c744bab4befcd2601e3e a oced:Event,
+        ext:08_AWB45_025_complete ;
+    oced:observed_at "2014-05-23T16:24:25+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_a5074ea69b12583a34b399c9fc7892d5fecee508 ;
+    ext:concept_name "08_AWB45_025" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_82dc123eb2c254eddfd556c2a3906d4d76ecd5f3,
+        res:object-o_88e1df2cbbae7f8994bfd4a05e9a1a6cad23e07d ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_1af019e9b8b5c19a05d142074f0b5f6015b06287 ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_2f095cbfa11fa838c88c0fdf698028c3afbb80d6 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_c506ef0ffbcbae301bc5004953ff78410a4b3f8d a oced:Event,
+        ext:01_HOOFD_101_complete ;
+    oced:observed_at "2014-04-14T11:34:27+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_e2bab55add2c185a2af8b19a4c277f1ac7cf682a ;
+    ext:concept_name "01_HOOFD_101" ;
+    ext:handled_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 ;
+    ext:has_activity_name res:object-o_741f8c14dc0a86848ce9245a700fac001403c491,
+        res:object-o_8a3e8672d65cc5e38b72e09decbbf2cbb9dc7f14 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_f621146e9d061759bc5b7f0ea9226badf7f92d83 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_c6676b339beea4cd050d74e7a8bcb4e18884c6c5 a oced:Event,
+        ext:01_HOOFD_430_complete ;
+    oced:observed_at "2014-07-10T15:32:47+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_398a010adf380d9d0ad8d328b5c721a95c0432c4 ;
+    ext:concept_name "01_HOOFD_430" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_61a41257ab687e982503033a90693d555db5288c,
+        res:object-o_747a3de20374abc6116beda448c9deb68ec3bfd2 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_805f0f0b033238ce4f68e2468cd995c8387bf9fb ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_ccdb1aa50fe72c0873ae29636509085915f8cc75 a oced:Event,
+        ext:01_HOOFD_250_2_complete ;
+    oced:observed_at "2014-07-10T15:32:36+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_3aa64df855e004cee15e675a8a2af027ea8b1667 ;
+    ext:concept_name "01_HOOFD_250_2" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_5dc635cee2875800be9698298a19833d3500b9b2,
+        res:object-o_f22ce7cb26a32e55ca271f5a24e9c55ea08186ce ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_79ebde002b0054f1c1a7007bc20a27f9f28ab019 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_d254d90757aa67e6a7713d43ea79a3cc0aab918d a oced:Event,
+        ext:01_HOOFD_510_4_complete ;
+    oced:observed_at "2014-07-14T10:17:57+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_01a5a03b45f642b4d275323044539f58ae00545d ;
+    ext:concept_name "01_HOOFD_510_4" ;
+    ext:handled_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 ;
+    ext:has_activity_name res:object-o_3068c8a1ba139979275f38e6d1e302278dfb4b93,
+        res:object-o_fbbcf70e7d9c4478acfb540667003d1dde626cef ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:has_monitoring_resource res:object-o_df27d53cbf0fbb9e12cc6b261d181a85215e7f64 ;
+    ext:has_planned_date res:object-o_3a044633edbb0bb1f94f99db266d3df3eb5b4c03 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_d6ac677dfd092d6d2ecc187ef9c386d001aca419 a oced:Event,
+        ext:01_HOOFD_030_2_complete ;
+    oced:observed_at "2014-04-14T11:34:17+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_6b844469c35576c525ed8106fb2867926ba057d5 ;
+    ext:concept_name "01_HOOFD_030_2" ;
+    ext:handled_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 ;
+    ext:has_activity_name res:object-o_465889e75f19468551d3fca33b7aadf42d44f5f2,
+        res:object-o_de238a7d656348001cb61aef9428e99e2db69e41 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_6baf4003776b7f75d8986df28954bebfcde9b08a ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_d8442743cee1f3db882c33f4af348ffb509347c8 a oced:Event,
+        ext:01_HOOFD_250_1_complete ;
+    oced:observed_at "2014-07-10T15:32:35+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_69de69c91ea6a2f25851fffc4dfdf2b8544fe1fd ;
+    ext:concept_name "01_HOOFD_250_1" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_215fea7c52d0cf6d967faae47f249ef790528c85,
+        res:object-o_efa47ef56adcfd0a93ca73d4f382b993515baee2 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_b7517471c66714fb2293052ea76bc0033d9fae7a ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_d87a7427b2fbbb143d04d351bd7b18e2dc3f5ac1 a oced:Event,
+        ext:01_HOOFD_490_1_complete ;
+    oced:observed_at "2014-07-10T15:32:54+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_19636583539166366c69c8b167ef4ec1ff0e9601 ;
+    ext:concept_name "01_HOOFD_490_1" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_626bc3dbdb4e1a2bfce7d944f233d16053c25489,
+        res:object-o_cd9ffd1d6750532fadd34460a711ea8c6890dfc8 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_f0caef8145034cc3113a2acb472eca6b79675625 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_d97b8e2faf0bf0fc8643408ab63cf99ce2ac3a30 a oced:Event,
+        ext:01_HOOFD_490_2_complete ;
+    oced:observed_at "2014-07-10T15:32:59+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_53542ec4c5daf885f123aedeba2004adeccbef8c ;
+    ext:concept_name "01_HOOFD_490_2" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_5b39bcf4909679fd743d202d73a09bc24c7fbeca,
+        res:object-o_969212417ac1e52c7eac13b861d87db94c382730 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_78df09870a3745a8f0721aa6079b87012ef2a029 ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_dcbd24d8e73e4274da226ffd70b5a67fc049d0e1 a oced:Event,
+        ext:01_HOOFD_010_complete ;
+    oced:observed_at "2014-04-16T11:16:44+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_b1ca6f33d64658f1c5c10d4ca1a9d3b57b926ffc ;
+    ext:concept_name "01_HOOFD_010" ;
+    ext:handled_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 ;
+    ext:has_activity_name res:object-o_a495c3a66a69cce991272e21f414867285e83332,
+        res:object-o_aeba533d0d6dd68536b9c8c49d15d14b7833413d ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:has_due_date res:object-o_d927c73059fa402356f035c9941f096bb21c5289 ;
+    ext:has_monitoring_resource res:object-o_130bec4d3af96f44303d0c8438e8b6a7b7b7e3ee ;
+    ext:has_planned_date res:object-o_f2428d782b0ff480e9dedf9a316839c042e186f2 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_e7053d19f2f84789ba609de2f3b542e615fced17 a oced:Event,
+        ext:01_HOOFD_490_4_complete ;
+    oced:observed_at "2014-07-10T15:33:05+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_83e1ac7b33d48aee540f09aca667096f57c114e0 ;
+    ext:concept_name "01_HOOFD_490_4" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_d99a545d44c459cf974d1d1c99d9b06b9e025344,
+        res:object-o_fb1c7248f49e3eb261f618727790599ce288431d ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_3f6c33bdb0b70f107bee6953c0e1afd39bda7954 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_e83e4f4624d8327742aa11d5ff33b5f93b5a3b65 a oced:Event,
+        ext:08_AWB45_045_complete ;
+    oced:observed_at "2014-07-10T12:08:05+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_e00785d7422217a4577995cba1ce9c9bf4a940f4 ;
+    ext:concept_name "08_AWB45_045" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_3b1498825d5533af384dcd31d00d6f719b654fc0,
+        res:object-o_ea3e1323990809b6d14923361a23210061fb39b1 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_0c9f9e7e90863afa124b0d5fb545f25f52b536be ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_ebc06906b59b6930e8631134fb59e3606257d40b a oced:Event,
+        ext:13_CRD_010_complete ;
+    oced:observed_at "2014-07-10T15:32:50+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_e5dff51257b3d4aeb14f1343362981a0ffa3474b ;
+    ext:concept_name "13_CRD_010" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_20c57b9cea18929e218906acf747256c3d91d0e7,
+        res:object-o_5cffeeda53eabfcc8d4f1fbe4f553fc0500c228d ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_fa1662d9f609f371a36ce9de48cd2c6c7c5a6f87 ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_ed268a427820c7f6f9756f4e3bcd8fd68d6a7228 a oced:Event,
+        ext:08_AWB45_020_1_complete ;
+    oced:observed_at "2014-05-23T16:17:17+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_444509b9456bee27900335653d0216bc7520fdfd ;
+    ext:concept_name "08_AWB45_020_1" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_4affc51c55889ad569c5ee8ef6937750e5c6d9c6,
+        res:object-o_ddf1c679cebe6bc23301dd592d1adcd89fb0c9c0 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_1af019e9b8b5c19a05d142074f0b5f6015b06287 ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_7e23a134a195423a72ff22c35013c1c9140defca ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_f11ac23021a3c72906618588e20e3ccf32d6406e a oced:Event,
+        ext:01_HOOFD_495_complete ;
+    oced:observed_at "2014-07-14T10:14:15+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_c169315c539bac5bfd8dddaf9f30d7deded9a0f6 ;
+    ext:concept_name "01_HOOFD_495" ;
+    ext:handled_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 ;
+    ext:has_activity_name res:object-o_3fa6a4e6d9746c1b366bf3d0574c85bdbdde580d,
+        res:object-o_6a784ab569faf1889e2ff381fdaedeb808210140 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:has_monitoring_resource res:object-o_df27d53cbf0fbb9e12cc6b261d181a85215e7f64 ;
+    ext:has_planned_date res:object-o_af6a0592084f41253ad233e1591c91947c2aee2f ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_f63d528a15424410de8b1a8583dd588d8f143d7d a oced:Event,
+        ext:01_HOOFD_330_complete ;
+    oced:observed_at "2014-07-10T15:32:37+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_f5116bed23e4d24517950154188edb8cd021e3f2 ;
+    ext:concept_name "01_HOOFD_330" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_2d06ac5129cb2966f86619fd6fe1bbca33ab6ef4,
+        res:object-o_6f3baacf8c43ce9102c84e04a402661daa41c630 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_8f8cfce8563ba7d35aa3d691b7ec042433f818e1 ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_fa259b071eab7f6676b3719d9a607889dc166e20 a oced:Event,
+        ext:01_HOOFD_100_0_complete ;
+    oced:observed_at "2014-04-14T11:35:32+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_2931aee6e5408231f60509fc77e3cd6045f57ffc ;
+    ext:concept_name "01_HOOFD_100_0" ;
+    ext:handled_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 ;
+    ext:has_activity_name res:object-o_556d2b1e8af152b252cd7100e208992952c6b33b,
+        res:object-o_e21150a5dcc1dfa0e7297939485258cc649cefa7 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_2e8278a1469db3d36416ef388d4a31d100a8e211 ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_fc034cd78f3bfa84b0664b892236516b6bcb3149 a oced:Event,
+        ext:01_HOOFD_380_complete ;
+    oced:observed_at "2014-07-10T15:32:45+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_ed78037436bf707460c0418834a95b7a5aad04f8 ;
+    ext:concept_name "01_HOOFD_380" ;
+    ext:handled_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff ;
+    ext:has_activity_name res:object-o_1e0e47481366923462882740536d8a3f8e38a0ab,
+        res:object-o_c62f20003c1b4053b7c4ed1c0a53131ba8d2cd3d ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_b871b2243e0ec45136566298c165e47d37a3c1f6 ;
+    ext:has_question res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_fd65549591156f01643d41ff8617964c0002dcf8 a oced:Event,
+        ext:01_HOOFD_061_complete ;
+    oced:observed_at "2014-04-14T11:34:24+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_8ab4e6f560df20a0abbd08e1f6d91af3aba684b9 ;
+    ext:concept_name "01_HOOFD_061" ;
+    ext:handled_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 ;
+    ext:has_activity_name res:object-o_60439d54ba47bcc042ee35dfd30f1ad086a42183,
+        res:object-o_a28595d96ce1323d974566b2c6c48fcde1f8ab29 ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:has_monitoring_resource res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:has_planned_date res:object-o_8b2bb0d4279d32cdb659a0afc731ec38b28a4427 ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:event-e_fe6d35775f06a03c6666e5f9165c591ad13e532d a oced:Event,
+        ext:01_HOOFD_510_1_complete ;
+    oced:observed_at "2014-07-14T10:14:49+02:00"^^xsd:dateTime ;
+    ext:MainProcess_Subprocess_Step res:object-o_a4f978bd6ee954c27bcbd1ddf22249c9fd0db36c ;
+    ext:concept_name "01_HOOFD_510_1" ;
+    ext:handled_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 ;
+    ext:has_activity_name res:object-o_03e47cbf8b4382f05cc7a7877de88d89b720f38d,
+        res:object-o_ed8adcb004ffd45c5827379d0b73fabfd2397f5d ;
+    ext:has_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c ;
+    ext:has_date_finished res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:has_monitoring_resource res:object-o_df27d53cbf0fbb9e12cc6b261d181a85215e7f64 ;
+    ext:has_planned_date res:object-o_a4c0d06c2d720bc49696d914b66aa17ecd3f3e8c ;
+    ext:has_question res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 ;
+    ext:lifecycle_transition "complete" .
+
+res:object-o_08518a7435d6fddcce0dde457e83916dbfc0d176 a oced:Object ;
+    ext:SUMleges "1508.8435" .
+
+res:object-o_2bb63c06d2737ccb03a6b05d8529e96ee170c822 a oced:Object ;
+    ext:requestComplete "FALSE" .
+
+res:object-o_42c2ccdb908c32b565003aa894a8f6df7f3df346 a oced:Object ;
+    ext:caseStatus "O" .
+
+res:object-o_50bf911147450b66da9ea50ab4a57aebda44c0e5 a oced:Object ;
+    ext:landRegisterID "716970" .
+
+res:object-o_594e7fec466a2b2a7c94f21f80224a69d3bd8dce a oced:Object ;
+    ext:termName "Termijn bezwaar en beroep 1" .
+
+res:object-o_99e98cfc866b84059d543244f9a6729fa30e3f1b a oced:Object ;
+    ext:case_type "557669" .
+
+res:object-o_9f74cdf4df50c8d7a01477931b6967363c9c152f a oced:Object ;
+    ext:Responsible_actor "560912" .
+
+res:object-o_a9faeb7270bae67737a58325ac63cfab807b6f78 a oced:Object ;
+    ext:startDate "2014-04-10T00:00:00+02:00" .
+
+res:object-o_aae29deae293ea2bd8a794c8f5cfdc32dfc19588 a oced:Object ;
+    ext:parts "Bouw" .
+
+res:object-o_b9ec77f94c2d5ba04532b5e6b05a862b38521204 a oced:Object ;
+    ext:IDofConceptCase "9997047" .
+
+res:object-o_f834823228cd291fc2c6926b470634c7d28a9369 a oced:Object ;
+    ext:last_phase "Beschikking verzonden" .
+
+<https://w3id.org/semsys/ns/ocedo/core> a owl:Ontology ;
+    dcterms:contributor "Claudio di Ciccio",
+        "Maxim Vidgof",
+        "Sabrina Kirrane" ;
+    dcterms:created "2024-08-20" ;
+    dcterms:creator "Fajar J. Ekaputra",
+        "Saba Latif" ;
+    dcterms:description """\r
+    An ontology to describe Object-Centric Event Data (OCED) for Process Mining. \r
+    The ontology consists of \r
+    (a) OCED core part (prefix "oced") - describing core classes and properties, and \r
+    (b) OCED auxilary part (prefix "aux:") - describing additional context \r
+        information that will be replaced by use-case specific classes and \r
+        properties in the implementation\r
+    """@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0> ;
+    dcterms:modified "2025-03-18" ;
+    dcterms:title "The OCED Ontology"@en ;
+    vann:preferredNamespacePrefix "oced" ;
+    vann:preferredNamespaceUri "https://w3id.org/semsys/ns/ocedo/core#" .
+
+ext:01_HOOFD_010_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_011_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_015_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_020_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_030_1_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_030_2_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_061_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_065_0_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_100_0_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_101_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_110_0_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_180_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_193_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_195_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_196_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_200_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_250_1_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_250_2_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_330_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_370_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_375_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_380_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_430_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_480_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_490_1_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_490_1a_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_490_2_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_490_4_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_490_5_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_490_5a_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_491_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_494a_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_495_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_500_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_510_0_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_510_1_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_510_2_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_510_2a_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_510_3_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_510_4_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_515_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_532_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:02_DRZ_010_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:04_BPT_005_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_010_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_020_0_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_020_1_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_020_2_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_025_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_030_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_040_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_045_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_051_0_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:09_AH_I_010_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:11_AH_II_010_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:13_CRD_010_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:CaseProcedure a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:CaseStatus a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:CaseType a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:ConceptCaseID a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:DateStop a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:IncludesSubCases a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:LandRegisterID a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:LastPhase a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:Parts a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:PlannedEndDate a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:RequestComplete a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:StartDate a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:TermName a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+res:object-o_03e47cbf8b4382f05cc7a7877de88d89b720f38d a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "afschrift beschikking omgevingsvergunning aan belanghebbenden" ;
+    ext:completed_on res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_09bdac65e4e7e133c9dfed04d7b6b7add1d2e277 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:32:44+02:00" .
+
+res:object-o_0b1978c4644ef10b49f0c22198133c0cc18e9858 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "van rechtswege" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_0c9f9e7e90863afa124b0d5fb545f25f52b536be a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T12:08:05+02:00" .
+
+res:object-o_0dcab9aacaa0f9c9cf7e5410e89cfe743cdac0af a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "fase advies bekend" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_1765c0c1a68c3ded7c037d3e93ef7e4bf511b0ff a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "instellen besluitfase:besluit vergunnen verzonden" ;
+    ext:completed_on res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_19345456a5615c49f5fe803831a089a1f5ff99c9 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:32:28+02:00" .
+
+res:object-o_1d8768ffe1d513dcdf78b076cc4281aea2077aa1 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-14T10:14:12+02:00" .
+
+res:object-o_20c57b9cea18929e218906acf747256c3d91d0e7 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "coördinatie van toepassing" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_215fea7c52d0cf6d967faae47f249ef790528c85 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "behandelen deelzaken inhoudelijkheid" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_27cf698e081d4a9ae8047f392197ef0e1ff28f99 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "registreren ontvangst aanvullende gegevens" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_297f52aa96c52720b5be36a6b8a7997caf136215 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "artikel 34 WABO van toepassing" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_2b5892be5fdea9a7c3532d9d53cae963236dd0f2 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "deelzaken volledigheid aanmaken" ;
+    ext:completed_on res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_2d3aa0566b131d521647a222fb54707a7c773103 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "inhoudelijke beoordeling afgerond" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_2e8278a1469db3d36416ef388d4a31d100a8e211 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-04-14T11:35:32+02:00" .
+
+res:object-o_2ea6f83d958f753c7c05662a37ae5d43f510f0ba a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "brief in behandeling versturen" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_2f095cbfa11fa838c88c0fdf698028c3afbb80d6 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-05-23T16:24:25+02:00" .
+
+res:object-o_367317b52f6ff4fa0628c45f8731f7d3fdceca61 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "MER aanwezig bij aanvulling" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_385c6d4cadd93e2f3bee53ee629405ac9b8222c0 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "aanhoudingsgrond van toepassing" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_3f6c33bdb0b70f107bee6953c0e1afd39bda7954 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:33:05+02:00" .
+
+res:object-o_401928eaab71885cef5bc978c458321d72e8eadf a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:32:55+02:00" .
+
+res:object-o_40fa7abbc77830ef30690e8070be82660b363266 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-04-14T11:35:43+02:00" .
+
+res:object-o_42fcff1eeb106cef22f68ebfb54d3105fdbf0de0 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "fase beschikking gereed" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_432f7bea2698955383fd20b7434d29f7f9e09428 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-14T10:17:58+02:00" .
+
+res:object-o_453c8bc4aefab7263d56f851f35cd9b40f2deec3 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "beschikking voorleggen" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_4affc51c55889ad569c5ee8ef6937750e5c6d9c6 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "opvragen ontbrekende gegevens" ;
+    ext:completed_on res:object-o_1af019e9b8b5c19a05d142074f0b5f6015b06287 ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_4cc9da29c37d64b98d646aa7960ae3f20caf6df4 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "OLO berichtenverkeer actief" ;
+    ext:completed_on res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_556d2b1e8af152b252cd7100e208992952c6b33b a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "publicatie document aanmaken" ;
+    ext:completed_on res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_5b39bcf4909679fd743d202d73a09bc24c7fbeca a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "besluitdatum voorafgaand aan beschikking" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_5dc635cee2875800be9698298a19833d3500b9b2 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "deelzaken inhoudelijkheid afgerond" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_5fca60d09a3ae69589dde2d86191a201777a3fc6 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "controlehoofdzaak aanmaken" ;
+    ext:completed_on res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_60df7f7d0011d74d724d92352dca7c87812ab1af a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-04-14T11:34:25+02:00" .
+
+res:object-o_61a41257ab687e982503033a90693d555db5288c a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "belanghebbenden zienswijzen vragen" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_626bc3dbdb4e1a2bfce7d944f233d16053c25489 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "aanmaken besluit omgevingsvergunning" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_6294d71ef0463f906d6e85df1d4cf382047f8254 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "instellen besluitstatus" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_652524c10eff98e60a197ebd5b563a932da4d9d9 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "bevestiging ontvangst aanvullende gegevens versturen" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_6656c116a7b9321b2e6c8993e4d56ccd6d644d46 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T12:07:58+02:00" .
+
+res:object-o_68a0d8b158d8e3264451c1be59c8e4baee1d7b90 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "termijn aanleveren ontbrekende gegevens" ;
+    ext:completed_on res:object-o_1af019e9b8b5c19a05d142074f0b5f6015b06287 ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_6a784ab569faf1889e2ff381fdaedeb808210140 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "fase besluit genomen" ;
+    ext:completed_on res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_6aaab67eedb08ba00fb40a7471903fd70be6a8de a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-05-23T16:16:59+02:00" .
+
+res:object-o_73ab4082c6a1892f8f160724bef58862a83aa631 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-04-14T11:34:20+02:00" .
+
+res:object-o_78df09870a3745a8f0721aa6079b87012ef2a029 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:32:59+02:00" .
+
+res:object-o_79ebde002b0054f1c1a7007bc20a27f9f28ab019 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:32:36+02:00" .
+
+res:object-o_7be7a5e7268472bac548ffce93b8e918e09bc40f a oced:Object,
+        ext:DueDate ;
+    ext:dueDate "2014-04-18T11:34:17+02:00" .
+
+res:object-o_7e23a134a195423a72ff22c35013c1c9140defca a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-05-23T16:17:17+02:00" .
+
+res:object-o_805f0f0b033238ce4f68e2468cd995c8387bf9fb a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:32:47+02:00" .
+
+res:object-o_817328907b998013f2146d381b3673093f280491 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "reguliere procedure zonder MER" ;
+    ext:completed_on res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_827192945a84f501b5c5f2d62ccf7c8672b27da3 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:32:43+02:00" .
+
+res:object-o_84bd3df20a707c6f2db37b300d0a0f034bb97f07 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:32:27+02:00" .
+
+res:object-o_88e1df2cbbae7f8994bfd4a05e9a1a6cad23e07d a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "fase aanvullende gegevens gevraagd" ;
+    ext:completed_on res:object-o_1af019e9b8b5c19a05d142074f0b5f6015b06287 ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_8a0482119726a12ab19235976578d8a01e2941fa a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "procedureverandering na volledigheid" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_8a3e8672d65cc5e38b72e09decbbf2cbb9dc7f14 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "registratie datum publicatie" ;
+    ext:completed_on res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_8b2bb0d4279d32cdb659a0afc731ec38b28a4427 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-04-14T11:34:24+02:00" .
+
+res:object-o_8d6381754e9595faddd0758add74deab84671f1f a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:32:53+02:00" .
+
+res:object-o_8f8cfce8563ba7d35aa3d691b7ec042433f818e1 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:32:37+02:00" .
+
+res:object-o_92abd3b925080b84f30032b45794837360c3a278 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "fase beschikking verzonden" ;
+    ext:completed_on res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_974d8852f17a33137ee5e08ab894f327cddc34cc a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-14T10:17:55+02:00" .
+
+res:object-o_998551bd249af64014003dd8de8267026a522a52 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "fase aanvraag ontvankelijk" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_9b3b41de8b0c8f57d96f547e0ac9cc2984a9f314 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "fase aanvraag ontvangen" ;
+    ext:completed_on res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_a0693304119184d44f647ecc152b2c4bd3361cfa a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "doorsturen aan bevoegd gezag" ;
+    ext:completed_on res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_a28595d96ce1323d974566b2c6c48fcde1f8ab29 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "WABOprocedure instellen" ;
+    ext:completed_on res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_a4c0d06c2d720bc49696d914b66aa17ecd3f3e8c a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-14T10:14:49+02:00" .
+
+res:object-o_aeba533d0d6dd68536b9c8c49d15d14b7833413d a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "registratie datum binnenkomst aanvraag" ;
+    ext:completed_on res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_b58377ad15732ed0af4d7a98355176dc845dab72 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T12:08:06+02:00" .
+
+res:object-o_b7517471c66714fb2293052ea76bc0033d9fae7a a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:32:35+02:00" .
+
+res:object-o_bb8f5503ab569acdf452665995eb34b893f074d8 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:32:48+02:00" .
+
+res:object-o_be776c9886ed6d80e8a449aaa98ba3db458a9101 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-05-23T16:17:03+02:00" .
+
+res:object-o_c1d80893e1dba8e8a840dcc74aa8db8378f65f59 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-05-23T16:17:01+02:00" .
+
+res:object-o_c2a43000afa5fd8c712a2a82f97113c4e101da82 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "brief opvragen ontbrekende gegevens aanmaken" ;
+    ext:completed_on res:object-o_1af019e9b8b5c19a05d142074f0b5f6015b06287 ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_c36e9b747f7ea50094b2789f595bd78ea04c92d6 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-14T10:14:43+02:00" .
+
+res:object-o_c4c114becf55a953f03e913abc9c556ae742bb45 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "registreren bezwaar beroepstermijn" ;
+    ext:completed_on res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_c4e6f01784d740aa7cb51b6bb8341aa8f7c6dcb0 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-05-23T16:24:26+02:00" .
+
+res:object-o_c62f20003c1b4053b7c4ed1c0a53131ba8d2cd3d a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "weigeringsgrond" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_c8fec6e64a179b8df97ac6a71ba1798b5b65933d a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-04-14T11:29:21+02:00" .
+
+res:object-o_cb5256e38f9af0f57746161609b6620bd1de3675 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-05-23T16:24:18+02:00" .
+
+res:object-o_d35c91e181728a90b9e66047862d0d90f2e6942d a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "procedurebevestiging aanmaken" ;
+    ext:completed_on res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_d6a6d72b0599626b5a409390b91bb9f42c80b108 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "aanvullende gegevens ontvangen" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_d927c73059fa402356f035c9941f096bb21c5289 a oced:Object,
+        ext:DueDate ;
+    ext:dueDate "2014-04-16T11:16:44+02:00" .
+
+res:object-o_d99a545d44c459cf974d1d1c99d9b06b9e025344 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "genereren beschikking omgevingsvergunning" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_dd941c8091543e79df0bab548159b9b689a425c6 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "registreren datum besluit omgevingsvergunning2" ;
+    ext:completed_on res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_de238a7d656348001cb61aef9428e99e2db69e41 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "invoeren verzenddatum ontvangstbevestiging" ;
+    ext:completed_on res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_e8a867bdd82b4cf7ef0f1354b2342d163b6b3dcc a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "begeleidende brief beschikking aanmaken" ;
+    ext:completed_on res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_ea3e1323990809b6d14923361a23210061fb39b1 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "fase aanvullende gegevens ontvangen" ;
+    ext:completed_on res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_ec93bcc159c61628216832de75c9683b1c5b9146 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:49:58+02:00" .
+
+res:object-o_ed1ce05687b370df657ff34f56d6ea564d82891a a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "instellen besluitfase:besluit vergunnen besloten" ;
+    ext:completed_on res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_ef4e433600bb72b405782aa994b89c98b760d896 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:32:33+02:00" .
+
+res:object-o_f0caef8145034cc3113a2acb472eca6b79675625 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:32:54+02:00" .
+
+res:object-o_f0d6e5410feb260478e54f28dca21e0fab2bd490 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-14T10:17:51+02:00" .
+
+res:object-o_f2428d782b0ff480e9dedf9a316839c042e186f2 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-04-14T11:16:44+02:00" .
+
+res:object-o_f4f06184e0755e192f7759fc0449552e83f695da a oced:Object,
+        ext:Question ;
+    ext:question "9-7-2014 0:00:00" .
+
+res:object-o_f7c775502668e23de615b16941cd81e13bc91315 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "invoeren verzenddatum opvragen ontbrekende gegevens" ;
+    ext:completed_on res:object-o_1af019e9b8b5c19a05d142074f0b5f6015b06287 ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_fa1662d9f609f371a36ce9de48cd2c6c7c5a6f87 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:32:50+02:00" .
+
+res:object-o_fbbcf70e7d9c4478acfb540667003d1dde626cef a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "invoeren verzenddatum beschikking" ;
+    ext:completed_on res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+oced:event_attribute a owl:DatatypeProperty ;
+    rdfs:label "event_attribute" ;
+    rdfs:comment "the super-property for all use-case specific event attributes" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:string .
+
+ext:08_AWB45_005_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:EndDate a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:SumLeges a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+res:object-o_01a5a03b45f642b4d275323044539f58ae00545d a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_510_4" .
+
+res:object-o_04e5505f43f73b41a38108441cce1c575c91ba95 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_8a411e26e5b5d9c620c1604484ebf28ede680873 ;
+    ext:activityNameEN "create subcases completeness" ;
+    ext:performed_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 .
+
+res:object-o_094397a460523732708a8729370a1dd8eb43170b a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_500" .
+
+res:object-o_0adb98e9aada4fc1e9af5d205c1940b972a0c885 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_195" .
+
+res:object-o_0e189cdfc4616bff6c06556c44f066161d16d3cc a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:32:31+02:00" .
+
+res:object-o_0ec0aa33aaa6e472a3e51a2c050a7321340db281 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_a2bd5b62c98d7dbc6c9a195b30c0d4d6c3e81641 ;
+    ext:activityNameEN "start decision phase decision permitting sent" ;
+    ext:performed_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 .
+
+res:object-o_119273a50a9567b5406f8db3e30c29e8d1b3996c a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "08_AWB45_020_0" .
+
+res:object-o_130bec4d3af96f44303d0c8438e8b6a7b7b7e3ee a oced:Object,
+        ext:MonitoringResource ;
+    ext:monitoringResource "560872" .
+
+res:object-o_14ab6dc86030fb50ace712ae3c560e90d17d48f2 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_d84c3b81a3eda7f573238dc5dc01214433a20c82 ;
+    ext:activityNameEN "creating cover letter decision" ;
+    ext:performed_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 .
+
+res:object-o_19636583539166366c69c8b167ef4ec1ff0e9601 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_490_1" .
+
+res:object-o_1e0e47481366923462882740536d8a3f8e38a0ab a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_ed78037436bf707460c0418834a95b7a5aad04f8 ;
+    ext:activityNameEN "grounds for refusal" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_2196a9bfc58470ccd2aab1d031ffe0e5d56f49cf a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_2f22511a5a02eec0d6bcead57fdff9e248d9545a ;
+    ext:activityNameEN "send confirmation receipt additional data" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_24d5c8b21f0925e471d25501a85378d60addce33 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_119273a50a9567b5406f8db3e30c29e8d1b3996c ;
+    ext:activityNameEN "create letter requesting missing data" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_27e83b0a6d56a771e30e3b2b4c9cb6b0e129b3d4 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_92d203ad7f69f8772758ed9aa329aa97c078b6c4 ;
+    ext:activityNameEN "MER present in supplement" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_2931aee6e5408231f60509fc77e3cd6045f57ffc a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_100_0" .
+
+res:object-o_2d06ac5129cb2966f86619fd6fe1bbca33ab6ef4 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "procedure verandering" ;
+    ext:completed_on res:object-o_1af019e9b8b5c19a05d142074f0b5f6015b06287,
+        res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_2f22511a5a02eec0d6bcead57fdff9e248d9545a a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "08_AWB45_051_0" .
+
+res:object-o_3068c8a1ba139979275f38e6d1e302278dfb4b93 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_01a5a03b45f642b4d275323044539f58ae00545d ;
+    ext:activityNameEN "enter senddate decision" ;
+    ext:performed_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 .
+
+res:object-o_333ae1e92372c0c42df424c02a8b6f4726526e3b a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_491" .
+
+res:object-o_398a010adf380d9d0ad8d328b5c721a95c0432c4 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_430" .
+
+res:object-o_3a044633edbb0bb1f94f99db266d3df3eb5b4c03 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-14T10:17:57+02:00" .
+
+res:object-o_3aa64df855e004cee15e675a8a2af027ea8b1667 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_250_2" .
+
+res:object-o_3b1498825d5533af384dcd31d00d6f719b654fc0 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_e00785d7422217a4577995cba1ce9c9bf4a940f4 ;
+    ext:activityNameEN "phase additional information received" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_3d8cc1b5041cefd74e055c67772d5ec58603fae6 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "08_AWB45_040" .
+
+res:object-o_3fa6a4e6d9746c1b366bf3d0574c85bdbdde580d a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_c169315c539bac5bfd8dddaf9f30d7deded9a0f6 ;
+    ext:activityNameEN "phase decision taken" ;
+    ext:performed_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 .
+
+res:object-o_41d5c96851695a9d063fd6b8413b069cd15738ec a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_9c254f4f507abc47e4a6f2ed22d91dc3ff62dead ;
+    ext:activityNameEN "phase decision ready" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_444509b9456bee27900335653d0216bc7520fdfd a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "08_AWB45_020_1" .
+
+res:object-o_463cff6a83b1c797f7d1216a6d845ba69eb7403c a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_510_3" .
+
+res:object-o_465889e75f19468551d3fca33b7aadf42d44f5f2 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_6b844469c35576c525ed8106fb2867926ba057d5 ;
+    ext:activityNameEN "enter senddate acknowledgement" ;
+    ext:performed_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 .
+
+res:object-o_510cd65aa895672b57536af1e69084cd2b5f5de2 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "invoeren verzenddatum beschikking omgevingsvergunning" ;
+    ext:completed_on res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_53542ec4c5daf885f123aedeba2004adeccbef8c a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_490_2" .
+
+res:object-o_550147e0aafb9b997f10f3d6d30546b89f149cc2 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:50:01+02:00" .
+
+res:object-o_591689e89c54c14f7b1cbf63a0b89549712604d5 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_200" .
+
+res:object-o_5c4135b0437b703cdb362cedf1b92e36dbe88a9e a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "08_AWB45_020_2" .
+
+res:object-o_5cffeeda53eabfcc8d4f1fbe4f553fc0500c228d a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_e5dff51257b3d4aeb14f1343362981a0ffa3474b ;
+    ext:activityNameEN "coordination of application" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_5e34b5006dadfe348f89a4dad6ca0485e8aa5d10 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_375" .
+
+res:object-o_5e5d38e82538d50c7102bd76075fe3f4f48e22b9 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "aanvraag volledig" ;
+    ext:completed_on res:object-o_1af019e9b8b5c19a05d142074f0b5f6015b06287,
+        res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_60439d54ba47bcc042ee35dfd30f1ad086a42183 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_8ab4e6f560df20a0abbd08e1f6d91af3aba684b9 ;
+    ext:activityNameEN "start WABOprocedure" ;
+    ext:performed_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 .
+
+res:object-o_675a7bfa76f70e2636be9f0e9872b7dd9e747f0e a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_065_0" .
+
+res:object-o_69de69c91ea6a2f25851fffc4dfdf2b8544fe1fd a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_250_1" .
+
+res:object-o_6b844469c35576c525ed8106fb2867926ba057d5 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_030_2" .
+
+res:object-o_6baf4003776b7f75d8986df28954bebfcde9b08a a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-04-14T11:34:17+02:00" .
+
+res:object-o_6d65a914212a17237c406b1cd3ad6502b9e6859d a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_490_5" .
+
+res:object-o_6fce9919bd21c2df7bec18d19e17930d71008085 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_020" .
+
+res:object-o_71309d568c6334adaa6838d454a804d17364a2fb a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_515" .
+
+res:object-o_71e5f95fe95440830b39e91a372df60f7370769a a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_c53145d111a1a1c5fe25c8777d87a4ef2c5f32e5 ;
+    ext:activityNameEN "by law" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_736f4b9e0563bdf0870bd92c1c68f88a4f441d24 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_030_1" .
+
+res:object-o_74092cbd31f83e681b36e83cf5dd35ce6eff100e a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "04_BPT_005" .
+
+res:object-o_741f8c14dc0a86848ce9245a700fac001403c491 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_e2bab55add2c185a2af8b19a4c277f1ac7cf682a ;
+    ext:activityNameEN "registration date publication" ;
+    ext:performed_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 .
+
+res:object-o_747a3de20374abc6116beda448c9deb68ec3bfd2 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_398a010adf380d9d0ad8d328b5c721a95c0432c4 ;
+    ext:activityNameEN "ask stakeholders views" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_7576f2d2db7ad79d513037743ff60576432b6bb4 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_a52fbf12741eba598f0d8dfe62542bcd77a0208b ;
+    ext:activityNameEN "set decision phase decision permitting decided" ;
+    ext:performed_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 .
+
+res:object-o_7d403b7653f3aa2b34e5574828842ad54dad9593 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_5c4135b0437b703cdb362cedf1b92e36dbe88a9e ;
+    ext:activityNameEN "enter senddate retrieve missing data" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_7e9e3b0a9591598a6f6cdc1f758f8bf03633a04b a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_74092cbd31f83e681b36e83cf5dd35ce6eff100e ;
+    ext:activityNameEN "regular procedure without MER" ;
+    ext:performed_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 .
+
+res:object-o_80e079bdf26c6ed272952b1a6dd08ad082022975 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_333ae1e92372c0c42df424c02a8b6f4726526e3b ;
+    ext:activityNameEN "submit decision" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_8126821c932c50e48ed76e26f3452ed56b447851 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_f308617b1ecc39c630b8880195ec39f5ff421836 ;
+    ext:activityNameEN "term for supplying missing data" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_81efb067cd4c9513e08a5df85289d066177a08b7 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_510_2" .
+
+res:object-o_81f37e75db81087c824f9d07985af1662a117a37 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_9c07900950db064fdba1505646495267ad7e383c ;
+    ext:activityNameEN "phase application received" ;
+    ext:performed_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 .
+
+res:object-o_82dc123eb2c254eddfd556c2a3906d4d76ecd5f3 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_a5074ea69b12583a34b399c9fc7892d5fecee508 ;
+    ext:activityNameEN "phase asked additional information" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_8320e6e6b225158261d13f6e0dddfb0db65b64cb a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_c45010b4381168fa6484e0d7800bafd3e85ca824 ;
+    ext:activityNameEN "article 34  WABO applies" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_83e1ac7b33d48aee540f09aca667096f57c114e0 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_490_4" .
+
+res:object-o_88046de5a2529ba2a1e29f71a4d9716f3cbb7601 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_5e34b5006dadfe348f89a4dad6ca0485e8aa5d10 ;
+    ext:activityNameEN "phase advice known" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_890a1a2fa6c8d4947ed40fc6881ecd3660a72ef5 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_370" .
+
+res:object-o_8a411e26e5b5d9c620c1604484ebf28ede680873 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_110_0" .
+
+res:object-o_8ab4e6f560df20a0abbd08e1f6d91af3aba684b9 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_061" .
+
+res:object-o_8cad1202446126e8800d19755bd855ba84e9ecff a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_71309d568c6334adaa6838d454a804d17364a2fb ;
+    ext:activityNameEN "phase decision sent" ;
+    ext:performed_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 .
+
+res:object-o_8d8419879906726bd3996eda7854242a4219c65a a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_9c00afea866a0dcbaae4fa66d95d1ce606f0bce0 ;
+    ext:activityNameEN "forward to the competent authority" ;
+    ext:performed_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 .
+
+res:object-o_8f64dbde8c1abf4446e646abf60537452fc77752 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_180" .
+
+res:object-o_92d203ad7f69f8772758ed9aa329aa97c078b6c4 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_193" .
+
+res:object-o_969212417ac1e52c7eac13b861d87db94c382730 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_53542ec4c5daf885f123aedeba2004adeccbef8c ;
+    ext:activityNameEN "decision date prior to decision" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_99e920b71c52cd18bf0e94c923cebfd98e168cb0 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_011" .
+
+res:object-o_99f8a9b767bc084f578fdf59e90a727cfff079ad a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_675a7bfa76f70e2636be9f0e9872b7dd9e747f0e ;
+    ext:activityNameEN "create procedure confirmation" ;
+    ext:performed_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 .
+
+res:object-o_9c00afea866a0dcbaae4fa66d95d1ce606f0bce0 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "02_DRZ_010" .
+
+res:object-o_9c07900950db064fdba1505646495267ad7e383c a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_015" .
+
+res:object-o_9c254f4f507abc47e4a6f2ed22d91dc3ff62dead a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_494a" .
+
+res:object-o_9c4124f26ad4a4bc7db09330ec58ceef29e4b407 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_cfda8faaa5c37688347dffb5dc27e5400a5d17c7 ;
+    ext:activityNameEN "set decision status" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_9d713d1d76f3ad5859376bb7cc5cec72c060c43e a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_df9efa19712fd4af038eddf120bad7cdf6aee9f9 ;
+    ext:activityNameEN "procedure change after completeness" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_a1c14a5e506e37b771d362e5e088c3f94a8b0eed a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_99e920b71c52cd18bf0e94c923cebfd98e168cb0 ;
+    ext:activityNameEN "OLO messaging active" ;
+    ext:performed_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 .
+
+res:object-o_a2bd5b62c98d7dbc6c9a195b30c0d4d6c3e81641 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_510_2a" .
+
+res:object-o_a47f4ed094e135adda7868524574ef92537f2ff9 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_6d65a914212a17237c406b1cd3ad6502b9e6859d ;
+    ext:activityNameEN "record date of decision environmental permit" ;
+    ext:performed_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 .
+
+res:object-o_a495c3a66a69cce991272e21f414867285e83332 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_b1ca6f33d64658f1c5c10d4ca1a9d3b57b926ffc ;
+    ext:activityNameEN "register submission date request" ;
+    ext:performed_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 .
+
+res:object-o_a4f978bd6ee954c27bcbd1ddf22249c9fd0db36c a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_510_1" .
+
+res:object-o_a5074ea69b12583a34b399c9fc7892d5fecee508 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "08_AWB45_025" .
+
+res:object-o_a52fbf12741eba598f0d8dfe62542bcd77a0208b a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_490_5a" .
+
+res:object-o_aa90c3d9928c77d4bd7946d3d393021bc57cdac2 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "08_AWB45_030" .
+
+res:object-o_b0ea82ab77c32b95f35bd22b196f7fa4684005d6 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_ea4e8d16312badae810de3b809745ed0c5805b51 ;
+    ext:activityNameEN "create monitoring case" ;
+    ext:performed_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 .
+
+res:object-o_b1ca6f33d64658f1c5c10d4ca1a9d3b57b926ffc a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_010" .
+
+res:object-o_b42cf781e0c3d317e5e8807e96079f1c17c093f1 a oced:Object,
+        ext:ActivityName ;
+    ext:activityNameNL "versturen ontvangstbevestiging" ;
+    ext:completed_on res:object-o_9a5094df55dfce84ada6506f8195a9994628852d ;
+    ext:is_part_of_case res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c .
+
+res:object-o_b871b2243e0ec45136566298c165e47d37a3c1f6 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-10T15:32:45+02:00" .
+
+res:object-o_ba611d937292c19f88a2cdc388984beea85c8f70 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_890a1a2fa6c8d4947ed40fc6881ecd3660a72ef5 ;
+    ext:activityNameEN "assessment of content completed" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_bdf6621ea52ab95c2c88cab47ac9837c33d9c1c3 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_3d8cc1b5041cefd74e055c67772d5ec58603fae6 ;
+    ext:activityNameEN "enter receipt of additional data" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_c169315c539bac5bfd8dddaf9f30d7deded9a0f6 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_495" .
+
+res:object-o_c45010b4381168fa6484e0d7800bafd3e85ca824 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "09_AH_I_010" .
+
+res:object-o_c53145d111a1a1c5fe25c8777d87a4ef2c5f32e5 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_480" .
+
+res:object-o_cd9ffd1d6750532fadd34460a711ea8c6890dfc8 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_19636583539166366c69c8b167ef4ec1ff0e9601 ;
+    ext:activityNameEN "creating environmental permit decision" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_cf3942b3eba1126c072f8ea57c7b17c11b9768cc a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "11_AH_II_010" .
+
+res:object-o_cfda8faaa5c37688347dffb5dc27e5400a5d17c7 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_490_1a" .
+
+res:object-o_d84c3b81a3eda7f573238dc5dc01214433a20c82 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_510_0" .
+
+res:object-o_ddf1c679cebe6bc23301dd592d1adcd89fb0c9c0 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_444509b9456bee27900335653d0216bc7520fdfd ;
+    ext:activityNameEN "retrieve missing data" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_df9efa19712fd4af038eddf120bad7cdf6aee9f9 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_196" .
+
+res:object-o_e00785d7422217a4577995cba1ce9c9bf4a940f4 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "08_AWB45_045" .
+
+res:object-o_e21150a5dcc1dfa0e7297939485258cc649cefa7 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_2931aee6e5408231f60509fc77e3cd6045f57ffc ;
+    ext:activityNameEN "create publication document" ;
+    ext:performed_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 .
+
+res:object-o_e2bab55add2c185a2af8b19a4c277f1ac7cf682a a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_101" .
+
+res:object-o_e4e6de762b42de585b4607c9ddb20f71f48ca091 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_0adb98e9aada4fc1e9af5d205c1940b972a0c885 ;
+    ext:activityNameEN "phase application receptive" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_e5dff51257b3d4aeb14f1343362981a0ffa3474b a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "13_CRD_010" .
+
+res:object-o_ea4e8d16312badae810de3b809745ed0c5805b51 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_532" .
+
+res:object-o_ed78037436bf707460c0418834a95b7a5aad04f8 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_380" .
+
+res:object-o_ed8adcb004ffd45c5827379d0b73fabfd2397f5d a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_a4f978bd6ee954c27bcbd1ddf22249c9fd0db36c ;
+    ext:activityNameEN "transcript decision environmental permit to stakeholders" ;
+    ext:performed_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 .
+
+res:object-o_efa47ef56adcfd0a93ca73d4f382b993515baee2 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_69de69c91ea6a2f25851fffc4dfdf2b8544fe1fd ;
+    ext:activityNameEN "treat subcases content" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_efddc886db37f2bef996a2cf866c63fda8ec416b a oced:Object,
+        ext:Question ;
+    ext:question "42" .
+
+res:object-o_f01309abdd31fa9a940154df0b9eb90a75c6995e a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_cf3942b3eba1126c072f8ea57c7b17c11b9768cc ;
+    ext:activityNameEN "suspension ground applicable" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_f22ce7cb26a32e55ca271f5a24e9c55ea08186ce a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_3aa64df855e004cee15e675a8a2af027ea8b1667 ;
+    ext:activityNameEN "completed subcases content" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_f28981d87a5562a5cd5b7ebe0ebe3c68769d3f80 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_aa90c3d9928c77d4bd7946d3d393021bc57cdac2 ;
+    ext:activityNameEN "receive additional information" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_f308617b1ecc39c630b8880195ec39f5ff421836 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "08_AWB45_010" .
+
+res:object-o_f5116bed23e4d24517950154188edb8cd021e3f2 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "01_HOOFD_330" .
+
+res:object-o_f621146e9d061759bc5b7f0ea9226badf7f92d83 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-04-14T11:34:27+02:00" .
+
+res:object-o_f71cf4f40df837a5aa4c2f649e8f0f1e4e4385c3 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_094397a460523732708a8729370a1dd8eb43170b ;
+    ext:activityNameEN "register objection and appeal periods" ;
+    ext:performed_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 .
+
+res:object-o_fa601b7b6972df77acc3dba0f068ddcaf399e4ed a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_591689e89c54c14f7b1cbf63a0b89549712604d5 ;
+    ext:activityNameEN "send letter in progress" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_fb1c7248f49e3eb261f618727790599ce288431d a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_83e1ac7b33d48aee540f09aca667096f57c114e0 ;
+    ext:activityNameEN "generating decision environmental permit" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+ext:DueDate a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:ResponsibleActor a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+res:object-o_00bf5a23a5d4f39a4829c9193919853be6b07520 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_6fce9919bd21c2df7bec18d19e17930d71008085,
+        res:object-o_736f4b9e0563bdf0870bd92c1c68f88a4f441d24 ;
+    ext:activityNameEN "send confirmation receipt" ;
+    ext:performed_by_resource res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 .
+
+res:object-o_4a4da4602d75eddb780cd3d885aa304e045588c2 a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-04-14T11:29:20+02:00" .
+
+res:object-o_6f3baacf8c43ce9102c84e04a402661daa41c630 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_8f64dbde8c1abf4446e646abf60537452fc77752,
+        res:object-o_f5116bed23e4d24517950154188edb8cd021e3f2 ;
+    ext:activityNameEN "procedure change" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_7e676ee924fdd7327025a8935e9a990732b483a0 a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_463cff6a83b1c797f7d1216a6d845ba69eb7403c,
+        res:object-o_81efb067cd4c9513e08a5df85289d066177a08b7 ;
+    ext:activityNameEN "enter senddate decision environmental permit" ;
+    ext:performed_by_resource res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 .
+
+res:object-o_9641e56a92ab0acc5c94a3501882b1274f181e5c a oced:Object,
+        ext:ActivityName ;
+    ext:MainProcess_Subprocess_Step_objects res:object-o_e46f36dbeee85f1e2fe7b87b184e50ce12e6a161 ;
+    ext:activityNameEN "request complete" ;
+    ext:performed_by_resource res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff .
+
+res:object-o_af6a0592084f41253ad233e1591c91947c2aee2f a oced:Object,
+        ext:PlannedDate ;
+    ext:planned "2014-07-14T10:14:15+02:00" .
+
+res:object-o_e46f36dbeee85f1e2fe7b87b184e50ce12e6a161 a oced:Object,
+        ext:ActionCode ;
+    ext:action_code "08_AWB45_005" .
+
+ext:Case a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:MonitoringResource a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:DateFinished a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:Question a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+res:object-o_7eeb8bc46e3a7da425375afd2a81e49e975d25f4 a oced:Object,
+        ext:Question ;
+    ext:question "True" .
+
+ext:Resource a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+res:object-o_df27d53cbf0fbb9e12cc6b261d181a85215e7f64 a oced:Object,
+        ext:MonitoringResource ;
+    ext:monitoringResource "560890" .
+
+res:object-o_1af019e9b8b5c19a05d142074f0b5f6015b06287 a oced:Object,
+        ext:DateFinished ;
+    ext:dateFinished "2014-05-22 00:00:00" .
+
+res:object-o_7a4af822c64d8273bc78a441226a769a6bddf67a a oced:Object,
+        ext:Question ;
+    ext:question "False" .
+
+oced:object_attribute a owl:DatatypeProperty ;
+    rdfs:label "object_attribute" ;
+    rdfs:comment "the super-property for all use-case specific object attributes" ;
+    rdfs:domain oced:Object ;
+    rdfs:range xsd:string .
+
+res:object-o_5dd42a1a7c862dd62ed19df8e37376b121ee44bd a oced:Object,
+        ext:DateFinished ;
+    ext:dateFinished "2014-07-11 00:00:00" .
+
+res:object-o_8acae8b520a6ea1f5d7f458a8196c4ce99b697b7 a oced:Object,
+        ext:Resource ;
+    ext:monitored_by res:object-o_df27d53cbf0fbb9e12cc6b261d181a85215e7f64,
+        res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:org_resource "560890" ;
+    ext:performed_action res:object-o_0ec0aa33aaa6e472a3e51a2c050a7321340db281,
+        res:object-o_14ab6dc86030fb50ace712ae3c560e90d17d48f2,
+        res:object-o_3068c8a1ba139979275f38e6d1e302278dfb4b93,
+        res:object-o_3fa6a4e6d9746c1b366bf3d0574c85bdbdde580d,
+        res:object-o_7576f2d2db7ad79d513037743ff60576432b6bb4,
+        res:object-o_7e676ee924fdd7327025a8935e9a990732b483a0,
+        res:object-o_8cad1202446126e8800d19755bd855ba84e9ecff,
+        res:object-o_a47f4ed094e135adda7868524574ef92537f2ff9,
+        res:object-o_b0ea82ab77c32b95f35bd22b196f7fa4684005d6,
+        res:object-o_ed8adcb004ffd45c5827379d0b73fabfd2397f5d,
+        res:object-o_f71cf4f40df837a5aa4c2f649e8f0f1e4e4385c3 .
+
+ext:ObjectBPIC2015 a owl:Class ;
+    rdfs:subClassOf oced:Object .
+
+res:object-o_9a5094df55dfce84ada6506f8195a9994628852d a oced:Object,
+        ext:DateFinished ;
+    ext:dateFinished "2014-04-11 00:00:00" .
+
+res:object-o_f9626720d9f002a212c07050c429ed1c7f3cf4a8 a oced:Object,
+        ext:Resource ;
+    ext:monitored_by res:object-o_130bec4d3af96f44303d0c8438e8b6a7b7b7e3ee,
+        res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:org_resource "560872" ;
+    ext:performed_action res:object-o_00bf5a23a5d4f39a4829c9193919853be6b07520,
+        res:object-o_04e5505f43f73b41a38108441cce1c575c91ba95,
+        res:object-o_465889e75f19468551d3fca33b7aadf42d44f5f2,
+        res:object-o_60439d54ba47bcc042ee35dfd30f1ad086a42183,
+        res:object-o_741f8c14dc0a86848ce9245a700fac001403c491,
+        res:object-o_7e9e3b0a9591598a6f6cdc1f758f8bf03633a04b,
+        res:object-o_81f37e75db81087c824f9d07985af1662a117a37,
+        res:object-o_8d8419879906726bd3996eda7854242a4219c65a,
+        res:object-o_99f8a9b767bc084f578fdf59e90a727cfff079ad,
+        res:object-o_a1c14a5e506e37b771d362e5e088c3f94a8b0eed,
+        res:object-o_a495c3a66a69cce991272e21f414867285e83332,
+        res:object-o_e21150a5dcc1dfa0e7297939485258cc649cefa7 .
+
+res:object-o_ece92c7719e156407192e6f6da38dfc7ac36f338 a oced:Object,
+        ext:Question ;
+    ext:question "EMPTY" .
+
+res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e a oced:Object,
+        ext:MonitoringResource ;
+    ext:monitoringResource "2670601" .
+
+ext:PlannedDate a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+res:object-o_cd6ff1415ef814d591045efdc04fce9be0b3eefa a oced:Object,
+        ext:DateFinished ;
+    ext:dateFinished "2014-07-09 00:00:00" .
+
+ext:EventBPIC2015 a owl:Class ;
+    rdfs:subClassOf oced:Event .
+
+ext:ActionCode a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+res:object-o_17dc088e038b441430ea55a2ced9abe2ad20aeff a oced:Object,
+        ext:Resource ;
+    ext:monitored_by res:object-o_fb7168e0362ac815340b9576abe7f9c414b6eb5e ;
+    ext:org_resource "2670601" ;
+    ext:performed_action res:object-o_1e0e47481366923462882740536d8a3f8e38a0ab,
+        res:object-o_2196a9bfc58470ccd2aab1d031ffe0e5d56f49cf,
+        res:object-o_24d5c8b21f0925e471d25501a85378d60addce33,
+        res:object-o_27e83b0a6d56a771e30e3b2b4c9cb6b0e129b3d4,
+        res:object-o_3b1498825d5533af384dcd31d00d6f719b654fc0,
+        res:object-o_41d5c96851695a9d063fd6b8413b069cd15738ec,
+        res:object-o_5cffeeda53eabfcc8d4f1fbe4f553fc0500c228d,
+        res:object-o_6f3baacf8c43ce9102c84e04a402661daa41c630,
+        res:object-o_71e5f95fe95440830b39e91a372df60f7370769a,
+        res:object-o_747a3de20374abc6116beda448c9deb68ec3bfd2,
+        res:object-o_7d403b7653f3aa2b34e5574828842ad54dad9593,
+        res:object-o_80e079bdf26c6ed272952b1a6dd08ad082022975,
+        res:object-o_8126821c932c50e48ed76e26f3452ed56b447851,
+        res:object-o_82dc123eb2c254eddfd556c2a3906d4d76ecd5f3,
+        res:object-o_8320e6e6b225158261d13f6e0dddfb0db65b64cb,
+        res:object-o_88046de5a2529ba2a1e29f71a4d9716f3cbb7601,
+        res:object-o_9641e56a92ab0acc5c94a3501882b1274f181e5c,
+        res:object-o_969212417ac1e52c7eac13b861d87db94c382730,
+        res:object-o_9c4124f26ad4a4bc7db09330ec58ceef29e4b407,
+        res:object-o_9d713d1d76f3ad5859376bb7cc5cec72c060c43e,
+        res:object-o_ba611d937292c19f88a2cdc388984beea85c8f70,
+        res:object-o_bdf6621ea52ab95c2c88cab47ac9837c33d9c1c3,
+        res:object-o_cd9ffd1d6750532fadd34460a711ea8c6890dfc8,
+        res:object-o_ddf1c679cebe6bc23301dd592d1adcd89fb0c9c0,
+        res:object-o_e4e6de762b42de585b4607c9ddb20f71f48ca091,
+        res:object-o_efa47ef56adcfd0a93ca73d4f382b993515baee2,
+        res:object-o_f01309abdd31fa9a940154df0b9eb90a75c6995e,
+        res:object-o_f22ce7cb26a32e55ca271f5a24e9c55ea08186ce,
+        res:object-o_f28981d87a5562a5cd5b7ebe0ebe3c68769d3f80,
+        res:object-o_fa601b7b6972df77acc3dba0f068ddcaf399e4ed,
+        res:object-o_fb1c7248f49e3eb261f618727790599ce288431d .
+
+oced:Event a owl:Class ;
+    rdfs:label "Event" ;
+    rdfs:comment "Representation of the Event class/concept" .
+
+res:object-o_3119c9df368b73353bcf89a14ef583acc2ce3e5c a oced:Object,
+        ext:Case ;
+    ext:concept_name "9996445" .
+
+ext:ActivityName a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+oced:Object a owl:Class ;
+    rdfs:label "Object" ;
+    rdfs:comment "Representation of the Object class/concept" .
+

@@ -1,0 +1,555 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ext: <https://w3id.org/ocedo/ext#> .
+@prefix oced: <https://w3id.org/ocedo/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+oced:object_relation a owl:ObjectProperty ;
+    rdfs:label "observes" ;
+    rdfs:comment "the super-property for all use-case specific relations between two Objects" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:Object .
+
+oced:observed_at a owl:DatatypeProperty ;
+    rdfs:label "observed_at" ;
+    rdfs:comment "timestamp of an event" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:dateTime .
+
+oced:observes a owl:ObjectProperty ;
+    rdfs:label "observes" ;
+    rdfs:comment "the super-property for all use-case specific relations Event and Object" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:Object .
+
+ext:01_HOOFD_010_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_011_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_015_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_020_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_030_1_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_030_2_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_061_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_065_0_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_100_0_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_101_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_110_0_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_180_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_193_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_195_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_196_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_200_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_250_1_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_250_2_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_330_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_370_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_375_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_380_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_430_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_480_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_490_1_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_490_1a_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_490_2_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_490_4_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_490_5_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_490_5a_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_491_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_494a_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_495_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_500_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_510_0_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_510_1_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_510_2_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_510_2a_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_510_3_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_510_4_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_515_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:01_HOOFD_532_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:02_DRZ_010_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:04_BPT_005_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_005_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_010_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_020_0_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_020_1_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_020_2_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_025_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_030_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_040_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_045_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:08_AWB45_051_0_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:09_AH_I_010_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:11_AH_II_010_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:13_CRD_010_complete a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2015 .
+
+ext:IDofConceptCase a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:MainProcess_Subprocess_Step a owl:ObjectProperty ;
+    rdfs:label "ext:MainProcess_Subprocess_Step" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:ActionCode .
+
+ext:MainProcess_Subprocess_Step_objects a owl:ObjectProperty ;
+    rdfs:label "ext:MainProcess_Subprocess_Step_objects" ;
+    rdfs:domain ext:ActivityName ;
+    rdfs:range ext:ActionCode .
+
+ext:Responsible_actor a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:SUMleges a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:action_code a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:activityNameEN a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:activityNameNL a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:caseStatus a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:case_type a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:completed_on a owl:ObjectProperty ;
+    rdfs:label "ext:completed_on" ;
+    rdfs:domain ext:ActivityName ;
+    rdfs:range ext:DateFinished .
+
+ext:concept_name a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:event_attribute,
+        oced:object_attribute .
+
+ext:dateFinished a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:dueDate a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:handled_by_resource a owl:ObjectProperty ;
+    rdfs:label "ext:handled_by_resource" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:Resource .
+
+ext:has_activity_name a owl:ObjectProperty ;
+    rdfs:label "ext:has_activity_name" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:ActivityName .
+
+ext:has_associated_cost a owl:ObjectProperty ;
+    rdfs:label "ext:has_associated_cost" ;
+    rdfs:domain ext:Case ;
+    rdfs:range ext:SumLeges .
+
+ext:has_case a owl:ObjectProperty ;
+    rdfs:label "ext:has_case" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:Case .
+
+ext:has_case_procedure a owl:ObjectProperty ;
+    rdfs:label "ext:has_case_procedure" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:CaseProcedure .
+
+ext:has_case_status a owl:ObjectProperty ;
+    rdfs:label "ext:has_case_status" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:CaseStatus .
+
+ext:has_case_type a owl:ObjectProperty ;
+    rdfs:label "ext:has_case_type" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:CaseType .
+
+ext:has_date_finished a owl:ObjectProperty ;
+    rdfs:label "ext:has_date_finished" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:DateFinished .
+
+ext:has_date_stop a owl:ObjectProperty ;
+    rdfs:label "ext:has_date_stop" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:DateStop .
+
+ext:has_due_date a owl:ObjectProperty ;
+    rdfs:label "ext:has_due_date" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:DueDate .
+
+ext:has_end_date a owl:ObjectProperty ;
+    rdfs:label "ext:has_end_date" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:EndDate .
+
+ext:has_id_of_concept_case a owl:ObjectProperty ;
+    rdfs:label "ext:has_id_of_concept_case" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:ConceptCaseID .
+
+ext:has_land_register_id a owl:ObjectProperty ;
+    rdfs:label "ext:has_land_register_id" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:LandRegisterID .
+
+ext:has_last_phase a owl:ObjectProperty ;
+    rdfs:label "ext:has_last_phase" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:LastPhase .
+
+ext:has_monitoring_resource a owl:ObjectProperty ;
+    rdfs:label "ext:has_monitoring_resource" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:MonitoringResource .
+
+ext:has_parts a owl:ObjectProperty ;
+    rdfs:label "ext:has_parts" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:Parts .
+
+ext:has_planned_date a owl:ObjectProperty ;
+    rdfs:label "ext:has_planned_date" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:PlannedDate .
+
+ext:has_planned_end_date a owl:ObjectProperty ;
+    rdfs:label "ext:has_planned_end_date" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:PlannedEndDate .
+
+ext:has_question a owl:ObjectProperty ;
+    rdfs:label "ext:has_question" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:Question .
+
+ext:has_request_complete a owl:ObjectProperty ;
+    rdfs:label "ext:has_request_complete" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:RequestComplete .
+
+ext:has_responsible_actor a owl:ObjectProperty ;
+    rdfs:label "ext:has_responsible_actor" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:ResponsibleActor .
+
+ext:has_start_date a owl:ObjectProperty ;
+    rdfs:label "ext:has_start_date" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:StartDate .
+
+ext:has_sum_leges a owl:ObjectProperty ;
+    rdfs:label "ext:has_sum_leges" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:SumLeges .
+
+ext:has_term_name a owl:ObjectProperty ;
+    rdfs:label "ext:has_term_name" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:TermName .
+
+ext:includes_sub_cases a owl:ObjectProperty ;
+    rdfs:label "ext:includes_sub_cases" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:IncludesSubCases .
+
+ext:is_part_of_case a owl:ObjectProperty ;
+    rdfs:label "ext:is_part_of_case" ;
+    rdfs:domain ext:ActivityName ;
+    rdfs:range ext:Case .
+
+ext:landRegisterID a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:last_phase a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:lifecycle_transition a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:event_attribute .
+
+ext:monitored_by a owl:ObjectProperty ;
+    rdfs:label "ext:monitored_by" ;
+    rdfs:domain ext:Resource ;
+    rdfs:range ext:MonitoringResource .
+
+ext:monitoringResource a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:org_resource a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:parts a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:performed_action a owl:ObjectProperty ;
+    rdfs:label "ext:performed_action" ;
+    rdfs:domain ext:Resource ;
+    rdfs:range ext:ActivityName .
+
+ext:performed_by_resource a owl:ObjectProperty ;
+    rdfs:label "ext:performed_by_resource" ;
+    rdfs:domain ext:ActivityName ;
+    rdfs:range ext:Resource .
+
+ext:planned a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:planned_to_finish_on a owl:ObjectProperty ;
+    rdfs:label "ext:planned_to_finish_on" ;
+    rdfs:domain ext:PlannedDate ;
+    rdfs:range ext:EndDate .
+
+ext:question a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:requestComplete a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:responsible_for_case a owl:ObjectProperty ;
+    rdfs:label "ext:responsible_for_case" ;
+    rdfs:domain ext:ResponsibleActor ;
+    rdfs:range ext:Case .
+
+ext:startDate a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:termName a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:works_under a owl:ObjectProperty ;
+    rdfs:label "ext:works_under" ;
+    rdfs:domain ext:Resource ;
+    rdfs:range ext:ResponsibleActor .
+
+<https://w3id.org/semsys/ns/ocedo/core> a owl:Ontology ;
+    dcterms:contributor "Claudio di Ciccio",
+        "Maxim Vidgof",
+        "Sabrina Kirrane" ;
+    dcterms:created "2024-08-20" ;
+    dcterms:creator "Fajar J. Ekaputra",
+        "Saba Latif" ;
+    dcterms:description """\r
+    An ontology to describe Object-Centric Event Data (OCED) for Process Mining. \r
+    The ontology consists of \r
+    (a) OCED core part (prefix "oced") - describing core classes and properties, and \r
+    (b) OCED auxilary part (prefix "aux:") - describing additional context \r
+        information that will be replaced by use-case specific classes and \r
+        properties in the implementation\r
+    """@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0> ;
+    dcterms:modified "2025-03-18" ;
+    dcterms:title "The OCED Ontology"@en ;
+    vann:preferredNamespacePrefix "oced" ;
+    vann:preferredNamespaceUri "https://w3id.org/semsys/ns/ocedo/core#" .
+
+oced:Object a owl:Class ;
+    rdfs:label "Object" ;
+    rdfs:comment "Representation of the Object class/concept" .
+
+ext:CaseProcedure a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:CaseStatus a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:CaseType a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:ConceptCaseID a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:DateStop a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:DueDate a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:IncludesSubCases a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:LandRegisterID a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:LastPhase a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:Parts a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:PlannedEndDate a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:Question a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:RequestComplete a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:StartDate a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:TermName a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+oced:event_attribute a owl:DatatypeProperty ;
+    rdfs:label "event_attribute" ;
+    rdfs:comment "the super-property for all use-case specific event attributes" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:string .
+
+ext:ActionCode a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:DateFinished a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:EndDate a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:MonitoringResource a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:PlannedDate a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:SumLeges a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:ResponsibleActor a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:Case a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:Resource a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+ext:ActivityName a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2015 .
+
+oced:object_attribute a owl:DatatypeProperty ;
+    rdfs:label "object_attribute" ;
+    rdfs:comment "the super-property for all use-case specific object attributes" ;
+    rdfs:domain oced:Object ;
+    rdfs:range xsd:string .
+
+oced:Event a owl:Class ;
+    rdfs:label "Event" ;
+    rdfs:comment "Representation of the Event class/concept" .
+
