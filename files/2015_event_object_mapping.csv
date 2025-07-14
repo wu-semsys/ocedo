@@ -5,7 +5,7 @@ case,ext:Case,ext:has_case
 monitoringResource,ext:MonitoringResource,ext:has_monitoring_resource
 activityNameEN,ext:ActivityName,ext:has_activity_name
 question,ext:Question,ext:has_question
-action_code,ext:ActionCode,ext:MainProcess_Subprocess_Step
+action_code,ext:ActionCode,ext:primary_procedural_flow_completed
 org:resource,ext:Resource,ext:handled_by_resource
 planned,ext:PlannedDate,ext:has_planned_date
 dueDate,ext:DueDate,ext:has_due_date
