@@ -1,0 +1,6 @@
+object1_class,object2_class,object1_type,object2_type,ext_relation
+"ext:OrgTeamMember","ext:Case","org:resource","case","ext:part_of"
+"ext:EventID","ext:Action","EventID","Action","ext:has_Associated_action"
+"ext:EventID","ext:EventOrigin","EventID","EventOrigin","ext:association_eventID_to_EventOrigin"
+
+

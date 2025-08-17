@@ -1,0 +1,10 @@
+object_type,ext_class,ext_relation
+"org:resource","ext:Resource","ext:is_a_resource"
+"case","ext:Case","ext:event_case"
+"action","ext:Action","ext:has_Action"
+"EventOrigin","ext:EventOrigin","ext:origin_of_Event"
+"EventID","ext:EventID","ext:associated_EventID"
+
+
+
+
