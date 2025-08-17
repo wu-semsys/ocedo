@@ -1,0 +1,621 @@
+@prefix aux: <https://w3id.org/ocedo/aux#> .
+@prefix oced: <https://w3id.org/ocedo/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://w3id.org/ocedo/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:observe-e_052a1f313148b33f0bc11d9886ed7e4c1a5247d2-o_b985c862f26cd2a99bc1a29b54062387a595b482 a aux:Observe ;
+    aux:eo_event res:event-e_052a1f313148b33f0bc11d9886ed7e4c1a5247d2 ;
+    aux:eo_object res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_052a1f313148b33f0bc11d9886ed7e4c1a5247d2-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 a aux:Observe ;
+    aux:eo_event res:event-e_052a1f313148b33f0bc11d9886ed7e4c1a5247d2 ;
+    aux:eo_object res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_28a2927f517bb26edbc8817660407c5d956338b5-o_b985c862f26cd2a99bc1a29b54062387a595b482 a aux:Observe ;
+    aux:eo_event res:event-e_28a2927f517bb26edbc8817660407c5d956338b5 ;
+    aux:eo_object res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_28a2927f517bb26edbc8817660407c5d956338b5-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 a aux:Observe ;
+    aux:eo_event res:event-e_28a2927f517bb26edbc8817660407c5d956338b5 ;
+    aux:eo_object res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2c88d8ede384ab650ff57315a2967cbab6929d9f-o_7b4468306ffc5ca41a90de75849801546ed40cee a aux:Observe ;
+    aux:eo_event res:event-e_2c88d8ede384ab650ff57315a2967cbab6929d9f ;
+    aux:eo_object res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2c88d8ede384ab650ff57315a2967cbab6929d9f-o_b985c862f26cd2a99bc1a29b54062387a595b482 a aux:Observe ;
+    aux:eo_event res:event-e_2c88d8ede384ab650ff57315a2967cbab6929d9f ;
+    aux:eo_object res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_34b7aa10591bd0ebe4d100bcd64cea562beb9a5a-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 a aux:Observe ;
+    aux:eo_event res:event-e_34b7aa10591bd0ebe4d100bcd64cea562beb9a5a ;
+    aux:eo_object res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_34b7aa10591bd0ebe4d100bcd64cea562beb9a5a-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 a aux:Observe ;
+    aux:eo_event res:event-e_34b7aa10591bd0ebe4d100bcd64cea562beb9a5a ;
+    aux:eo_object res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_35564d5769c02da6f55f30fb4443fb83e0b20c4f-o_b985c862f26cd2a99bc1a29b54062387a595b482 a aux:Observe ;
+    aux:eo_event res:event-e_35564d5769c02da6f55f30fb4443fb83e0b20c4f ;
+    aux:eo_object res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_35564d5769c02da6f55f30fb4443fb83e0b20c4f-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 a aux:Observe ;
+    aux:eo_event res:event-e_35564d5769c02da6f55f30fb4443fb83e0b20c4f ;
+    aux:eo_object res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_52d31cdd4de85c893e52562388d1601f7343bf63-o_7b4468306ffc5ca41a90de75849801546ed40cee a aux:Observe ;
+    aux:eo_event res:event-e_52d31cdd4de85c893e52562388d1601f7343bf63 ;
+    aux:eo_object res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:qualifier "case_event" .
+
+res:observe-e_52d31cdd4de85c893e52562388d1601f7343bf63-o_b985c862f26cd2a99bc1a29b54062387a595b482 a aux:Observe ;
+    aux:eo_event res:event-e_52d31cdd4de85c893e52562388d1601f7343bf63 ;
+    aux:eo_object res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_5733cda8f09adc55c1be16cab9e7faeae9391808-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 a aux:Observe ;
+    aux:eo_event res:event-e_5733cda8f09adc55c1be16cab9e7faeae9391808 ;
+    aux:eo_object res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_5733cda8f09adc55c1be16cab9e7faeae9391808-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 a aux:Observe ;
+    aux:eo_event res:event-e_5733cda8f09adc55c1be16cab9e7faeae9391808 ;
+    aux:eo_object res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_6994047d06fea0d9a65427c9e237a3e4b055e9d0-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 a aux:Observe ;
+    aux:eo_event res:event-e_6994047d06fea0d9a65427c9e237a3e4b055e9d0 ;
+    aux:eo_object res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_6994047d06fea0d9a65427c9e237a3e4b055e9d0-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 a aux:Observe ;
+    aux:eo_event res:event-e_6994047d06fea0d9a65427c9e237a3e4b055e9d0 ;
+    aux:eo_object res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_79cb7556d225640505deed8c4ab9d651147f107e-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 a aux:Observe ;
+    aux:eo_event res:event-e_79cb7556d225640505deed8c4ab9d651147f107e ;
+    aux:eo_object res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_79cb7556d225640505deed8c4ab9d651147f107e-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 a aux:Observe ;
+    aux:eo_event res:event-e_79cb7556d225640505deed8c4ab9d651147f107e ;
+    aux:eo_object res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_80d8cd6dd669e1210a14732f83b28729803cc60a-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 a aux:Observe ;
+    aux:eo_event res:event-e_80d8cd6dd669e1210a14732f83b28729803cc60a ;
+    aux:eo_object res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_80d8cd6dd669e1210a14732f83b28729803cc60a-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 a aux:Observe ;
+    aux:eo_event res:event-e_80d8cd6dd669e1210a14732f83b28729803cc60a ;
+    aux:eo_object res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_83204e3ea3f65ca4a106a1914b30c87a3433d342-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 a aux:Observe ;
+    aux:eo_event res:event-e_83204e3ea3f65ca4a106a1914b30c87a3433d342 ;
+    aux:eo_object res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_83204e3ea3f65ca4a106a1914b30c87a3433d342-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 a aux:Observe ;
+    aux:eo_event res:event-e_83204e3ea3f65ca4a106a1914b30c87a3433d342 ;
+    aux:eo_object res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_851ba901a0ce34a59b5727b2e9e7b2148e2eb614-o_7b4468306ffc5ca41a90de75849801546ed40cee a aux:Observe ;
+    aux:eo_event res:event-e_851ba901a0ce34a59b5727b2e9e7b2148e2eb614 ;
+    aux:eo_object res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:qualifier "case_event" .
+
+res:observe-e_8a7b6528891cc73abbf515a33e1c4403ee70b528-o_7b4468306ffc5ca41a90de75849801546ed40cee a aux:Observe ;
+    aux:eo_event res:event-e_8a7b6528891cc73abbf515a33e1c4403ee70b528 ;
+    aux:eo_object res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:qualifier "case_event" .
+
+res:observe-e_8ef9144947a7146660959536a010a6e8c02ab97c-o_7b4468306ffc5ca41a90de75849801546ed40cee a aux:Observe ;
+    aux:eo_event res:event-e_8ef9144947a7146660959536a010a6e8c02ab97c ;
+    aux:eo_object res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:qualifier "case_event" .
+
+res:observe-e_8ef9144947a7146660959536a010a6e8c02ab97c-o_b985c862f26cd2a99bc1a29b54062387a595b482 a aux:Observe ;
+    aux:eo_event res:event-e_8ef9144947a7146660959536a010a6e8c02ab97c ;
+    aux:eo_object res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_8f52e27e2302aee97d4435b51942d8f9cbe1fc81-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 a aux:Observe ;
+    aux:eo_event res:event-e_8f52e27e2302aee97d4435b51942d8f9cbe1fc81 ;
+    aux:eo_object res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_8f52e27e2302aee97d4435b51942d8f9cbe1fc81-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 a aux:Observe ;
+    aux:eo_event res:event-e_8f52e27e2302aee97d4435b51942d8f9cbe1fc81 ;
+    aux:eo_object res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_9990c661396263be3242dcb6b8a8b7a2ee3cd267-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 a aux:Observe ;
+    aux:eo_event res:event-e_9990c661396263be3242dcb6b8a8b7a2ee3cd267 ;
+    aux:eo_object res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_9990c661396263be3242dcb6b8a8b7a2ee3cd267-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 a aux:Observe ;
+    aux:eo_event res:event-e_9990c661396263be3242dcb6b8a8b7a2ee3cd267 ;
+    aux:eo_object res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_ab22334dc9512c2152d182c3fe6a0f74118525b1-o_b985c862f26cd2a99bc1a29b54062387a595b482 a aux:Observe ;
+    aux:eo_event res:event-e_ab22334dc9512c2152d182c3fe6a0f74118525b1 ;
+    aux:eo_object res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_ab22334dc9512c2152d182c3fe6a0f74118525b1-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 a aux:Observe ;
+    aux:eo_event res:event-e_ab22334dc9512c2152d182c3fe6a0f74118525b1 ;
+    aux:eo_object res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_bac4120ca37c92de6b51f200d338bfc0799e3f74-o_7b4468306ffc5ca41a90de75849801546ed40cee a aux:Observe ;
+    aux:eo_event res:event-e_bac4120ca37c92de6b51f200d338bfc0799e3f74 ;
+    aux:eo_object res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:qualifier "case_event" .
+
+res:observe-e_bac4120ca37c92de6b51f200d338bfc0799e3f74-o_b985c862f26cd2a99bc1a29b54062387a595b482 a aux:Observe ;
+    aux:eo_event res:event-e_bac4120ca37c92de6b51f200d338bfc0799e3f74 ;
+    aux:eo_object res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_bdd2ab53df525a53f6c927b14ce032163074613d-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 a aux:Observe ;
+    aux:eo_event res:event-e_bdd2ab53df525a53f6c927b14ce032163074613d ;
+    aux:eo_object res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_bdd2ab53df525a53f6c927b14ce032163074613d-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 a aux:Observe ;
+    aux:eo_event res:event-e_bdd2ab53df525a53f6c927b14ce032163074613d ;
+    aux:eo_object res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_f43f1ce9cbb2c3037a5699286ce53d7f6cb507bd-o_7b4468306ffc5ca41a90de75849801546ed40cee a aux:Observe ;
+    aux:eo_event res:event-e_f43f1ce9cbb2c3037a5699286ce53d7f6cb507bd ;
+    aux:eo_object res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:qualifier "case_event" .
+
+res:observe-e_f43f1ce9cbb2c3037a5699286ce53d7f6cb507bd-o_b985c862f26cd2a99bc1a29b54062387a595b482 a aux:Observe ;
+    aux:eo_event res:event-e_f43f1ce9cbb2c3037a5699286ce53d7f6cb507bd ;
+    aux:eo_object res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_fd0587811e77fec28514f4a18deef3c82855b147-o_b985c862f26cd2a99bc1a29b54062387a595b482 a aux:Observe ;
+    aux:eo_event res:event-e_fd0587811e77fec28514f4a18deef3c82855b147 ;
+    aux:eo_object res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_fd0587811e77fec28514f4a18deef3c82855b147-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 a aux:Observe ;
+    aux:eo_event res:event-e_fd0587811e77fec28514f4a18deef3c82855b147 ;
+    aux:eo_object res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:qualifier "case_event" .
+
+res:or-o_7b4468306ffc5ca41a90de75849801546ed40cee-o_01675ca26a2454bf71f0fdc377eb2b73f8a23229 a aux:ObjectRelation ;
+    aux:from res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_01675ca26a2454bf71f0fdc377eb2b73f8a23229 .
+
+res:or-o_7b4468306ffc5ca41a90de75849801546ed40cee-o_098cc08493dbd36608ac5bd2f1961780a93b8145 a aux:ObjectRelation ;
+    aux:from res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_098cc08493dbd36608ac5bd2f1961780a93b8145 .
+
+res:or-o_7b4468306ffc5ca41a90de75849801546ed40cee-o_3acfd4a16d832536a6412b057e1cc2a0a8e0a1fc a aux:ObjectRelation ;
+    aux:from res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_3acfd4a16d832536a6412b057e1cc2a0a8e0a1fc .
+
+res:or-o_7b4468306ffc5ca41a90de75849801546ed40cee-o_420893a0f975a294795f7836917bd20e2b126a5a a aux:ObjectRelation ;
+    aux:from res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_420893a0f975a294795f7836917bd20e2b126a5a .
+
+res:or-o_7b4468306ffc5ca41a90de75849801546ed40cee-o_52c7974c2a883d08018248cd7b3239b7d66e7a97 a aux:ObjectRelation ;
+    aux:from res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_52c7974c2a883d08018248cd7b3239b7d66e7a97 .
+
+res:or-o_7b4468306ffc5ca41a90de75849801546ed40cee-o_5c98fe6e223412841d5a1325c6d6b1c053a9e473 a aux:ObjectRelation ;
+    aux:from res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_5c98fe6e223412841d5a1325c6d6b1c053a9e473 .
+
+res:or-o_7b4468306ffc5ca41a90de75849801546ed40cee-o_5e1025bec39c1beb3bf5e501b2c8de2296058f53 a aux:ObjectRelation ;
+    aux:from res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_5e1025bec39c1beb3bf5e501b2c8de2296058f53 .
+
+res:or-o_7b4468306ffc5ca41a90de75849801546ed40cee-o_7a8467a99bb4db3e69df01686f0a431123f24f70 a aux:ObjectRelation ;
+    aux:from res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_7a8467a99bb4db3e69df01686f0a431123f24f70 .
+
+res:or-o_7b4468306ffc5ca41a90de75849801546ed40cee-o_b985c862f26cd2a99bc1a29b54062387a595b482 a aux:ObjectRelation ;
+    aux:from res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_b985c862f26cd2a99bc1a29b54062387a595b482 .
+
+res:or-o_7b4468306ffc5ca41a90de75849801546ed40cee-o_c7d44bdfb7fa3c85374f247a86da39b047ba4ba2 a aux:ObjectRelation ;
+    aux:from res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_c7d44bdfb7fa3c85374f247a86da39b047ba4ba2 .
+
+res:or-o_7b4468306ffc5ca41a90de75849801546ed40cee-o_f04e7b254fcca54c59915c48ba267491acf4bc90 a aux:ObjectRelation ;
+    aux:from res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_f04e7b254fcca54c59915c48ba267491acf4bc90 .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_01675ca26a2454bf71f0fdc377eb2b73f8a23229 a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_01675ca26a2454bf71f0fdc377eb2b73f8a23229 .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_113d1cdfeb2e60e3c598d889085c5f9b185ead5c a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_113d1cdfeb2e60e3c598d889085c5f9b185ead5c .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_295963281228f3c03daabefac3f0e9c0e039a227 a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_295963281228f3c03daabefac3f0e9c0e039a227 .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_380ebecf6a73b64dbec8ede1337429feb0dab7ef a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_380ebecf6a73b64dbec8ede1337429feb0dab7ef .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_3d77742468e00f1df5e9de6be198be54924df282 a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_3d77742468e00f1df5e9de6be198be54924df282 .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_52c7974c2a883d08018248cd7b3239b7d66e7a97 a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_52c7974c2a883d08018248cd7b3239b7d66e7a97 .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_65a998aab5f2a952baf9ca666c34dc5a5c775c85 a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_65a998aab5f2a952baf9ca666c34dc5a5c775c85 .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_695c26ffc2957c0134620b01849e117c76c62caa a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_695c26ffc2957c0134620b01849e117c76c62caa .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_701c7a50b10e41bed99df87a3b8200bede73c7b9 a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_701c7a50b10e41bed99df87a3b8200bede73c7b9 .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_8dcf88905cd900a34bddf539904c7af11832385e a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_8dcf88905cd900a34bddf539904c7af11832385e .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_abca6da893ce1126f587b84a117decf3843162a9 a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_abca6da893ce1126f587b84a117decf3843162a9 .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_b985c862f26cd2a99bc1a29b54062387a595b482 a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_b985c862f26cd2a99bc1a29b54062387a595b482 .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_d0fe2ac0b586808f566cfafcebc5f9ad32971f63 a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_d0fe2ac0b586808f566cfafcebc5f9ad32971f63 .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_d3b051f52766154f997978eb414318c13262ef45 a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_d3b051f52766154f997978eb414318c13262ef45 .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_dbf85fdd0f5aa0895ed2626e5adff82f43a7a8c8 a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_dbf85fdd0f5aa0895ed2626e5adff82f43a7a8c8 .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_e2fe4c0b4138910b0f5f0a3db5d548aa59b7e46a a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_e2fe4c0b4138910b0f5f0a3db5d548aa59b7e46a .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_e889cd518f2f84c13e63a9cc3ae10746adfa1467 a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_e889cd518f2f84c13e63a9cc3ae10746adfa1467 .
+
+res:or-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2-o_f04e7b254fcca54c59915c48ba267491acf4bc90 a aux:ObjectRelation ;
+    aux:from res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_f04e7b254fcca54c59915c48ba267491acf4bc90 .
+
+res:ea-concept_name-A_ACCEPTED a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "A_ACCEPTED" .
+
+res:ea-concept_name-A_CANCELLED a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "A_CANCELLED" .
+
+res:ea-concept_name-A_FINALIZED a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "A_FINALIZED" .
+
+res:ea-concept_name-O_CREATED a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "O_CREATED" .
+
+res:ea-concept_name-O_SELECTED a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "O_SELECTED" .
+
+res:ea-concept_name-O_SENT a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "O_SENT" .
+
+res:etype-A_ACCEPTED%20COMPLETE a aux:EventType ;
+    rdfs:label "A_ACCEPTED COMPLETE" .
+
+res:etype-A_CANCELLED%20COMPLETE a aux:EventType ;
+    rdfs:label "A_CANCELLED COMPLETE" .
+
+res:etype-A_FINALIZED%20COMPLETE a aux:EventType ;
+    rdfs:label "A_FINALIZED COMPLETE" .
+
+res:etype-O_CREATED%20COMPLETE a aux:EventType ;
+    rdfs:label "O_CREATED COMPLETE" .
+
+res:etype-O_SELECTED%20COMPLETE a aux:EventType ;
+    rdfs:label "O_SELECTED COMPLETE" .
+
+res:etype-O_SENT%20COMPLETE a aux:EventType ;
+    rdfs:label "O_SENT COMPLETE" .
+
+res:etype-W_Nabellen%20offertes%20COMPLETE a aux:EventType ;
+    rdfs:label "W_Nabellen offertes COMPLETE" .
+
+res:etype-W_Nabellen%20offertes%20SCHEDULE a aux:EventType ;
+    rdfs:label "W_Nabellen offertes SCHEDULE" .
+
+res:etype-W_Nabellen%20offertes%20START a aux:EventType ;
+    rdfs:label "W_Nabellen offertes START" .
+
+res:event-e_851ba901a0ce34a59b5727b2e9e7b2148e2eb614 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-A_CANCELLED,
+        res:ea-lifecycle_transition-COMPLETE ;
+    aux:instance_of res:etype-A_CANCELLED%20COMPLETE ;
+    oced:observed_at "2011-10-01T07:22:27.469000+02:00"^^xsd:dateTime .
+
+res:event-e_8a7b6528891cc73abbf515a33e1c4403ee70b528 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Completeren%20aanvraag,
+        res:ea-lifecycle_transition-COMPLETE ;
+    aux:instance_of res:etype-W_Completeren%20aanvraag%20COMPLETE ;
+    oced:observed_at "2011-10-01T07:22:27.502000+02:00"^^xsd:dateTime .
+
+res:oa-concept%3Aname-173688 a aux:ObjectAttribute ;
+    aux:object_attribute "concept:name" ;
+    aux:object_attribute_value "173688" .
+
+res:oa-concept%3Aname-173689 a aux:ObjectAttribute ;
+    aux:object_attribute "concept:name" ;
+    aux:object_attribute_value "173689" .
+
+res:oa-org%3Aresource-10862 a aux:ObjectAttribute ;
+    aux:object_attribute "org:resource" ;
+    aux:object_attribute_value "10862" .
+
+res:oa-org%3Aresource-112 a aux:ObjectAttribute ;
+    aux:object_attribute "org:resource" ;
+    aux:object_attribute_value "112" .
+
+res:ea-concept_name-A_PARTLYSUBMITTED a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "A_PARTLYSUBMITTED" .
+
+res:ea-concept_name-A_PREACCEPTED a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "A_PREACCEPTED" .
+
+res:ea-concept_name-A_SUBMITTED a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "A_SUBMITTED" .
+
+res:etype-A_PARTLYSUBMITTED%20COMPLETE a aux:EventType ;
+    rdfs:label "A_PARTLYSUBMITTED COMPLETE" .
+
+res:etype-A_PREACCEPTED%20COMPLETE a aux:EventType ;
+    rdfs:label "A_PREACCEPTED COMPLETE" .
+
+res:etype-A_SUBMITTED%20COMPLETE a aux:EventType ;
+    rdfs:label "A_SUBMITTED COMPLETE" .
+
+res:etype-W_Completeren%20aanvraag%20COMPLETE a aux:EventType ;
+    rdfs:label "W_Completeren aanvraag COMPLETE" .
+
+res:etype-W_Completeren%20aanvraag%20SCHEDULE a aux:EventType ;
+    rdfs:label "W_Completeren aanvraag SCHEDULE" .
+
+res:etype-W_Completeren%20aanvraag%20START a aux:EventType ;
+    rdfs:label "W_Completeren aanvraag START" .
+
+res:event-e_052a1f313148b33f0bc11d9886ed7e4c1a5247d2 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-A_PARTLYSUBMITTED,
+        res:ea-lifecycle_transition-COMPLETE ;
+    aux:instance_of res:etype-A_PARTLYSUBMITTED%20COMPLETE ;
+    oced:observed_at "2011-10-01T00:39:10.870000+02:00"^^xsd:dateTime .
+
+res:event-e_28a2927f517bb26edbc8817660407c5d956338b5 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-A_PREACCEPTED,
+        res:ea-lifecycle_transition-COMPLETE ;
+    aux:instance_of res:etype-A_PREACCEPTED%20COMPLETE ;
+    oced:observed_at "2011-10-01T00:39:10.930000+02:00"^^xsd:dateTime .
+
+res:event-e_2c88d8ede384ab650ff57315a2967cbab6929d9f a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-A_PREACCEPTED,
+        res:ea-lifecycle_transition-COMPLETE ;
+    aux:instance_of res:etype-A_PREACCEPTED%20COMPLETE ;
+    oced:observed_at "2011-10-01T00:42:25.860000+02:00"^^xsd:dateTime .
+
+res:event-e_34b7aa10591bd0ebe4d100bcd64cea562beb9a5a a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-O_SELECTED,
+        res:ea-lifecycle_transition-COMPLETE ;
+    aux:instance_of res:etype-O_SELECTED%20COMPLETE ;
+    oced:observed_at "2011-10-01T01:34:06.273000+02:00"^^xsd:dateTime .
+
+res:event-e_35564d5769c02da6f55f30fb4443fb83e0b20c4f a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Completeren%20aanvraag,
+        res:ea-lifecycle_transition-SCHEDULE ;
+    aux:instance_of res:etype-W_Completeren%20aanvraag%20SCHEDULE ;
+    oced:observed_at "2011-10-01T00:39:11.146000+02:00"^^xsd:dateTime .
+
+res:event-e_52d31cdd4de85c893e52562388d1601f7343bf63 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-A_PARTLYSUBMITTED,
+        res:ea-lifecycle_transition-COMPLETE ;
+    aux:instance_of res:etype-A_PARTLYSUBMITTED%20COMPLETE ;
+    oced:observed_at "2011-10-01T00:42:25.795000+02:00"^^xsd:dateTime .
+
+res:event-e_5733cda8f09adc55c1be16cab9e7faeae9391808 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-O_SENT,
+        res:ea-lifecycle_transition-COMPLETE ;
+    aux:instance_of res:etype-O_SENT%20COMPLETE ;
+    oced:observed_at "2011-10-01T01:34:26.315000+02:00"^^xsd:dateTime .
+
+res:event-e_6994047d06fea0d9a65427c9e237a3e4b055e9d0 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-A_ACCEPTED,
+        res:ea-lifecycle_transition-COMPLETE ;
+    aux:instance_of res:etype-A_ACCEPTED%20COMPLETE ;
+    oced:observed_at "2011-10-01T01:34:06.012000+02:00"^^xsd:dateTime .
+
+res:event-e_79cb7556d225640505deed8c4ab9d651147f107e a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Nabellen%20offertes,
+        res:ea-lifecycle_transition-START ;
+    aux:instance_of res:etype-W_Nabellen%20offertes%20START ;
+    oced:observed_at "2011-10-01T01:34:26.388000+02:00"^^xsd:dateTime .
+
+res:event-e_80d8cd6dd669e1210a14732f83b28729803cc60a a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Nabellen%20offertes,
+        res:ea-lifecycle_transition-SCHEDULE ;
+    aux:instance_of res:etype-W_Nabellen%20offertes%20SCHEDULE ;
+    oced:observed_at "2011-10-01T01:34:26.347000+02:00"^^xsd:dateTime .
+
+res:event-e_83204e3ea3f65ca4a106a1914b30c87a3433d342 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Completeren%20aanvraag,
+        res:ea-lifecycle_transition-COMPLETE ;
+    aux:instance_of res:etype-W_Completeren%20aanvraag%20COMPLETE ;
+    oced:observed_at "2011-10-01T01:34:25.807000+02:00"^^xsd:dateTime .
+
+res:event-e_8ef9144947a7146660959536a010a6e8c02ab97c a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Completeren%20aanvraag,
+        res:ea-lifecycle_transition-SCHEDULE ;
+    aux:instance_of res:etype-W_Completeren%20aanvraag%20SCHEDULE ;
+    oced:observed_at "2011-10-01T00:42:26.046000+02:00"^^xsd:dateTime .
+
+res:event-e_8f52e27e2302aee97d4435b51942d8f9cbe1fc81 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-O_CREATED,
+        res:ea-lifecycle_transition-COMPLETE ;
+    aux:instance_of res:etype-O_CREATED%20COMPLETE ;
+    oced:observed_at "2011-10-01T01:34:25.753000+02:00"^^xsd:dateTime .
+
+res:event-e_9990c661396263be3242dcb6b8a8b7a2ee3cd267 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Nabellen%20offertes,
+        res:ea-lifecycle_transition-COMPLETE ;
+    aux:instance_of res:etype-W_Nabellen%20offertes%20COMPLETE ;
+    oced:observed_at "2011-10-01T10:06:50.419000+02:00"^^xsd:dateTime .
+
+res:event-e_ab22334dc9512c2152d182c3fe6a0f74118525b1 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-A_SUBMITTED,
+        res:ea-lifecycle_transition-COMPLETE ;
+    aux:instance_of res:etype-A_SUBMITTED%20COMPLETE ;
+    oced:observed_at "2011-10-01T00:38:44.546000+02:00"^^xsd:dateTime .
+
+res:event-e_bac4120ca37c92de6b51f200d338bfc0799e3f74 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-A_SUBMITTED,
+        res:ea-lifecycle_transition-COMPLETE ;
+    aux:instance_of res:etype-A_SUBMITTED%20COMPLETE ;
+    oced:observed_at "2011-10-01T00:39:37.906000+02:00"^^xsd:dateTime .
+
+res:event-e_bdd2ab53df525a53f6c927b14ce032163074613d a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-A_FINALIZED,
+        res:ea-lifecycle_transition-COMPLETE ;
+    aux:instance_of res:etype-A_FINALIZED%20COMPLETE ;
+    oced:observed_at "2011-10-01T01:34:25.568000+02:00"^^xsd:dateTime .
+
+res:event-e_f43f1ce9cbb2c3037a5699286ce53d7f6cb507bd a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Completeren%20aanvraag,
+        res:ea-lifecycle_transition-START ;
+    aux:instance_of res:etype-W_Completeren%20aanvraag%20START ;
+    oced:observed_at "2011-10-01T00:42:26.075000+02:00"^^xsd:dateTime .
+
+res:event-e_fd0587811e77fec28514f4a18deef3c82855b147 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Completeren%20aanvraag,
+        res:ea-lifecycle_transition-START ;
+    aux:instance_of res:etype-W_Completeren%20aanvraag%20START ;
+    oced:observed_at "2011-10-01T00:39:11.168000+02:00"^^xsd:dateTime .
+
+res:otype-case a aux:ObjectType ;
+    rdfs:label "case" .
+
+res:otype-org%3Aresource a aux:ObjectType ;
+    rdfs:label "org:resource" .
+
+res:ea-concept_name-W_Nabellen%20offertes a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "W_Nabellen offertes" .
+
+res:ea-lifecycle_transition-SCHEDULE a aux:EventAttribute ;
+    aux:event_attribute "lifecycle_transition" ;
+    aux:event_attribute_value "SCHEDULE" .
+
+res:ea-lifecycle_transition-START a aux:EventAttribute ;
+    aux:event_attribute "lifecycle_transition" ;
+    aux:event_attribute_value "START" .
+
+res:ea-concept_name-W_Completeren%20aanvraag a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "W_Completeren aanvraag" .
+
+res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 a oced:Object ;
+    aux:hasObjectAttribute res:oa-org%3Aresource-10862 ;
+    aux:instance_of res:otype-org%3Aresource .
+
+res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 a oced:Object ;
+    aux:hasObjectAttribute res:oa-org%3Aresource-112 ;
+    aux:instance_of res:otype-org%3Aresource .
+
+res:ea-lifecycle_transition-COMPLETE a aux:EventAttribute ;
+    aux:event_attribute "lifecycle_transition" ;
+    aux:event_attribute_value "COMPLETE" .
+
+res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee a oced:Object ;
+    aux:hasObjectAttribute res:oa-concept%3Aname-173689 ;
+    aux:instance_of res:otype-case .
+
+res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 a oced:Object ;
+    aux:hasObjectAttribute res:oa-concept%3Aname-173688 ;
+    aux:instance_of res:otype-case .
+

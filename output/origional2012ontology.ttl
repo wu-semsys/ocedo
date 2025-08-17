@@ -1,0 +1,146 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ext: <https://w3id.org/ocedo/ext#> .
+@prefix oced: <https://w3id.org/ocedo/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+oced:object_relation a owl:ObjectProperty ;
+    rdfs:label "observes" ;
+    rdfs:comment "the super-property for all use-case specific relations between two Objects" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:Object .
+
+oced:observed_at a owl:DatatypeProperty ;
+    rdfs:label "observed_at" ;
+    rdfs:comment "timestamp of an event" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:dateTime .
+
+oced:observes a owl:ObjectProperty ;
+    rdfs:label "observes" ;
+    rdfs:comment "the super-property for all use-case specific relations Event and Object" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:Object .
+
+ext:A_ACCEPTED_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:A_CANCELLED_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:A_FINALIZED_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:A_PARTLYSUBMITTED_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:A_PREACCEPTED_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:A_SUBMITTED_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:O_CREATED_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:O_SELECTED_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:O_SENT_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:W_Completeren_aanvraag_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:W_Completeren_aanvraag_SCHEDULE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:W_Completeren_aanvraag_START a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:W_Nabellen_offertes_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:W_Nabellen_offertes_SCHEDULE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:W_Nabellen_offertes_START a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:concept_name a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:event_attribute,
+        oced:object_attribute .
+
+ext:event_case a owl:ObjectProperty ;
+    rdfs:label "ext:event_case" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:Case .
+
+ext:is_a_resource a owl:ObjectProperty ;
+    rdfs:label "ext:is_a_resource" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:Resource .
+
+ext:lifecycle_transition a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:event_attribute .
+
+ext:org_resource a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:requested_loan_amount_by_resource a owl:ObjectProperty ;
+    rdfs:label "ext:requested_loan_amount_by_resource" ;
+    rdfs:domain ext:Amount_Req ;
+    rdfs:range ext:Resource .
+
+<https://w3id.org/semsys/ns/ocedo/core> a owl:Ontology ;
+    dcterms:contributor "Claudio di Ciccio",
+        "Maxim Vidgof",
+        "Sabrina Kirrane" ;
+    dcterms:created "2024-08-20" ;
+    dcterms:creator "Fajar J. Ekaputra",
+        "Saba Latif" ;
+    dcterms:description """\r
+    An ontology to describe Object-Centric Event Data (OCED) for Process Mining. \r
+    The ontology consists of \r
+    (a) OCED core part (prefix "oced") - describing core classes and properties, and \r
+    (b) OCED auxilary part (prefix "aux:") - describing additional context \r
+        information that will be replaced by use-case specific classes and \r
+        properties in the implementation\r
+    """@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0> ;
+    dcterms:modified "2025-03-18" ;
+    dcterms:title "The OCED Ontology"@en ;
+    vann:preferredNamespacePrefix "oced" ;
+    vann:preferredNamespaceUri "https://w3id.org/semsys/ns/ocedo/core#" .
+
+oced:Object a owl:Class ;
+    rdfs:label "Object" ;
+    rdfs:comment "Representation of the Object class/concept" .
+
+ext:Amount_Req a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2012 .
+
+ext:Case a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2012 .
+
+oced:event_attribute a owl:DatatypeProperty ;
+    rdfs:label "event_attribute" ;
+    rdfs:comment "the super-property for all use-case specific event attributes" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:string .
+
+oced:object_attribute a owl:DatatypeProperty ;
+    rdfs:label "object_attribute" ;
+    rdfs:comment "the super-property for all use-case specific object attributes" ;
+    rdfs:domain oced:Object ;
+    rdfs:range xsd:string .
+
+ext:Resource a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2012 .
+
+oced:Event a owl:Class ;
+    rdfs:label "Event" ;
+    rdfs:comment "Representation of the Event class/concept" .
+

@@ -1,0 +1,335 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ext: <https://w3id.org/ocedo/ext#> .
+@prefix oced: <https://w3id.org/ocedo/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://w3id.org/ocedo/resource/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+oced:object_relation a owl:ObjectProperty ;
+    rdfs:label "observes" ;
+    rdfs:comment "the super-property for all use-case specific relations between two Objects" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:Object .
+
+oced:observed_at a owl:DatatypeProperty ;
+    rdfs:label "observed_at" ;
+    rdfs:comment "timestamp of an event" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:dateTime .
+
+oced:observes a owl:ObjectProperty ;
+    rdfs:label "observes" ;
+    rdfs:comment "the super-property for all use-case specific relations Event and Object" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:Object .
+
+ext:concept_name a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:event_attribute,
+        oced:object_attribute .
+
+ext:event_case a owl:ObjectProperty ;
+    rdfs:label "ext:event_case" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:Case .
+
+ext:is_a_resource a owl:ObjectProperty ;
+    rdfs:label "ext:is_a_resource" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:Resource .
+
+ext:lifecycle_transition a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:event_attribute .
+
+ext:org_resource a owl:datatypeProperty ;
+    rdfs:subPropertyOf oced:object_attribute .
+
+ext:requested_loan_amount_by_resource a owl:ObjectProperty ;
+    rdfs:label "ext:requested_loan_amount_by_resource" ;
+    rdfs:domain ext:Amount_Req ;
+    rdfs:range ext:Resource .
+
+res:event-e_052a1f313148b33f0bc11d9886ed7e4c1a5247d2 a oced:Event,
+        ext:A_PARTLYSUBMITTED_COMPLETE ;
+    oced:observed_at "2011-10-01T00:39:10.870000+02:00"^^xsd:dateTime ;
+    ext:concept_name "A_PARTLYSUBMITTED" ;
+    ext:event_case res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    ext:is_a_resource res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    ext:lifecycle_transition "COMPLETE" .
+
+res:event-e_28a2927f517bb26edbc8817660407c5d956338b5 a oced:Event,
+        ext:A_PREACCEPTED_COMPLETE ;
+    oced:observed_at "2011-10-01T00:39:10.930000+02:00"^^xsd:dateTime ;
+    ext:concept_name "A_PREACCEPTED" ;
+    ext:event_case res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    ext:is_a_resource res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    ext:lifecycle_transition "COMPLETE" .
+
+res:event-e_2c88d8ede384ab650ff57315a2967cbab6929d9f a oced:Event,
+        ext:A_PREACCEPTED_COMPLETE ;
+    oced:observed_at "2011-10-01T00:42:25.860000+02:00"^^xsd:dateTime ;
+    ext:concept_name "A_PREACCEPTED" ;
+    ext:event_case res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    ext:is_a_resource res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    ext:lifecycle_transition "COMPLETE" .
+
+res:event-e_34b7aa10591bd0ebe4d100bcd64cea562beb9a5a a oced:Event,
+        ext:O_SELECTED_COMPLETE ;
+    oced:observed_at "2011-10-01T01:34:06.273000+02:00"^^xsd:dateTime ;
+    ext:concept_name "O_SELECTED" ;
+    ext:event_case res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    ext:is_a_resource res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    ext:lifecycle_transition "COMPLETE" .
+
+res:event-e_35564d5769c02da6f55f30fb4443fb83e0b20c4f a oced:Event,
+        ext:W_Completeren_aanvraag_SCHEDULE ;
+    oced:observed_at "2011-10-01T00:39:11.146000+02:00"^^xsd:dateTime ;
+    ext:concept_name "W_Completeren aanvraag" ;
+    ext:event_case res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    ext:is_a_resource res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    ext:lifecycle_transition "SCHEDULE" .
+
+res:event-e_52d31cdd4de85c893e52562388d1601f7343bf63 a oced:Event,
+        ext:A_PARTLYSUBMITTED_COMPLETE ;
+    oced:observed_at "2011-10-01T00:42:25.795000+02:00"^^xsd:dateTime ;
+    ext:concept_name "A_PARTLYSUBMITTED" ;
+    ext:event_case res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    ext:is_a_resource res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    ext:lifecycle_transition "COMPLETE" .
+
+res:event-e_5733cda8f09adc55c1be16cab9e7faeae9391808 a oced:Event,
+        ext:O_SENT_COMPLETE ;
+    oced:observed_at "2011-10-01T01:34:26.315000+02:00"^^xsd:dateTime ;
+    ext:concept_name "O_SENT" ;
+    ext:event_case res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    ext:is_a_resource res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    ext:lifecycle_transition "COMPLETE" .
+
+res:event-e_6994047d06fea0d9a65427c9e237a3e4b055e9d0 a oced:Event,
+        ext:A_ACCEPTED_COMPLETE ;
+    oced:observed_at "2011-10-01T01:34:06.012000+02:00"^^xsd:dateTime ;
+    ext:concept_name "A_ACCEPTED" ;
+    ext:event_case res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    ext:is_a_resource res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    ext:lifecycle_transition "COMPLETE" .
+
+res:event-e_79cb7556d225640505deed8c4ab9d651147f107e a oced:Event,
+        ext:W_Nabellen_offertes_START ;
+    oced:observed_at "2011-10-01T01:34:26.388000+02:00"^^xsd:dateTime ;
+    ext:concept_name "W_Nabellen offertes" ;
+    ext:event_case res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    ext:is_a_resource res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    ext:lifecycle_transition "START" .
+
+res:event-e_80d8cd6dd669e1210a14732f83b28729803cc60a a oced:Event,
+        ext:W_Nabellen_offertes_SCHEDULE ;
+    oced:observed_at "2011-10-01T01:34:26.347000+02:00"^^xsd:dateTime ;
+    ext:concept_name "W_Nabellen offertes" ;
+    ext:event_case res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    ext:is_a_resource res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    ext:lifecycle_transition "SCHEDULE" .
+
+res:event-e_83204e3ea3f65ca4a106a1914b30c87a3433d342 a oced:Event,
+        ext:W_Completeren_aanvraag_COMPLETE ;
+    oced:observed_at "2011-10-01T01:34:25.807000+02:00"^^xsd:dateTime ;
+    ext:concept_name "W_Completeren aanvraag" ;
+    ext:event_case res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    ext:is_a_resource res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    ext:lifecycle_transition "COMPLETE" .
+
+res:event-e_851ba901a0ce34a59b5727b2e9e7b2148e2eb614 a oced:Event,
+        ext:A_CANCELLED_COMPLETE ;
+    oced:observed_at "2011-10-01T07:22:27.469000+02:00"^^xsd:dateTime ;
+    ext:concept_name "A_CANCELLED" ;
+    ext:event_case res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    ext:lifecycle_transition "COMPLETE" .
+
+res:event-e_8a7b6528891cc73abbf515a33e1c4403ee70b528 a oced:Event,
+        ext:W_Completeren_aanvraag_COMPLETE ;
+    oced:observed_at "2011-10-01T07:22:27.502000+02:00"^^xsd:dateTime ;
+    ext:concept_name "W_Completeren aanvraag" ;
+    ext:event_case res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    ext:lifecycle_transition "COMPLETE" .
+
+res:event-e_8ef9144947a7146660959536a010a6e8c02ab97c a oced:Event,
+        ext:W_Completeren_aanvraag_SCHEDULE ;
+    oced:observed_at "2011-10-01T00:42:26.046000+02:00"^^xsd:dateTime ;
+    ext:concept_name "W_Completeren aanvraag" ;
+    ext:event_case res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    ext:is_a_resource res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    ext:lifecycle_transition "SCHEDULE" .
+
+res:event-e_8f52e27e2302aee97d4435b51942d8f9cbe1fc81 a oced:Event,
+        ext:O_CREATED_COMPLETE ;
+    oced:observed_at "2011-10-01T01:34:25.753000+02:00"^^xsd:dateTime ;
+    ext:concept_name "O_CREATED" ;
+    ext:event_case res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    ext:is_a_resource res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    ext:lifecycle_transition "COMPLETE" .
+
+res:event-e_9990c661396263be3242dcb6b8a8b7a2ee3cd267 a oced:Event,
+        ext:W_Nabellen_offertes_COMPLETE ;
+    oced:observed_at "2011-10-01T10:06:50.419000+02:00"^^xsd:dateTime ;
+    ext:concept_name "W_Nabellen offertes" ;
+    ext:event_case res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    ext:is_a_resource res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    ext:lifecycle_transition "COMPLETE" .
+
+res:event-e_ab22334dc9512c2152d182c3fe6a0f74118525b1 a oced:Event,
+        ext:A_SUBMITTED_COMPLETE ;
+    oced:observed_at "2011-10-01T00:38:44.546000+02:00"^^xsd:dateTime ;
+    ext:concept_name "A_SUBMITTED" ;
+    ext:event_case res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    ext:is_a_resource res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    ext:lifecycle_transition "COMPLETE" .
+
+res:event-e_bac4120ca37c92de6b51f200d338bfc0799e3f74 a oced:Event,
+        ext:A_SUBMITTED_COMPLETE ;
+    oced:observed_at "2011-10-01T00:39:37.906000+02:00"^^xsd:dateTime ;
+    ext:concept_name "A_SUBMITTED" ;
+    ext:event_case res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    ext:is_a_resource res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    ext:lifecycle_transition "COMPLETE" .
+
+res:event-e_bdd2ab53df525a53f6c927b14ce032163074613d a oced:Event,
+        ext:A_FINALIZED_COMPLETE ;
+    oced:observed_at "2011-10-01T01:34:25.568000+02:00"^^xsd:dateTime ;
+    ext:concept_name "A_FINALIZED" ;
+    ext:event_case res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    ext:is_a_resource res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 ;
+    ext:lifecycle_transition "COMPLETE" .
+
+res:event-e_f43f1ce9cbb2c3037a5699286ce53d7f6cb507bd a oced:Event,
+        ext:W_Completeren_aanvraag_START ;
+    oced:observed_at "2011-10-01T00:42:26.075000+02:00"^^xsd:dateTime ;
+    ext:concept_name "W_Completeren aanvraag" ;
+    ext:event_case res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee ;
+    ext:is_a_resource res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    ext:lifecycle_transition "START" .
+
+res:event-e_fd0587811e77fec28514f4a18deef3c82855b147 a oced:Event,
+        ext:W_Completeren_aanvraag_START ;
+    oced:observed_at "2011-10-01T00:39:11.168000+02:00"^^xsd:dateTime ;
+    ext:concept_name "W_Completeren aanvraag" ;
+    ext:event_case res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 ;
+    ext:is_a_resource res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 ;
+    ext:lifecycle_transition "START" .
+
+<https://w3id.org/semsys/ns/ocedo/core> a owl:Ontology ;
+    dcterms:contributor "Claudio di Ciccio",
+        "Maxim Vidgof",
+        "Sabrina Kirrane" ;
+    dcterms:created "2024-08-20" ;
+    dcterms:creator "Fajar J. Ekaputra",
+        "Saba Latif" ;
+    dcterms:description """\r
+    An ontology to describe Object-Centric Event Data (OCED) for Process Mining. \r
+    The ontology consists of \r
+    (a) OCED core part (prefix "oced") - describing core classes and properties, and \r
+    (b) OCED auxilary part (prefix "aux:") - describing additional context \r
+        information that will be replaced by use-case specific classes and \r
+        properties in the implementation\r
+    """@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0> ;
+    dcterms:modified "2025-03-18" ;
+    dcterms:title "The OCED Ontology"@en ;
+    vann:preferredNamespacePrefix "oced" ;
+    vann:preferredNamespaceUri "https://w3id.org/semsys/ns/ocedo/core#" .
+
+ext:A_ACCEPTED_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:A_CANCELLED_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:A_FINALIZED_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:Amount_Req a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2012 .
+
+ext:O_CREATED_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:O_SELECTED_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:O_SENT_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:W_Nabellen_offertes_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:W_Nabellen_offertes_SCHEDULE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:W_Nabellen_offertes_START a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+oced:event_attribute a owl:DatatypeProperty ;
+    rdfs:label "event_attribute" ;
+    rdfs:comment "the super-property for all use-case specific event attributes" ;
+    rdfs:domain oced:Event ;
+    rdfs:range xsd:string .
+
+oced:object_attribute a owl:DatatypeProperty ;
+    rdfs:label "object_attribute" ;
+    rdfs:comment "the super-property for all use-case specific object attributes" ;
+    rdfs:domain oced:Object ;
+    rdfs:range xsd:string .
+
+ext:A_PARTLYSUBMITTED_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:A_PREACCEPTED_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:A_SUBMITTED_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:W_Completeren_aanvraag_COMPLETE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:W_Completeren_aanvraag_SCHEDULE a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:W_Completeren_aanvraag_START a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2012 .
+
+ext:Case a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2012 .
+
+ext:ObjectBPIC2012 a owl:Class ;
+    rdfs:subClassOf oced:Object .
+
+ext:Resource a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2012 .
+
+oced:Object a owl:Class ;
+    rdfs:label "Object" ;
+    rdfs:comment "Representation of the Object class/concept" .
+
+res:object-o_7b4468306ffc5ca41a90de75849801546ed40cee a oced:Object,
+        ext:Case ;
+    ext:concept_name "173689" .
+
+res:object-o_c5f34202afb5211b7e2abd88b7dc7bcd1527a360 a oced:Object,
+        ext:Resource ;
+    ext:org_resource "10862" .
+
+res:object-o_b985c862f26cd2a99bc1a29b54062387a595b482 a oced:Object,
+        ext:Resource ;
+    ext:org_resource "112" .
+
+res:object-o_d1e6fad4317dd32096823957ddf1aafd34ad26c2 a oced:Object,
+        ext:Case ;
+    ext:concept_name "173688" .
+
+ext:EventBPIC2012 a owl:Class ;
+    rdfs:subClassOf oced:Event .
+
+oced:Event a owl:Class ;
+    rdfs:label "Event" ;
+    rdfs:comment "Representation of the Event class/concept" .
+
