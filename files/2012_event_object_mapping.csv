@@ -1,0 +1,8 @@
+object_type,ext_class,ext_relation
+"org:resource","ext:Resource","ext:is_a_resource"
+"case","ext:Case","ext:event_case"
+
+
+
+
+

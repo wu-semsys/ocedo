@@ -1,0 +1,4 @@
+object1_class,object2_class,object1_type,object2_type,ext_relation
+"ext:Amount_Req","ext:Resource","AMOUNT_REQ","org:resource","ext:requested_loan_amount_by_resource"
+
+
