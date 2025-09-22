@@ -1,0 +1,2257 @@
+@prefix aux: <https://w3id.org/ocedo/aux#> .
+@prefix oced: <https://w3id.org/ocedo/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <https://w3id.org/ocedo/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:object-o_2017_4cd3f2a946fb439722f01a90b18bc2ac9d35f46f a oced:Object ;
+    aux:hasObjectAttribute res:oa-ApplicationType-New%20credit ;
+    aux:instance_of res:otype-ApplicationType .
+
+res:object-o_2017_97afbfc9018210f3f3fcd0309d2707ce1606a6de a oced:Object ;
+    aux:hasObjectAttribute res:oa-LoanGoal-Remaining%20debt%20home ;
+    aux:instance_of res:otype-LoanGoal .
+
+res:object-o_2017_fd5f8b513f25a1152111a6e84c688fb550ccb50d a oced:Object ;
+    aux:hasObjectAttribute res:oa-RequestedAmount-40000.0 ;
+    aux:instance_of res:otype-RequestedAmount .
+
+res:observe-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6-o_2017_0170e3dd927783790567b4462033b84b0d470513 a aux:Observe ;
+    aux:eo_event res:event-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6 ;
+    aux:eo_object res:object-o_2017_0170e3dd927783790567b4462033b84b0d470513 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6-o_2017_3b411c7e5c8fc85d21ff3bc0b542bfa0d6836112 a aux:Observe ;
+    aux:eo_event res:event-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6 ;
+    aux:eo_object res:object-o_2017_3b411c7e5c8fc85d21ff3bc0b542bfa0d6836112 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6-o_2017_4af01145e716cebe01c363d0818e057a3c5760e7 a aux:Observe ;
+    aux:eo_event res:event-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6 ;
+    aux:eo_object res:object-o_2017_4af01145e716cebe01c363d0818e057a3c5760e7 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6-o_2017_5ab730b682ca6bada92ebbb2a654bcd42a9337b2 a aux:Observe ;
+    aux:eo_event res:event-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6 ;
+    aux:eo_object res:object-o_2017_5ab730b682ca6bada92ebbb2a654bcd42a9337b2 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6-o_2017_7f2ca85dc493eeea79235642f8ec163ff6d52100 a aux:Observe ;
+    aux:eo_event res:event-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6 ;
+    aux:eo_object res:object-o_2017_7f2ca85dc493eeea79235642f8ec163ff6d52100 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6-o_2017_995017b834a879515b6e1cd2aadc7672bd0b90a9 a aux:Observe ;
+    aux:eo_event res:event-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6 ;
+    aux:eo_object res:object-o_2017_995017b834a879515b6e1cd2aadc7672bd0b90a9 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6 ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6-o_2017_a9320af06650fe9ae0480690c4be1fc8657ff838 a aux:Observe ;
+    aux:eo_event res:event-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6 ;
+    aux:eo_object res:object-o_2017_a9320af06650fe9ae0480690c4be1fc8657ff838 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 a aux:Observe ;
+    aux:eo_event res:event-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6 ;
+    aux:eo_object res:object-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6-o_2017_dc0b6bb90fe2d51e62f2803655bf135fccc4d477 a aux:Observe ;
+    aux:eo_event res:event-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6 ;
+    aux:eo_object res:object-o_2017_dc0b6bb90fe2d51e62f2803655bf135fccc4d477 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6-o_2017_e2d7207cc7bcb773fe8468cd07fa930385b16391 a aux:Observe ;
+    aux:eo_event res:event-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6 ;
+    aux:eo_object res:object-o_2017_e2d7207cc7bcb773fe8468cd07fa930385b16391 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6-o_2017_e4c0e0f18173bfbc9a893927f2c9c352b374cd09 a aux:Observe ;
+    aux:eo_event res:event-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6 ;
+    aux:eo_object res:object-o_2017_e4c0e0f18173bfbc9a893927f2c9c352b374cd09 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6-o_2017_f370b98144e0c9bf96c877ff35417d69a2cf57ab a aux:Observe ;
+    aux:eo_event res:event-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6 ;
+    aux:eo_object res:object-o_2017_f370b98144e0c9bf96c877ff35417d69a2cf57ab ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_24c3543099000cb36646867a94a8f7c100d4720b-o_2017_09aa045da596386f42c2ae54ff904525bc988b1a a aux:Observe ;
+    aux:eo_event res:event-e_2017_24c3543099000cb36646867a94a8f7c100d4720b ;
+    aux:eo_object res:object-o_2017_09aa045da596386f42c2ae54ff904525bc988b1a ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_24c3543099000cb36646867a94a8f7c100d4720b-o_2017_71c5d3512e04aa5aa146cf8203d9cbea1990965b a aux:Observe ;
+    aux:eo_event res:event-e_2017_24c3543099000cb36646867a94a8f7c100d4720b ;
+    aux:eo_object res:object-o_2017_71c5d3512e04aa5aa146cf8203d9cbea1990965b ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_24c3543099000cb36646867a94a8f7c100d4720b-o_2017_7579aa30e5f50375ca56ec9204495a5751c588b0 a aux:Observe ;
+    aux:eo_event res:event-e_2017_24c3543099000cb36646867a94a8f7c100d4720b ;
+    aux:eo_object res:object-o_2017_7579aa30e5f50375ca56ec9204495a5751c588b0 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_24c3543099000cb36646867a94a8f7c100d4720b-o_2017_7d21735e0309de60b1b1962c2c88af06720c0f55 a aux:Observe ;
+    aux:eo_event res:event-e_2017_24c3543099000cb36646867a94a8f7c100d4720b ;
+    aux:eo_object res:object-o_2017_7d21735e0309de60b1b1962c2c88af06720c0f55 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_24c3543099000cb36646867a94a8f7c100d4720b-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_24c3543099000cb36646867a94a8f7c100d4720b ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_24c3543099000cb36646867a94a8f7c100d4720b-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a aux:Observe ;
+    aux:eo_event res:event-e_2017_24c3543099000cb36646867a94a8f7c100d4720b ;
+    aux:eo_object res:object-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_2a6f5f40c0c0d3daa86770c6aa5b4d091ec71f3d-o_2017_487d30de0d9631a14edead019ebc2b1a57ead446 a aux:Observe ;
+    aux:eo_event res:event-e_2017_2a6f5f40c0c0d3daa86770c6aa5b4d091ec71f3d ;
+    aux:eo_object res:object-o_2017_487d30de0d9631a14edead019ebc2b1a57ead446 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_2a6f5f40c0c0d3daa86770c6aa5b4d091ec71f3d-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_2a6f5f40c0c0d3daa86770c6aa5b4d091ec71f3d ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_2a6f5f40c0c0d3daa86770c6aa5b4d091ec71f3d-o_2017_b879381733f8aec27f74e2c278c111fc760322c6 a aux:Observe ;
+    aux:eo_event res:event-e_2017_2a6f5f40c0c0d3daa86770c6aa5b4d091ec71f3d ;
+    aux:eo_object res:object-o_2017_b879381733f8aec27f74e2c278c111fc760322c6 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_2a6f5f40c0c0d3daa86770c6aa5b4d091ec71f3d-o_2017_ba3a8e7b53da8f3e22e80aa82ddb4e3a01230832 a aux:Observe ;
+    aux:eo_event res:event-e_2017_2a6f5f40c0c0d3daa86770c6aa5b4d091ec71f3d ;
+    aux:eo_object res:object-o_2017_ba3a8e7b53da8f3e22e80aa82ddb4e3a01230832 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_2a6f5f40c0c0d3daa86770c6aa5b4d091ec71f3d-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 a aux:Observe ;
+    aux:eo_event res:event-e_2017_2a6f5f40c0c0d3daa86770c6aa5b4d091ec71f3d ;
+    aux:eo_object res:object-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_2a6f5f40c0c0d3daa86770c6aa5b4d091ec71f3d-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a aux:Observe ;
+    aux:eo_event res:event-e_2017_2a6f5f40c0c0d3daa86770c6aa5b4d091ec71f3d ;
+    aux:eo_object res:object-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_2aa91cb6209e05815d7120002c97112ab0d301f5-o_2017_6ddcf195c236d01ea34db58d1d549977f3da4c45 a aux:Observe ;
+    aux:eo_event res:event-e_2017_2aa91cb6209e05815d7120002c97112ab0d301f5 ;
+    aux:eo_object res:object-o_2017_6ddcf195c236d01ea34db58d1d549977f3da4c45 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_2aa91cb6209e05815d7120002c97112ab0d301f5-o_2017_7d29734b15f5f494eed10a4411db3245df0b6fe2 a aux:Observe ;
+    aux:eo_event res:event-e_2017_2aa91cb6209e05815d7120002c97112ab0d301f5 ;
+    aux:eo_object res:object-o_2017_7d29734b15f5f494eed10a4411db3245df0b6fe2 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_2aa91cb6209e05815d7120002c97112ab0d301f5-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_2aa91cb6209e05815d7120002c97112ab0d301f5 ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_2aa91cb6209e05815d7120002c97112ab0d301f5-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a a aux:Observe ;
+    aux:eo_event res:event-e_2017_2aa91cb6209e05815d7120002c97112ab0d301f5 ;
+    aux:eo_object res:object-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_2aa91cb6209e05815d7120002c97112ab0d301f5-o_2017_cf643108061daa42996e3803315ac74929732fa8 a aux:Observe ;
+    aux:eo_event res:event-e_2017_2aa91cb6209e05815d7120002c97112ab0d301f5 ;
+    aux:eo_object res:object-o_2017_cf643108061daa42996e3803315ac74929732fa8 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_2aa91cb6209e05815d7120002c97112ab0d301f5-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 a aux:Observe ;
+    aux:eo_event res:event-e_2017_2aa91cb6209e05815d7120002c97112ab0d301f5 ;
+    aux:eo_object res:object-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_2aa91cb6209e05815d7120002c97112ab0d301f5-o_2017_dc0b6bb90fe2d51e62f2803655bf135fccc4d477 a aux:Observe ;
+    aux:eo_event res:event-e_2017_2aa91cb6209e05815d7120002c97112ab0d301f5 ;
+    aux:eo_object res:object-o_2017_dc0b6bb90fe2d51e62f2803655bf135fccc4d477 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_2f7f92de051a65f24d4a57f70fb4556ee21ec29e-o_2017_157f3267f69ce5175542de5b557c74e19f60d2d5 a aux:Observe ;
+    aux:eo_event res:event-e_2017_2f7f92de051a65f24d4a57f70fb4556ee21ec29e ;
+    aux:eo_object res:object-o_2017_157f3267f69ce5175542de5b557c74e19f60d2d5 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_2f7f92de051a65f24d4a57f70fb4556ee21ec29e-o_2017_5ab730b682ca6bada92ebbb2a654bcd42a9337b2 a aux:Observe ;
+    aux:eo_event res:event-e_2017_2f7f92de051a65f24d4a57f70fb4556ee21ec29e ;
+    aux:eo_object res:object-o_2017_5ab730b682ca6bada92ebbb2a654bcd42a9337b2 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_2f7f92de051a65f24d4a57f70fb4556ee21ec29e-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 a aux:Observe ;
+    aux:eo_event res:event-e_2017_2f7f92de051a65f24d4a57f70fb4556ee21ec29e ;
+    aux:eo_object res:object-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_2f7f92de051a65f24d4a57f70fb4556ee21ec29e-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_2f7f92de051a65f24d4a57f70fb4556ee21ec29e ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_2f7f92de051a65f24d4a57f70fb4556ee21ec29e-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a aux:Observe ;
+    aux:eo_event res:event-e_2017_2f7f92de051a65f24d4a57f70fb4556ee21ec29e ;
+    aux:eo_object res:object-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_2f7f92de051a65f24d4a57f70fb4556ee21ec29e-o_2017_f064d7033b8919937d457f29985996f857cd3e8e a aux:Observe ;
+    aux:eo_event res:event-e_2017_2f7f92de051a65f24d4a57f70fb4556ee21ec29e ;
+    aux:eo_object res:object-o_2017_f064d7033b8919937d457f29985996f857cd3e8e ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_31dba71be1cd0c732b3a8e57fe52089c9d77a747-o_2017_43bcda30c1c5960799221cfbc9fa9e97fb7be4eb a aux:Observe ;
+    aux:eo_event res:event-e_2017_31dba71be1cd0c732b3a8e57fe52089c9d77a747 ;
+    aux:eo_object res:object-o_2017_43bcda30c1c5960799221cfbc9fa9e97fb7be4eb ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_31dba71be1cd0c732b3a8e57fe52089c9d77a747-o_2017_5ab730b682ca6bada92ebbb2a654bcd42a9337b2 a aux:Observe ;
+    aux:eo_event res:event-e_2017_31dba71be1cd0c732b3a8e57fe52089c9d77a747 ;
+    aux:eo_object res:object-o_2017_5ab730b682ca6bada92ebbb2a654bcd42a9337b2 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_31dba71be1cd0c732b3a8e57fe52089c9d77a747-o_2017_707acd81b48bfef9869621a93ca67094ddbb3033 a aux:Observe ;
+    aux:eo_event res:event-e_2017_31dba71be1cd0c732b3a8e57fe52089c9d77a747 ;
+    aux:eo_object res:object-o_2017_707acd81b48bfef9869621a93ca67094ddbb3033 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_31dba71be1cd0c732b3a8e57fe52089c9d77a747-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 a aux:Observe ;
+    aux:eo_event res:event-e_2017_31dba71be1cd0c732b3a8e57fe52089c9d77a747 ;
+    aux:eo_object res:object-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_31dba71be1cd0c732b3a8e57fe52089c9d77a747-o_2017_83ca100589dce5e4c2b489864b1c7266dc95a4ac a aux:Observe ;
+    aux:eo_event res:event-e_2017_31dba71be1cd0c732b3a8e57fe52089c9d77a747 ;
+    aux:eo_object res:object-o_2017_83ca100589dce5e4c2b489864b1c7266dc95a4ac ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_31dba71be1cd0c732b3a8e57fe52089c9d77a747-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_31dba71be1cd0c732b3a8e57fe52089c9d77a747 ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_3410df9042bb9830488655c483724842db78b72e-o_2017_09aa045da596386f42c2ae54ff904525bc988b1a a aux:Observe ;
+    aux:eo_event res:event-e_2017_3410df9042bb9830488655c483724842db78b72e ;
+    aux:eo_object res:object-o_2017_09aa045da596386f42c2ae54ff904525bc988b1a ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_3410df9042bb9830488655c483724842db78b72e-o_2017_9717ac23926918b3f56bc00fa3cafc49bb13e3c1 a aux:Observe ;
+    aux:eo_event res:event-e_2017_3410df9042bb9830488655c483724842db78b72e ;
+    aux:eo_object res:object-o_2017_9717ac23926918b3f56bc00fa3cafc49bb13e3c1 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_3410df9042bb9830488655c483724842db78b72e-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_3410df9042bb9830488655c483724842db78b72e ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_3410df9042bb9830488655c483724842db78b72e-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 a aux:Observe ;
+    aux:eo_event res:event-e_2017_3410df9042bb9830488655c483724842db78b72e ;
+    aux:eo_object res:object-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_3410df9042bb9830488655c483724842db78b72e-o_2017_db4a7719a2b1db935742c003455946d3defb168f a aux:Observe ;
+    aux:eo_event res:event-e_2017_3410df9042bb9830488655c483724842db78b72e ;
+    aux:eo_object res:object-o_2017_db4a7719a2b1db935742c003455946d3defb168f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_3410df9042bb9830488655c483724842db78b72e-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a aux:Observe ;
+    aux:eo_event res:event-e_2017_3410df9042bb9830488655c483724842db78b72e ;
+    aux:eo_object res:object-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_3bb0d9425ac103744236c5a1dc5425f1e4fcda36-o_2017_04b8782cf3cf3717fb6ebe3e4b4816d53075f89a a aux:Observe ;
+    aux:eo_event res:event-e_2017_3bb0d9425ac103744236c5a1dc5425f1e4fcda36 ;
+    aux:eo_object res:object-o_2017_04b8782cf3cf3717fb6ebe3e4b4816d53075f89a ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_3bb0d9425ac103744236c5a1dc5425f1e4fcda36-o_2017_1b9ae0c0945f3ea7b1f440c9958c631b3d497f39 a aux:Observe ;
+    aux:eo_event res:event-e_2017_3bb0d9425ac103744236c5a1dc5425f1e4fcda36 ;
+    aux:eo_object res:object-o_2017_1b9ae0c0945f3ea7b1f440c9958c631b3d497f39 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_3bb0d9425ac103744236c5a1dc5425f1e4fcda36-o_2017_7d21735e0309de60b1b1962c2c88af06720c0f55 a aux:Observe ;
+    aux:eo_event res:event-e_2017_3bb0d9425ac103744236c5a1dc5425f1e4fcda36 ;
+    aux:eo_object res:object-o_2017_7d21735e0309de60b1b1962c2c88af06720c0f55 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_3bb0d9425ac103744236c5a1dc5425f1e4fcda36-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_3bb0d9425ac103744236c5a1dc5425f1e4fcda36 ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_3bb0d9425ac103744236c5a1dc5425f1e4fcda36-o_2017_bcc0c3d38e71efbe13905a02b90d8557673429f9 a aux:Observe ;
+    aux:eo_event res:event-e_2017_3bb0d9425ac103744236c5a1dc5425f1e4fcda36 ;
+    aux:eo_object res:object-o_2017_bcc0c3d38e71efbe13905a02b90d8557673429f9 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_3bb0d9425ac103744236c5a1dc5425f1e4fcda36-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a aux:Observe ;
+    aux:eo_event res:event-e_2017_3bb0d9425ac103744236c5a1dc5425f1e4fcda36 ;
+    aux:eo_object res:object-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_40de9fa84687c8b960c2ef0607c96d5e39e4e8d0-o_2017_43bcda30c1c5960799221cfbc9fa9e97fb7be4eb a aux:Observe ;
+    aux:eo_event res:event-e_2017_40de9fa84687c8b960c2ef0607c96d5e39e4e8d0 ;
+    aux:eo_object res:object-o_2017_43bcda30c1c5960799221cfbc9fa9e97fb7be4eb ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_40de9fa84687c8b960c2ef0607c96d5e39e4e8d0-o_2017_87648db196afcb34271dd1f786630209d953c092 a aux:Observe ;
+    aux:eo_event res:event-e_2017_40de9fa84687c8b960c2ef0607c96d5e39e4e8d0 ;
+    aux:eo_object res:object-o_2017_87648db196afcb34271dd1f786630209d953c092 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_40de9fa84687c8b960c2ef0607c96d5e39e4e8d0-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_40de9fa84687c8b960c2ef0607c96d5e39e4e8d0 ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_40de9fa84687c8b960c2ef0607c96d5e39e4e8d0-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a a aux:Observe ;
+    aux:eo_event res:event-e_2017_40de9fa84687c8b960c2ef0607c96d5e39e4e8d0 ;
+    aux:eo_object res:object-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_40de9fa84687c8b960c2ef0607c96d5e39e4e8d0-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 a aux:Observe ;
+    aux:eo_event res:event-e_2017_40de9fa84687c8b960c2ef0607c96d5e39e4e8d0 ;
+    aux:eo_object res:object-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_40de9fa84687c8b960c2ef0607c96d5e39e4e8d0-o_2017_f093d408b3a0c3030c79b60e4f55e9560be1c1c4 a aux:Observe ;
+    aux:eo_event res:event-e_2017_40de9fa84687c8b960c2ef0607c96d5e39e4e8d0 ;
+    aux:eo_object res:object-o_2017_f093d408b3a0c3030c79b60e4f55e9560be1c1c4 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_57a71968b650a932b46e85a1b7658ff79ffc1069-o_2017_5ab730b682ca6bada92ebbb2a654bcd42a9337b2 a aux:Observe ;
+    aux:eo_event res:event-e_2017_57a71968b650a932b46e85a1b7658ff79ffc1069 ;
+    aux:eo_object res:object-o_2017_5ab730b682ca6bada92ebbb2a654bcd42a9337b2 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_57a71968b650a932b46e85a1b7658ff79ffc1069-o_2017_70424a36d2c8abaa37167e3c9a400fe4cc27bc4b a aux:Observe ;
+    aux:eo_event res:event-e_2017_57a71968b650a932b46e85a1b7658ff79ffc1069 ;
+    aux:eo_object res:object-o_2017_70424a36d2c8abaa37167e3c9a400fe4cc27bc4b ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_57a71968b650a932b46e85a1b7658ff79ffc1069-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 a aux:Observe ;
+    aux:eo_event res:event-e_2017_57a71968b650a932b46e85a1b7658ff79ffc1069 ;
+    aux:eo_object res:object-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_57a71968b650a932b46e85a1b7658ff79ffc1069-o_2017_90dba047e960f269832323f9bee3aa7dded36850 a aux:Observe ;
+    aux:eo_event res:event-e_2017_57a71968b650a932b46e85a1b7658ff79ffc1069 ;
+    aux:eo_object res:object-o_2017_90dba047e960f269832323f9bee3aa7dded36850 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_57a71968b650a932b46e85a1b7658ff79ffc1069-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_57a71968b650a932b46e85a1b7658ff79ffc1069 ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_57a71968b650a932b46e85a1b7658ff79ffc1069-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a aux:Observe ;
+    aux:eo_event res:event-e_2017_57a71968b650a932b46e85a1b7658ff79ffc1069 ;
+    aux:eo_object res:object-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_7680e94a9e58347b4cf789bfd3f1bcd2f929ebfe-o_2017_43bcda30c1c5960799221cfbc9fa9e97fb7be4eb a aux:Observe ;
+    aux:eo_event res:event-e_2017_7680e94a9e58347b4cf789bfd3f1bcd2f929ebfe ;
+    aux:eo_object res:object-o_2017_43bcda30c1c5960799221cfbc9fa9e97fb7be4eb ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_7680e94a9e58347b4cf789bfd3f1bcd2f929ebfe-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_7680e94a9e58347b4cf789bfd3f1bcd2f929ebfe ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_7680e94a9e58347b4cf789bfd3f1bcd2f929ebfe-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a a aux:Observe ;
+    aux:eo_event res:event-e_2017_7680e94a9e58347b4cf789bfd3f1bcd2f929ebfe ;
+    aux:eo_object res:object-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_7680e94a9e58347b4cf789bfd3f1bcd2f929ebfe-o_2017_ca5104c8c61b8b002817cbbfcda11f3129cce53f a aux:Observe ;
+    aux:eo_event res:event-e_2017_7680e94a9e58347b4cf789bfd3f1bcd2f929ebfe ;
+    aux:eo_object res:object-o_2017_ca5104c8c61b8b002817cbbfcda11f3129cce53f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_7680e94a9e58347b4cf789bfd3f1bcd2f929ebfe-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 a aux:Observe ;
+    aux:eo_event res:event-e_2017_7680e94a9e58347b4cf789bfd3f1bcd2f929ebfe ;
+    aux:eo_object res:object-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_7680e94a9e58347b4cf789bfd3f1bcd2f929ebfe-o_2017_f1bde6df913e6354911819b7840fcf5c19079f12 a aux:Observe ;
+    aux:eo_event res:event-e_2017_7680e94a9e58347b4cf789bfd3f1bcd2f929ebfe ;
+    aux:eo_object res:object-o_2017_f1bde6df913e6354911819b7840fcf5c19079f12 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_782bf94aa609573b30df1a62a983577f59bf73b5-o_2017_09aa045da596386f42c2ae54ff904525bc988b1a a aux:Observe ;
+    aux:eo_event res:event-e_2017_782bf94aa609573b30df1a62a983577f59bf73b5 ;
+    aux:eo_object res:object-o_2017_09aa045da596386f42c2ae54ff904525bc988b1a ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_782bf94aa609573b30df1a62a983577f59bf73b5-o_2017_306a0c25c3a61151622015794f819f864169a8ed a aux:Observe ;
+    aux:eo_event res:event-e_2017_782bf94aa609573b30df1a62a983577f59bf73b5 ;
+    aux:eo_object res:object-o_2017_306a0c25c3a61151622015794f819f864169a8ed ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_782bf94aa609573b30df1a62a983577f59bf73b5-o_2017_4fa218506c30bdacec35248452725ba0070c731c a aux:Observe ;
+    aux:eo_event res:event-e_2017_782bf94aa609573b30df1a62a983577f59bf73b5 ;
+    aux:eo_object res:object-o_2017_4fa218506c30bdacec35248452725ba0070c731c ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_782bf94aa609573b30df1a62a983577f59bf73b5-o_2017_80f731b28d42cc3ae83191cf185138983ea39009 a aux:Observe ;
+    aux:eo_event res:event-e_2017_782bf94aa609573b30df1a62a983577f59bf73b5 ;
+    aux:eo_object res:object-o_2017_80f731b28d42cc3ae83191cf185138983ea39009 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_782bf94aa609573b30df1a62a983577f59bf73b5-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_782bf94aa609573b30df1a62a983577f59bf73b5 ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_782bf94aa609573b30df1a62a983577f59bf73b5-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a aux:Observe ;
+    aux:eo_event res:event-e_2017_782bf94aa609573b30df1a62a983577f59bf73b5 ;
+    aux:eo_object res:object-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_7c2f2aa7b44472198c6b09184d8398251041be35-o_2017_2e1c6ad9a7fa9abb9a13133e944ffe3567e10fd0 a aux:Observe ;
+    aux:eo_event res:event-e_2017_7c2f2aa7b44472198c6b09184d8398251041be35 ;
+    aux:eo_object res:object-o_2017_2e1c6ad9a7fa9abb9a13133e944ffe3567e10fd0 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_7c2f2aa7b44472198c6b09184d8398251041be35-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_7c2f2aa7b44472198c6b09184d8398251041be35 ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_7c2f2aa7b44472198c6b09184d8398251041be35-o_2017_bcc0c3d38e71efbe13905a02b90d8557673429f9 a aux:Observe ;
+    aux:eo_event res:event-e_2017_7c2f2aa7b44472198c6b09184d8398251041be35 ;
+    aux:eo_object res:object-o_2017_bcc0c3d38e71efbe13905a02b90d8557673429f9 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_7c2f2aa7b44472198c6b09184d8398251041be35-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 a aux:Observe ;
+    aux:eo_event res:event-e_2017_7c2f2aa7b44472198c6b09184d8398251041be35 ;
+    aux:eo_object res:object-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_7c2f2aa7b44472198c6b09184d8398251041be35-o_2017_ec70e0a2bf2d5e927a212e6ce74ba0cfd1c232d2 a aux:Observe ;
+    aux:eo_event res:event-e_2017_7c2f2aa7b44472198c6b09184d8398251041be35 ;
+    aux:eo_object res:object-o_2017_ec70e0a2bf2d5e927a212e6ce74ba0cfd1c232d2 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_7c2f2aa7b44472198c6b09184d8398251041be35-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a aux:Observe ;
+    aux:eo_event res:event-e_2017_7c2f2aa7b44472198c6b09184d8398251041be35 ;
+    aux:eo_object res:object-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_7c7cba15580670157911ef33e68f16e51c38286a-o_2017_4490d2c21fa0b4f6898a447157c9b69d7aad10ae a aux:Observe ;
+    aux:eo_event res:event-e_2017_7c7cba15580670157911ef33e68f16e51c38286a ;
+    aux:eo_object res:object-o_2017_4490d2c21fa0b4f6898a447157c9b69d7aad10ae ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_7c7cba15580670157911ef33e68f16e51c38286a-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_7c7cba15580670157911ef33e68f16e51c38286a ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_7c7cba15580670157911ef33e68f16e51c38286a-o_2017_bcc0c3d38e71efbe13905a02b90d8557673429f9 a aux:Observe ;
+    aux:eo_event res:event-e_2017_7c7cba15580670157911ef33e68f16e51c38286a ;
+    aux:eo_object res:object-o_2017_bcc0c3d38e71efbe13905a02b90d8557673429f9 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_7c7cba15580670157911ef33e68f16e51c38286a-o_2017_bf846bb75095ca09e6261bc69ff7a767c849e352 a aux:Observe ;
+    aux:eo_event res:event-e_2017_7c7cba15580670157911ef33e68f16e51c38286a ;
+    aux:eo_object res:object-o_2017_bf846bb75095ca09e6261bc69ff7a767c849e352 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_7c7cba15580670157911ef33e68f16e51c38286a-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 a aux:Observe ;
+    aux:eo_event res:event-e_2017_7c7cba15580670157911ef33e68f16e51c38286a ;
+    aux:eo_object res:object-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_7c7cba15580670157911ef33e68f16e51c38286a-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a aux:Observe ;
+    aux:eo_event res:event-e_2017_7c7cba15580670157911ef33e68f16e51c38286a ;
+    aux:eo_object res:object-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_9e29441edbe3ddae1ba960bfce3deabed7653ede-o_2017_158e88867acada3f8cb74bd51629fa9bbf9ae776 a aux:Observe ;
+    aux:eo_event res:event-e_2017_9e29441edbe3ddae1ba960bfce3deabed7653ede ;
+    aux:eo_object res:object-o_2017_158e88867acada3f8cb74bd51629fa9bbf9ae776 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_9e29441edbe3ddae1ba960bfce3deabed7653ede-o_2017_58fe0a2a5fa29053cb6141bce220d67fd0874ada a aux:Observe ;
+    aux:eo_event res:event-e_2017_9e29441edbe3ddae1ba960bfce3deabed7653ede ;
+    aux:eo_object res:object-o_2017_58fe0a2a5fa29053cb6141bce220d67fd0874ada ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_9e29441edbe3ddae1ba960bfce3deabed7653ede-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 a aux:Observe ;
+    aux:eo_event res:event-e_2017_9e29441edbe3ddae1ba960bfce3deabed7653ede ;
+    aux:eo_object res:object-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_9e29441edbe3ddae1ba960bfce3deabed7653ede-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_9e29441edbe3ddae1ba960bfce3deabed7653ede ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_9e29441edbe3ddae1ba960bfce3deabed7653ede-o_2017_b879381733f8aec27f74e2c278c111fc760322c6 a aux:Observe ;
+    aux:eo_event res:event-e_2017_9e29441edbe3ddae1ba960bfce3deabed7653ede ;
+    aux:eo_object res:object-o_2017_b879381733f8aec27f74e2c278c111fc760322c6 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_9e29441edbe3ddae1ba960bfce3deabed7653ede-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a aux:Observe ;
+    aux:eo_event res:event-e_2017_9e29441edbe3ddae1ba960bfce3deabed7653ede ;
+    aux:eo_object res:object-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_a6b902f219de4a7694ab1a3543ccdc0d25f2737a-o_2017_0de35d96557c582967897663e37e45ebb14c773e a aux:Observe ;
+    aux:eo_event res:event-e_2017_a6b902f219de4a7694ab1a3543ccdc0d25f2737a ;
+    aux:eo_object res:object-o_2017_0de35d96557c582967897663e37e45ebb14c773e ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_a6b902f219de4a7694ab1a3543ccdc0d25f2737a-o_2017_6ddcf195c236d01ea34db58d1d549977f3da4c45 a aux:Observe ;
+    aux:eo_event res:event-e_2017_a6b902f219de4a7694ab1a3543ccdc0d25f2737a ;
+    aux:eo_object res:object-o_2017_6ddcf195c236d01ea34db58d1d549977f3da4c45 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_a6b902f219de4a7694ab1a3543ccdc0d25f2737a-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 a aux:Observe ;
+    aux:eo_event res:event-e_2017_a6b902f219de4a7694ab1a3543ccdc0d25f2737a ;
+    aux:eo_object res:object-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_a6b902f219de4a7694ab1a3543ccdc0d25f2737a-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_a6b902f219de4a7694ab1a3543ccdc0d25f2737a ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_a6b902f219de4a7694ab1a3543ccdc0d25f2737a-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a a aux:Observe ;
+    aux:eo_event res:event-e_2017_a6b902f219de4a7694ab1a3543ccdc0d25f2737a ;
+    aux:eo_object res:object-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_a6b902f219de4a7694ab1a3543ccdc0d25f2737a-o_2017_dc0b6bb90fe2d51e62f2803655bf135fccc4d477 a aux:Observe ;
+    aux:eo_event res:event-e_2017_a6b902f219de4a7694ab1a3543ccdc0d25f2737a ;
+    aux:eo_object res:object-o_2017_dc0b6bb90fe2d51e62f2803655bf135fccc4d477 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_a6b902f219de4a7694ab1a3543ccdc0d25f2737a-o_2017_e5734d5ea734cc8f78196d5ee2fd186d48efaccd a aux:Observe ;
+    aux:eo_event res:event-e_2017_a6b902f219de4a7694ab1a3543ccdc0d25f2737a ;
+    aux:eo_object res:object-o_2017_e5734d5ea734cc8f78196d5ee2fd186d48efaccd ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_accc0da389bf416b161bc613ab256a5d2f3e21f4-o_2017_5ab730b682ca6bada92ebbb2a654bcd42a9337b2 a aux:Observe ;
+    aux:eo_event res:event-e_2017_accc0da389bf416b161bc613ab256a5d2f3e21f4 ;
+    aux:eo_object res:object-o_2017_5ab730b682ca6bada92ebbb2a654bcd42a9337b2 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_accc0da389bf416b161bc613ab256a5d2f3e21f4-o_2017_5e7a69e9d6f99eac9ca7a85f33cc11c8ff25b17f a aux:Observe ;
+    aux:eo_event res:event-e_2017_accc0da389bf416b161bc613ab256a5d2f3e21f4 ;
+    aux:eo_object res:object-o_2017_5e7a69e9d6f99eac9ca7a85f33cc11c8ff25b17f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_accc0da389bf416b161bc613ab256a5d2f3e21f4-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_accc0da389bf416b161bc613ab256a5d2f3e21f4 ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_accc0da389bf416b161bc613ab256a5d2f3e21f4-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 a aux:Observe ;
+    aux:eo_event res:event-e_2017_accc0da389bf416b161bc613ab256a5d2f3e21f4 ;
+    aux:eo_object res:object-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_accc0da389bf416b161bc613ab256a5d2f3e21f4-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a aux:Observe ;
+    aux:eo_event res:event-e_2017_accc0da389bf416b161bc613ab256a5d2f3e21f4 ;
+    aux:eo_object res:object-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_accc0da389bf416b161bc613ab256a5d2f3e21f4-o_2017_f3a9c16ab42b8cb8d234f169f493d924ac5bfd16 a aux:Observe ;
+    aux:eo_event res:event-e_2017_accc0da389bf416b161bc613ab256a5d2f3e21f4 ;
+    aux:eo_object res:object-o_2017_f3a9c16ab42b8cb8d234f169f493d924ac5bfd16 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_af5265e568f131711423d82c2cea7517f9115cc7-o_2017_29720b9407646dbff3d086686b8b77f080ebc480 a aux:Observe ;
+    aux:eo_event res:event-e_2017_af5265e568f131711423d82c2cea7517f9115cc7 ;
+    aux:eo_object res:object-o_2017_29720b9407646dbff3d086686b8b77f080ebc480 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_af5265e568f131711423d82c2cea7517f9115cc7-o_2017_2e30271721767a6a657814326659a4c02194eeb9 a aux:Observe ;
+    aux:eo_event res:event-e_2017_af5265e568f131711423d82c2cea7517f9115cc7 ;
+    aux:eo_object res:object-o_2017_2e30271721767a6a657814326659a4c02194eeb9 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_af5265e568f131711423d82c2cea7517f9115cc7-o_2017_306a0c25c3a61151622015794f819f864169a8ed a aux:Observe ;
+    aux:eo_event res:event-e_2017_af5265e568f131711423d82c2cea7517f9115cc7 ;
+    aux:eo_object res:object-o_2017_306a0c25c3a61151622015794f819f864169a8ed ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_af5265e568f131711423d82c2cea7517f9115cc7-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_af5265e568f131711423d82c2cea7517f9115cc7 ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_af5265e568f131711423d82c2cea7517f9115cc7-o_2017_bcc0c3d38e71efbe13905a02b90d8557673429f9 a aux:Observe ;
+    aux:eo_event res:event-e_2017_af5265e568f131711423d82c2cea7517f9115cc7 ;
+    aux:eo_object res:object-o_2017_bcc0c3d38e71efbe13905a02b90d8557673429f9 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_af5265e568f131711423d82c2cea7517f9115cc7-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a aux:Observe ;
+    aux:eo_event res:event-e_2017_af5265e568f131711423d82c2cea7517f9115cc7 ;
+    aux:eo_object res:object-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_b46339125f7f2d56252bf01b6c267cccf36e2043-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 a aux:Observe ;
+    aux:eo_event res:event-e_2017_b46339125f7f2d56252bf01b6c267cccf36e2043 ;
+    aux:eo_object res:object-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_b46339125f7f2d56252bf01b6c267cccf36e2043-o_2017_83137a35e82e93b05c3a3dab0902c9d2c6ad7c85 a aux:Observe ;
+    aux:eo_event res:event-e_2017_b46339125f7f2d56252bf01b6c267cccf36e2043 ;
+    aux:eo_object res:object-o_2017_83137a35e82e93b05c3a3dab0902c9d2c6ad7c85 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_b46339125f7f2d56252bf01b6c267cccf36e2043-o_2017_8878207cd509f24f4fc512476f73eff168fec2e2 a aux:Observe ;
+    aux:eo_event res:event-e_2017_b46339125f7f2d56252bf01b6c267cccf36e2043 ;
+    aux:eo_object res:object-o_2017_8878207cd509f24f4fc512476f73eff168fec2e2 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_b46339125f7f2d56252bf01b6c267cccf36e2043-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_b46339125f7f2d56252bf01b6c267cccf36e2043 ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_b46339125f7f2d56252bf01b6c267cccf36e2043-o_2017_b879381733f8aec27f74e2c278c111fc760322c6 a aux:Observe ;
+    aux:eo_event res:event-e_2017_b46339125f7f2d56252bf01b6c267cccf36e2043 ;
+    aux:eo_object res:object-o_2017_b879381733f8aec27f74e2c278c111fc760322c6 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_b46339125f7f2d56252bf01b6c267cccf36e2043-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a aux:Observe ;
+    aux:eo_event res:event-e_2017_b46339125f7f2d56252bf01b6c267cccf36e2043 ;
+    aux:eo_object res:object-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_bbe1ad0043e3ab3e341b0f9cbfeb513226c2e9ec-o_2017_3f9928a9342b4e2238b360ad3947fd275ad65194 a aux:Observe ;
+    aux:eo_event res:event-e_2017_bbe1ad0043e3ab3e341b0f9cbfeb513226c2e9ec ;
+    aux:eo_object res:object-o_2017_3f9928a9342b4e2238b360ad3947fd275ad65194 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_bbe1ad0043e3ab3e341b0f9cbfeb513226c2e9ec-o_2017_6ddcf195c236d01ea34db58d1d549977f3da4c45 a aux:Observe ;
+    aux:eo_event res:event-e_2017_bbe1ad0043e3ab3e341b0f9cbfeb513226c2e9ec ;
+    aux:eo_object res:object-o_2017_6ddcf195c236d01ea34db58d1d549977f3da4c45 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_bbe1ad0043e3ab3e341b0f9cbfeb513226c2e9ec-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_bbe1ad0043e3ab3e341b0f9cbfeb513226c2e9ec ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_bbe1ad0043e3ab3e341b0f9cbfeb513226c2e9ec-o_2017_a3b2e428faa094386b7cee37bb1d49abf5e8fcc6 a aux:Observe ;
+    aux:eo_event res:event-e_2017_bbe1ad0043e3ab3e341b0f9cbfeb513226c2e9ec ;
+    aux:eo_object res:object-o_2017_a3b2e428faa094386b7cee37bb1d49abf5e8fcc6 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_bbe1ad0043e3ab3e341b0f9cbfeb513226c2e9ec-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a a aux:Observe ;
+    aux:eo_event res:event-e_2017_bbe1ad0043e3ab3e341b0f9cbfeb513226c2e9ec ;
+    aux:eo_object res:object-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_bbe1ad0043e3ab3e341b0f9cbfeb513226c2e9ec-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 a aux:Observe ;
+    aux:eo_event res:event-e_2017_bbe1ad0043e3ab3e341b0f9cbfeb513226c2e9ec ;
+    aux:eo_object res:object-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_bbe1ad0043e3ab3e341b0f9cbfeb513226c2e9ec-o_2017_dc0b6bb90fe2d51e62f2803655bf135fccc4d477 a aux:Observe ;
+    aux:eo_event res:event-e_2017_bbe1ad0043e3ab3e341b0f9cbfeb513226c2e9ec ;
+    aux:eo_object res:object-o_2017_dc0b6bb90fe2d51e62f2803655bf135fccc4d477 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_ccf25f148052488c96e58ad8b703284d447cf7cb-o_2017_43bcda30c1c5960799221cfbc9fa9e97fb7be4eb a aux:Observe ;
+    aux:eo_event res:event-e_2017_ccf25f148052488c96e58ad8b703284d447cf7cb ;
+    aux:eo_object res:object-o_2017_43bcda30c1c5960799221cfbc9fa9e97fb7be4eb ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_ccf25f148052488c96e58ad8b703284d447cf7cb-o_2017_520b74d0304ba4b6e9e4c0471907bfeda1259715 a aux:Observe ;
+    aux:eo_event res:event-e_2017_ccf25f148052488c96e58ad8b703284d447cf7cb ;
+    aux:eo_object res:object-o_2017_520b74d0304ba4b6e9e4c0471907bfeda1259715 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_ccf25f148052488c96e58ad8b703284d447cf7cb-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 a aux:Observe ;
+    aux:eo_event res:event-e_2017_ccf25f148052488c96e58ad8b703284d447cf7cb ;
+    aux:eo_object res:object-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_ccf25f148052488c96e58ad8b703284d447cf7cb-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_ccf25f148052488c96e58ad8b703284d447cf7cb ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_ccf25f148052488c96e58ad8b703284d447cf7cb-o_2017_a766d4daedb8f01b1d117e5997bdbc02344d51be a aux:Observe ;
+    aux:eo_event res:event-e_2017_ccf25f148052488c96e58ad8b703284d447cf7cb ;
+    aux:eo_object res:object-o_2017_a766d4daedb8f01b1d117e5997bdbc02344d51be ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_ccf25f148052488c96e58ad8b703284d447cf7cb-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a a aux:Observe ;
+    aux:eo_event res:event-e_2017_ccf25f148052488c96e58ad8b703284d447cf7cb ;
+    aux:eo_object res:object-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_e004417163ab70c934b13982ecea84d7ee76eb02-o_2017_5484fd691199e252de2579e4fd59e68d6a8f1636 a aux:Observe ;
+    aux:eo_event res:event-e_2017_e004417163ab70c934b13982ecea84d7ee76eb02 ;
+    aux:eo_object res:object-o_2017_5484fd691199e252de2579e4fd59e68d6a8f1636 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_e004417163ab70c934b13982ecea84d7ee76eb02-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_e004417163ab70c934b13982ecea84d7ee76eb02 ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_e004417163ab70c934b13982ecea84d7ee76eb02-o_2017_aa239535dc8808e1ffcd5c0741dd40811c3f982b a aux:Observe ;
+    aux:eo_event res:event-e_2017_e004417163ab70c934b13982ecea84d7ee76eb02 ;
+    aux:eo_object res:object-o_2017_aa239535dc8808e1ffcd5c0741dd40811c3f982b ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_e004417163ab70c934b13982ecea84d7ee76eb02-o_2017_bcc0c3d38e71efbe13905a02b90d8557673429f9 a aux:Observe ;
+    aux:eo_event res:event-e_2017_e004417163ab70c934b13982ecea84d7ee76eb02 ;
+    aux:eo_object res:object-o_2017_bcc0c3d38e71efbe13905a02b90d8557673429f9 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_e004417163ab70c934b13982ecea84d7ee76eb02-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 a aux:Observe ;
+    aux:eo_event res:event-e_2017_e004417163ab70c934b13982ecea84d7ee76eb02 ;
+    aux:eo_object res:object-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_e004417163ab70c934b13982ecea84d7ee76eb02-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a aux:Observe ;
+    aux:eo_event res:event-e_2017_e004417163ab70c934b13982ecea84d7ee76eb02 ;
+    aux:eo_object res:object-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_f5ac0c8eccf0cc375b9f24539c01251576717ea6-o_2017_09aa045da596386f42c2ae54ff904525bc988b1a a aux:Observe ;
+    aux:eo_event res:event-e_2017_f5ac0c8eccf0cc375b9f24539c01251576717ea6 ;
+    aux:eo_object res:object-o_2017_09aa045da596386f42c2ae54ff904525bc988b1a ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_f5ac0c8eccf0cc375b9f24539c01251576717ea6-o_2017_2e286774d6b01dcfd0831fe376802a1df655c29e a aux:Observe ;
+    aux:eo_event res:event-e_2017_f5ac0c8eccf0cc375b9f24539c01251576717ea6 ;
+    aux:eo_object res:object-o_2017_2e286774d6b01dcfd0831fe376802a1df655c29e ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_f5ac0c8eccf0cc375b9f24539c01251576717ea6-o_2017_9717ac23926918b3f56bc00fa3cafc49bb13e3c1 a aux:Observe ;
+    aux:eo_event res:event-e_2017_f5ac0c8eccf0cc375b9f24539c01251576717ea6 ;
+    aux:eo_object res:object-o_2017_9717ac23926918b3f56bc00fa3cafc49bb13e3c1 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_f5ac0c8eccf0cc375b9f24539c01251576717ea6-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_f5ac0c8eccf0cc375b9f24539c01251576717ea6 ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_f5ac0c8eccf0cc375b9f24539c01251576717ea6-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 a aux:Observe ;
+    aux:eo_event res:event-e_2017_f5ac0c8eccf0cc375b9f24539c01251576717ea6 ;
+    aux:eo_object res:object-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_f5ac0c8eccf0cc375b9f24539c01251576717ea6-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a aux:Observe ;
+    aux:eo_event res:event-e_2017_f5ac0c8eccf0cc375b9f24539c01251576717ea6 ;
+    aux:eo_object res:object-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_fa9514c81861aa0c9325a84d5884e596872a45a7-o_2017_43bcda30c1c5960799221cfbc9fa9e97fb7be4eb a aux:Observe ;
+    aux:eo_event res:event-e_2017_fa9514c81861aa0c9325a84d5884e596872a45a7 ;
+    aux:eo_object res:object-o_2017_43bcda30c1c5960799221cfbc9fa9e97fb7be4eb ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_fa9514c81861aa0c9325a84d5884e596872a45a7-o_2017_52458d0fc60960c99177f05644888ebaa935038f a aux:Observe ;
+    aux:eo_event res:event-e_2017_fa9514c81861aa0c9325a84d5884e596872a45a7 ;
+    aux:eo_object res:object-o_2017_52458d0fc60960c99177f05644888ebaa935038f ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_fa9514c81861aa0c9325a84d5884e596872a45a7-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 a aux:Observe ;
+    aux:eo_event res:event-e_2017_fa9514c81861aa0c9325a84d5884e596872a45a7 ;
+    aux:eo_object res:object-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_fa9514c81861aa0c9325a84d5884e596872a45a7-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_fa9514c81861aa0c9325a84d5884e596872a45a7 ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_fa9514c81861aa0c9325a84d5884e596872a45a7-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a a aux:Observe ;
+    aux:eo_event res:event-e_2017_fa9514c81861aa0c9325a84d5884e596872a45a7 ;
+    aux:eo_object res:object-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_fa9514c81861aa0c9325a84d5884e596872a45a7-o_2017_c06f6f4a372002b86ba7194c94f62ddb1c21b966 a aux:Observe ;
+    aux:eo_event res:event-e_2017_fa9514c81861aa0c9325a84d5884e596872a45a7 ;
+    aux:eo_object res:object-o_2017_c06f6f4a372002b86ba7194c94f62ddb1c21b966 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_fbaf29e425b2cd2d76b55dacc189afa098568774-o_2017_290974dd39e25f1a44fa491e0011d30a6804cde9 a aux:Observe ;
+    aux:eo_event res:event-e_2017_fbaf29e425b2cd2d76b55dacc189afa098568774 ;
+    aux:eo_object res:object-o_2017_290974dd39e25f1a44fa491e0011d30a6804cde9 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_fbaf29e425b2cd2d76b55dacc189afa098568774-o_2017_3ab98b1639410aea9c2d637cf0247881e10d9b03 a aux:Observe ;
+    aux:eo_event res:event-e_2017_fbaf29e425b2cd2d76b55dacc189afa098568774 ;
+    aux:eo_object res:object-o_2017_3ab98b1639410aea9c2d637cf0247881e10d9b03 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_fbaf29e425b2cd2d76b55dacc189afa098568774-o_2017_43bcda30c1c5960799221cfbc9fa9e97fb7be4eb a aux:Observe ;
+    aux:eo_event res:event-e_2017_fbaf29e425b2cd2d76b55dacc189afa098568774 ;
+    aux:eo_object res:object-o_2017_43bcda30c1c5960799221cfbc9fa9e97fb7be4eb ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_fbaf29e425b2cd2d76b55dacc189afa098568774-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 a aux:Observe ;
+    aux:eo_event res:event-e_2017_fbaf29e425b2cd2d76b55dacc189afa098568774 ;
+    aux:eo_object res:object-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 ;
+    aux:qualifier "event_object" .
+
+res:observe-e_2017_fbaf29e425b2cd2d76b55dacc189afa098568774-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a aux:Observe ;
+    aux:eo_event res:event-e_2017_fbaf29e425b2cd2d76b55dacc189afa098568774 ;
+    aux:eo_object res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:qualifier "case_event" .
+
+res:observe-e_2017_fbaf29e425b2cd2d76b55dacc189afa098568774-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a a aux:Observe ;
+    aux:eo_event res:event-e_2017_fbaf29e425b2cd2d76b55dacc189afa098568774 ;
+    aux:eo_object res:object-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a ;
+    aux:qualifier "event_object" .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_0170e3dd927783790567b4462033b84b0d470513 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_0170e3dd927783790567b4462033b84b0d470513 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_04a8022e66cff1ce7cef1e924f251ac4c557370e a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_04a8022e66cff1ce7cef1e924f251ac4c557370e .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_04b8782cf3cf3717fb6ebe3e4b4816d53075f89a a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_04b8782cf3cf3717fb6ebe3e4b4816d53075f89a .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_09aa045da596386f42c2ae54ff904525bc988b1a a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_09aa045da596386f42c2ae54ff904525bc988b1a .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_0de35d96557c582967897663e37e45ebb14c773e a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_0de35d96557c582967897663e37e45ebb14c773e .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_1249040d78c2e8257aa146460eb0d9b0aaf0b43a a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_1249040d78c2e8257aa146460eb0d9b0aaf0b43a .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_157f3267f69ce5175542de5b557c74e19f60d2d5 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_157f3267f69ce5175542de5b557c74e19f60d2d5 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_158e88867acada3f8cb74bd51629fa9bbf9ae776 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_158e88867acada3f8cb74bd51629fa9bbf9ae776 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_1688acf8b15d1a3d54a749860ab8fe3c87e57807 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_1688acf8b15d1a3d54a749860ab8fe3c87e57807 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_1844f9a200bb484728909c7f46845d78b5bce4e2 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_1844f9a200bb484728909c7f46845d78b5bce4e2 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_1a3ed444fe513ced23c90178f635b04d0afaacc9 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_1a3ed444fe513ced23c90178f635b04d0afaacc9 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_1b9ae0c0945f3ea7b1f440c9958c631b3d497f39 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_1b9ae0c0945f3ea7b1f440c9958c631b3d497f39 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_1f77e70f748aa78d90cf350ba1c87fbf0e7bcfcb a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_1f77e70f748aa78d90cf350ba1c87fbf0e7bcfcb .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_24da35b6137f2a6d47e11a2c8f4e4b3f24928228 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_24da35b6137f2a6d47e11a2c8f4e4b3f24928228 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_290974dd39e25f1a44fa491e0011d30a6804cde9 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_290974dd39e25f1a44fa491e0011d30a6804cde9 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_29720b9407646dbff3d086686b8b77f080ebc480 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_29720b9407646dbff3d086686b8b77f080ebc480 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_2e1c6ad9a7fa9abb9a13133e944ffe3567e10fd0 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_2e1c6ad9a7fa9abb9a13133e944ffe3567e10fd0 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_2e286774d6b01dcfd0831fe376802a1df655c29e a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_2e286774d6b01dcfd0831fe376802a1df655c29e .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_2e30271721767a6a657814326659a4c02194eeb9 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_2e30271721767a6a657814326659a4c02194eeb9 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_2eda3b1c38e9ca8e5a8c99d7f4b4020aec0be2f7 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_2eda3b1c38e9ca8e5a8c99d7f4b4020aec0be2f7 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_306a0c25c3a61151622015794f819f864169a8ed a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_306a0c25c3a61151622015794f819f864169a8ed .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_3ab98b1639410aea9c2d637cf0247881e10d9b03 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_3ab98b1639410aea9c2d637cf0247881e10d9b03 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_3b411c7e5c8fc85d21ff3bc0b542bfa0d6836112 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_3b411c7e5c8fc85d21ff3bc0b542bfa0d6836112 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_3f9928a9342b4e2238b360ad3947fd275ad65194 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_3f9928a9342b4e2238b360ad3947fd275ad65194 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_43bcda30c1c5960799221cfbc9fa9e97fb7be4eb a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_43bcda30c1c5960799221cfbc9fa9e97fb7be4eb .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_4490d2c21fa0b4f6898a447157c9b69d7aad10ae a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_4490d2c21fa0b4f6898a447157c9b69d7aad10ae .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_4756bf34dbe0a9828a341ab6666e0f8469eb6393 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_4756bf34dbe0a9828a341ab6666e0f8469eb6393 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_487d30de0d9631a14edead019ebc2b1a57ead446 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_487d30de0d9631a14edead019ebc2b1a57ead446 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_4af01145e716cebe01c363d0818e057a3c5760e7 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_4af01145e716cebe01c363d0818e057a3c5760e7 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_4c153dce8043bb87ac2066a17c100946eea1fc90 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_4c153dce8043bb87ac2066a17c100946eea1fc90 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_4cd3f2a946fb439722f01a90b18bc2ac9d35f46f a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_4cd3f2a946fb439722f01a90b18bc2ac9d35f46f .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_4fa218506c30bdacec35248452725ba0070c731c a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_4fa218506c30bdacec35248452725ba0070c731c .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_502208ca8d03ca646993cfb3bffc8a430c279e1c a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_502208ca8d03ca646993cfb3bffc8a430c279e1c .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_520b74d0304ba4b6e9e4c0471907bfeda1259715 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_520b74d0304ba4b6e9e4c0471907bfeda1259715 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_52458d0fc60960c99177f05644888ebaa935038f a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_52458d0fc60960c99177f05644888ebaa935038f .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_5484fd691199e252de2579e4fd59e68d6a8f1636 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_5484fd691199e252de2579e4fd59e68d6a8f1636 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_58fe0a2a5fa29053cb6141bce220d67fd0874ada a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_58fe0a2a5fa29053cb6141bce220d67fd0874ada .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_5ab730b682ca6bada92ebbb2a654bcd42a9337b2 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_5ab730b682ca6bada92ebbb2a654bcd42a9337b2 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_5af5513187f72df8ee4b4efc63a1e79cac776c09 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_5af5513187f72df8ee4b4efc63a1e79cac776c09 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_5e7a69e9d6f99eac9ca7a85f33cc11c8ff25b17f a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_5e7a69e9d6f99eac9ca7a85f33cc11c8ff25b17f .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_627185256e06218dbfb93580128c599f4a3d565a a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_627185256e06218dbfb93580128c599f4a3d565a .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_6699e3e64fe298617a009298b9545992d48202dd a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_6699e3e64fe298617a009298b9545992d48202dd .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_6ddcf195c236d01ea34db58d1d549977f3da4c45 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_6ddcf195c236d01ea34db58d1d549977f3da4c45 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_70424a36d2c8abaa37167e3c9a400fe4cc27bc4b a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_70424a36d2c8abaa37167e3c9a400fe4cc27bc4b .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_707acd81b48bfef9869621a93ca67094ddbb3033 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_707acd81b48bfef9869621a93ca67094ddbb3033 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_71c5d3512e04aa5aa146cf8203d9cbea1990965b a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_71c5d3512e04aa5aa146cf8203d9cbea1990965b .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_7579aa30e5f50375ca56ec9204495a5751c588b0 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_7579aa30e5f50375ca56ec9204495a5751c588b0 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_7d21735e0309de60b1b1962c2c88af06720c0f55 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_7d21735e0309de60b1b1962c2c88af06720c0f55 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_7d29734b15f5f494eed10a4411db3245df0b6fe2 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_7d29734b15f5f494eed10a4411db3245df0b6fe2 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_7f2ca85dc493eeea79235642f8ec163ff6d52100 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_7f2ca85dc493eeea79235642f8ec163ff6d52100 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_80f731b28d42cc3ae83191cf185138983ea39009 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_80f731b28d42cc3ae83191cf185138983ea39009 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_83137a35e82e93b05c3a3dab0902c9d2c6ad7c85 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_83137a35e82e93b05c3a3dab0902c9d2c6ad7c85 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_833116b4eec8566f62ba05b9f63e4f3b49c7f011 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_833116b4eec8566f62ba05b9f63e4f3b49c7f011 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_83ca100589dce5e4c2b489864b1c7266dc95a4ac a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_83ca100589dce5e4c2b489864b1c7266dc95a4ac .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_87648db196afcb34271dd1f786630209d953c092 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_87648db196afcb34271dd1f786630209d953c092 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_8878207cd509f24f4fc512476f73eff168fec2e2 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_8878207cd509f24f4fc512476f73eff168fec2e2 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_88ef9e8fbf0bcad9f07eb0e2b4ec9b53b73acba3 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_88ef9e8fbf0bcad9f07eb0e2b4ec9b53b73acba3 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_8960e15f06b299df992024956e4f82dcde812ed6 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_8960e15f06b299df992024956e4f82dcde812ed6 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_8ab6a0a618401dc12477059bcbb515cfdc81bd3a a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_8ab6a0a618401dc12477059bcbb515cfdc81bd3a .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_90dba047e960f269832323f9bee3aa7dded36850 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_90dba047e960f269832323f9bee3aa7dded36850 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_94cabd2b37699473207593aed0cc29b57a549a74 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_94cabd2b37699473207593aed0cc29b57a549a74 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_9717ac23926918b3f56bc00fa3cafc49bb13e3c1 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_9717ac23926918b3f56bc00fa3cafc49bb13e3c1 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_97afbfc9018210f3f3fcd0309d2707ce1606a6de a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_97afbfc9018210f3f3fcd0309d2707ce1606a6de .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_98814c10c269098ed605ca29d150195a44a4fdb8 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_98814c10c269098ed605ca29d150195a44a4fdb8 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_995017b834a879515b6e1cd2aadc7672bd0b90a9 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_995017b834a879515b6e1cd2aadc7672bd0b90a9 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_9dbd31fdd2d60b5418e1fc9bf8e5d1d4b1a1a4eb a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_9dbd31fdd2d60b5418e1fc9bf8e5d1d4b1a1a4eb .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_a3b2e428faa094386b7cee37bb1d49abf5e8fcc6 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_a3b2e428faa094386b7cee37bb1d49abf5e8fcc6 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_a766d4daedb8f01b1d117e5997bdbc02344d51be a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_a766d4daedb8f01b1d117e5997bdbc02344d51be .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_a9320af06650fe9ae0480690c4be1fc8657ff838 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_a9320af06650fe9ae0480690c4be1fc8657ff838 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_aa239535dc8808e1ffcd5c0741dd40811c3f982b a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_aa239535dc8808e1ffcd5c0741dd40811c3f982b .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_b03624fd676ab19a8ad4305c683cb0ad854cca14 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_b03624fd676ab19a8ad4305c683cb0ad854cca14 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_b879381733f8aec27f74e2c278c111fc760322c6 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_b879381733f8aec27f74e2c278c111fc760322c6 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_ba3a8e7b53da8f3e22e80aa82ddb4e3a01230832 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_ba3a8e7b53da8f3e22e80aa82ddb4e3a01230832 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_bcc0c3d38e71efbe13905a02b90d8557673429f9 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_bcc0c3d38e71efbe13905a02b90d8557673429f9 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_bd6bec65bafc36279c55d6c14e8649d722d2ef1f a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_bd6bec65bafc36279c55d6c14e8649d722d2ef1f .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_bf846bb75095ca09e6261bc69ff7a767c849e352 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_bf846bb75095ca09e6261bc69ff7a767c849e352 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_c06f6f4a372002b86ba7194c94f62ddb1c21b966 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_c06f6f4a372002b86ba7194c94f62ddb1c21b966 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_c1e45ceae1fd570accec8481a3fadc85d9d68246 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_c1e45ceae1fd570accec8481a3fadc85d9d68246 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_ca5104c8c61b8b002817cbbfcda11f3129cce53f a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_ca5104c8c61b8b002817cbbfcda11f3129cce53f .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_cf643108061daa42996e3803315ac74929732fa8 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_cf643108061daa42996e3803315ac74929732fa8 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_db4a7719a2b1db935742c003455946d3defb168f a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_db4a7719a2b1db935742c003455946d3defb168f .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_dc0b6bb90fe2d51e62f2803655bf135fccc4d477 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_dc0b6bb90fe2d51e62f2803655bf135fccc4d477 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_e2d7207cc7bcb773fe8468cd07fa930385b16391 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_e2d7207cc7bcb773fe8468cd07fa930385b16391 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_e3767c093bb895dec69071b6ffbb27b64e5fba8f a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_e3767c093bb895dec69071b6ffbb27b64e5fba8f .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_e498caeb0f71958c0bfd88daa6f17ccbba517035 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_e498caeb0f71958c0bfd88daa6f17ccbba517035 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_e4c0e0f18173bfbc9a893927f2c9c352b374cd09 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_e4c0e0f18173bfbc9a893927f2c9c352b374cd09 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_e4fca5838a2041d5dad53d52c422cf25d5c8e44a a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_e4fca5838a2041d5dad53d52c422cf25d5c8e44a .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_e5734d5ea734cc8f78196d5ee2fd186d48efaccd a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_e5734d5ea734cc8f78196d5ee2fd186d48efaccd .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_e69d4e3215971715551570d47255852d2bc4a688 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_e69d4e3215971715551570d47255852d2bc4a688 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_ec70e0a2bf2d5e927a212e6ce74ba0cfd1c232d2 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_ec70e0a2bf2d5e927a212e6ce74ba0cfd1c232d2 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_ece9eece9c417996343a353a345f297fb96d7496 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_ece9eece9c417996343a353a345f297fb96d7496 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_ef032360e8fd59e08a20ff8c02aeedc2ab174040 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_ef032360e8fd59e08a20ff8c02aeedc2ab174040 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_f064d7033b8919937d457f29985996f857cd3e8e a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_f064d7033b8919937d457f29985996f857cd3e8e .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_f093d408b3a0c3030c79b60e4f55e9560be1c1c4 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_f093d408b3a0c3030c79b60e4f55e9560be1c1c4 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_f1bde6df913e6354911819b7840fcf5c19079f12 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_f1bde6df913e6354911819b7840fcf5c19079f12 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_f370b98144e0c9bf96c877ff35417d69a2cf57ab a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_f370b98144e0c9bf96c877ff35417d69a2cf57ab .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_f377bc2d142a0cdde4149280a046413d8672b678 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_f377bc2d142a0cdde4149280a046413d8672b678 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_f3a9c16ab42b8cb8d234f169f493d924ac5bfd16 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_f3a9c16ab42b8cb8d234f169f493d924ac5bfd16 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_fb7c80fdb00d7a54303192c2b91fce55caff4342 a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_fb7c80fdb00d7a54303192c2b91fce55caff4342 .
+
+res:or-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38-o_2017_fd5f8b513f25a1152111a6e84c688fb550ccb50d a aux:ObjectRelation ;
+    aux:from res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 ;
+    aux:relation_type "case_object" ;
+    aux:to res:event-o_2017_fd5f8b513f25a1152111a6e84c688fb550ccb50d .
+
+res:ea-concept_name-A_Accepted a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "A_Accepted" .
+
+res:ea-concept_name-A_Cancelled a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "A_Cancelled" .
+
+res:ea-concept_name-A_Complete a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "A_Complete" .
+
+res:ea-concept_name-A_Concept a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "A_Concept" .
+
+res:ea-concept_name-A_Create%20Application a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "A_Create Application" .
+
+res:ea-concept_name-A_Submitted a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "A_Submitted" .
+
+res:ea-concept_name-O_Cancelled a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "O_Cancelled" .
+
+res:ea-concept_name-O_Create%20Offer a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "O_Create Offer" .
+
+res:ea-concept_name-O_Created a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "O_Created" .
+
+res:ea-concept_name-O_Sent%20%28mail%20and%20online%29 a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "O_Sent (mail and online)" .
+
+res:ea-lifecycle_transition-ate_abort a aux:EventAttribute ;
+    aux:event_attribute "lifecycle_transition" ;
+    aux:event_attribute_value "ate_abort" .
+
+res:ea-lifecycle_transition-withdraw a aux:EventAttribute ;
+    aux:event_attribute "lifecycle_transition" ;
+    aux:event_attribute_value "withdraw" .
+
+res:etype-A_Accepted%20complete a aux:EventType ;
+    rdfs:label "A_Accepted complete" .
+
+res:etype-A_Cancelled%20complete a aux:EventType ;
+    rdfs:label "A_Cancelled complete" .
+
+res:etype-A_Complete%20complete a aux:EventType ;
+    rdfs:label "A_Complete complete" .
+
+res:etype-A_Concept%20complete a aux:EventType ;
+    rdfs:label "A_Concept complete" .
+
+res:etype-A_Create%20Application%20complete a aux:EventType ;
+    rdfs:label "A_Create Application complete" .
+
+res:etype-A_Submitted%20complete a aux:EventType ;
+    rdfs:label "A_Submitted complete" .
+
+res:etype-O_Cancelled%20complete a aux:EventType ;
+    rdfs:label "O_Cancelled complete" .
+
+res:etype-O_Create%20Offer%20complete a aux:EventType ;
+    rdfs:label "O_Create Offer complete" .
+
+res:etype-O_Created%20complete a aux:EventType ;
+    rdfs:label "O_Created complete" .
+
+res:etype-O_Sent%20%28mail%20and%20online%29%20complete a aux:EventType ;
+    rdfs:label "O_Sent (mail and online) complete" .
+
+res:etype-W_Call%20after%20offers%20ate_abort a aux:EventType ;
+    rdfs:label "W_Call after offers ate_abort" .
+
+res:etype-W_Call%20after%20offers%20resume a aux:EventType ;
+    rdfs:label "W_Call after offers resume" .
+
+res:etype-W_Call%20after%20offers%20schedule a aux:EventType ;
+    rdfs:label "W_Call after offers schedule" .
+
+res:etype-W_Call%20after%20offers%20start a aux:EventType ;
+    rdfs:label "W_Call after offers start" .
+
+res:etype-W_Complete%20application%20complete a aux:EventType ;
+    rdfs:label "W_Complete application complete" .
+
+res:etype-W_Complete%20application%20schedule a aux:EventType ;
+    rdfs:label "W_Complete application schedule" .
+
+res:etype-W_Complete%20application%20start a aux:EventType ;
+    rdfs:label "W_Complete application start" .
+
+res:etype-W_Handle%20leads%20schedule a aux:EventType ;
+    rdfs:label "W_Handle leads schedule" .
+
+res:etype-W_Handle%20leads%20withdraw a aux:EventType ;
+    rdfs:label "W_Handle leads withdraw" .
+
+res:oa-Accepted-true a aux:ObjectAttribute ;
+    aux:object_attribute "Accepted" ;
+    aux:object_attribute_value "true" .
+
+res:oa-Action-Created a aux:ObjectAttribute ;
+    aux:object_attribute "Action" ;
+    aux:object_attribute_value "Created" .
+
+res:oa-Action-Deleted a aux:ObjectAttribute ;
+    aux:object_attribute "Action" ;
+    aux:object_attribute_value "Deleted" .
+
+res:oa-Action-Obtained a aux:ObjectAttribute ;
+    aux:object_attribute "Action" ;
+    aux:object_attribute_value "Obtained" .
+
+res:oa-Action-Released a aux:ObjectAttribute ;
+    aux:object_attribute "Action" ;
+    aux:object_attribute_value "Released" .
+
+res:oa-Action-statechange a aux:ObjectAttribute ;
+    aux:object_attribute "Action" ;
+    aux:object_attribute_value "statechange" .
+
+res:oa-ApplicationType-New%20credit a aux:ObjectAttribute ;
+    aux:object_attribute "ApplicationType" ;
+    aux:object_attribute_value "New credit" .
+
+res:oa-CreditScore-0 a aux:ObjectAttribute ;
+    aux:object_attribute "CreditScore" ;
+    aux:object_attribute_value "0" .
+
+res:oa-EventID-ApplState_1855507567 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "ApplState_1855507567" .
+
+res:oa-EventID-ApplState_532616550 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "ApplState_532616550" .
+
+res:oa-EventID-ApplState_594539727 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "ApplState_594539727" .
+
+res:oa-EventID-ApplState_899826364 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "ApplState_899826364" .
+
+res:oa-EventID-ApplState_921991742 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "ApplState_921991742" .
+
+res:oa-EventID-Application_1966208034 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "Application_1966208034" .
+
+res:oa-EventID-OfferState_1205213001 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "OfferState_1205213001" .
+
+res:oa-EventID-OfferState_2048366699 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "OfferState_2048366699" .
+
+res:oa-EventID-OfferState_684087014 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "OfferState_684087014" .
+
+res:oa-EventID-Offer_1967986467 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "Offer_1967986467" .
+
+res:oa-EventID-Workitem_104001810 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "Workitem_104001810" .
+
+res:oa-EventID-Workitem_1074376093 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "Workitem_1074376093" .
+
+res:oa-EventID-Workitem_125509469 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "Workitem_125509469" .
+
+res:oa-EventID-Workitem_1401591527 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "Workitem_1401591527" .
+
+res:oa-EventID-Workitem_1712514593 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "Workitem_1712514593" .
+
+res:oa-EventID-Workitem_1828222550 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "Workitem_1828222550" .
+
+res:oa-EventID-Workitem_1931724944 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "Workitem_1931724944" .
+
+res:oa-EventID-Workitem_2009413784 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "Workitem_2009413784" .
+
+res:oa-EventID-Workitem_2073874350 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "Workitem_2073874350" .
+
+res:oa-EventID-Workitem_398723910 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "Workitem_398723910" .
+
+res:oa-EventID-Workitem_486705867 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "Workitem_486705867" .
+
+res:oa-EventID-Workitem_56311285 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "Workitem_56311285" .
+
+res:oa-EventID-Workitem_629680206 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "Workitem_629680206" .
+
+res:oa-EventID-Workitem_725447429 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "Workitem_725447429" .
+
+res:oa-EventID-Workitem_908904121 a aux:ObjectAttribute ;
+    aux:object_attribute "EventID" ;
+    aux:object_attribute_value "Workitem_908904121" .
+
+res:oa-EventOrigin-Application a aux:ObjectAttribute ;
+    aux:object_attribute "EventOrigin" ;
+    aux:object_attribute_value "Application" .
+
+res:oa-EventOrigin-Offer a aux:ObjectAttribute ;
+    aux:object_attribute "EventOrigin" ;
+    aux:object_attribute_value "Offer" .
+
+res:oa-EventOrigin-Workflow a aux:ObjectAttribute ;
+    aux:object_attribute "EventOrigin" ;
+    aux:object_attribute_value "Workflow" .
+
+res:oa-FirstWithdrawalAmount-0.0 a aux:ObjectAttribute ;
+    aux:object_attribute "FirstWithdrawalAmount" ;
+    aux:object_attribute_value "0.0" .
+
+res:oa-LoanGoal-Remaining%20debt%20home a aux:ObjectAttribute ;
+    aux:object_attribute "LoanGoal" ;
+    aux:object_attribute_value "Remaining debt home" .
+
+res:oa-MonthlyCost-400.0 a aux:ObjectAttribute ;
+    aux:object_attribute "MonthlyCost" ;
+    aux:object_attribute_value "400.0" .
+
+res:oa-NumberOfTerms-126 a aux:ObjectAttribute ;
+    aux:object_attribute "NumberOfTerms" ;
+    aux:object_attribute_value "126" .
+
+res:oa-OfferID-Offer_1967986467 a aux:ObjectAttribute ;
+    aux:object_attribute "OfferID" ;
+    aux:object_attribute_value "Offer_1967986467" .
+
+res:oa-OfferedAmount-40000.0 a aux:ObjectAttribute ;
+    aux:object_attribute "OfferedAmount" ;
+    aux:object_attribute_value "40000.0" .
+
+res:oa-RequestedAmount-40000.0 a aux:ObjectAttribute ;
+    aux:object_attribute "RequestedAmount" ;
+    aux:object_attribute_value "40000.0" .
+
+res:oa-Selected-false a aux:ObjectAttribute ;
+    aux:object_attribute "Selected" ;
+    aux:object_attribute_value "false" .
+
+res:oa-concept%3Aname-Application_1966208034 a aux:ObjectAttribute ;
+    aux:object_attribute "concept:name" ;
+    aux:object_attribute_value "Application_1966208034" .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Activity%20%27A_Accepted%27%20completed%20by%20User_19.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Activity 'A_Accepted' completed by User_19." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Activity%20%27A_Cancelled%27%20completed%20by%20User_1.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Activity 'A_Cancelled' completed by User_1." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Activity%20%27A_Complete%27%20completed%20by%20User_19.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Activity 'A_Complete' completed by User_19." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Activity%20%27A_Concept%27%20completed%20by%20User_1.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Activity 'A_Concept' completed by User_1." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Activity%20%27A_Create%20Application%27%20completed%20by%20User_1.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Activity 'A_Create Application' completed by User_1." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Activity%20%27A_Submitted%27%20completed%20by%20User_1.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Activity 'A_Submitted' completed by User_1." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Organizational%20event%20%27O_Cancelled%27%20completed%20by%20User_1.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Organizational event 'O_Cancelled' completed by User_1." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Organizational%20event%20%27O_Create%20Offer%27%20completed%20by%20User_19.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Organizational event 'O_Create Offer' completed by User_19." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Organizational%20event%20%27O_Created%27%20completed%20by%20User_19.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Organizational event 'O_Created' completed by User_19." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Organizational%20event%20%27O_Sent%20%28mail%20and%20online%29%27%20completed%20by%20User_19.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Organizational event 'O_Sent (mail and online)' completed by User_19." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Call%20after%20offers%27%20occurred%20with%20the%20lifecycle%20transition%20%27ATE_ABORT%27%2C%20performed%20by%20User_1.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Worker activity 'W_Call after offers' occurred with the lifecycle transition 'ATE_ABORT', performed by User_1." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Call%20after%20offers%27%20occurred%20with%20the%20lifecycle%20transition%20%27RESUME%27%2C%20performed%20by%20User_19.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Worker activity 'W_Call after offers' occurred with the lifecycle transition 'RESUME', performed by User_19." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Call%20after%20offers%27%20occurred%20with%20the%20lifecycle%20transition%20%27SUSPEND%27%2C%20performed%20by%20User_19.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Worker activity 'W_Call after offers' occurred with the lifecycle transition 'SUSPEND', performed by User_19." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Call%20after%20offers%27%20scheduled%20for%20User_19.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Worker activity 'W_Call after offers' scheduled for User_19." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Call%20after%20offers%27%20started%2C%20performed%20by%20User_19.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Worker activity 'W_Call after offers' started, performed by User_19." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Complete%20application%27%20completed%20by%20User_19.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Worker activity 'W_Complete application' completed by User_19." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Complete%20application%27%20occurred%20with%20the%20lifecycle%20transition%20%27RESUME%27%2C%20performed%20by%20User_17.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Worker activity 'W_Complete application' occurred with the lifecycle transition 'RESUME', performed by User_17." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Complete%20application%27%20occurred%20with%20the%20lifecycle%20transition%20%27RESUME%27%2C%20performed%20by%20User_19.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Worker activity 'W_Complete application' occurred with the lifecycle transition 'RESUME', performed by User_19." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Complete%20application%27%20occurred%20with%20the%20lifecycle%20transition%20%27SUSPEND%27%2C%20performed%20by%20User_17.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Worker activity 'W_Complete application' occurred with the lifecycle transition 'SUSPEND', performed by User_17." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Complete%20application%27%20occurred%20with%20the%20lifecycle%20transition%20%27SUSPEND%27%2C%20performed%20by%20User_38.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Worker activity 'W_Complete application' occurred with the lifecycle transition 'SUSPEND', performed by User_38." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Complete%20application%27%20scheduled%20for%20User_1.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Worker activity 'W_Complete application' scheduled for User_1." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Complete%20application%27%20started%2C%20performed%20by%20User_38.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Worker activity 'W_Complete application' started, performed by User_38." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Handle%20leads%27%20occurred%20with%20the%20lifecycle%20transition%20%27WITHDRAW%27%2C%20performed%20by%20User_1.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Worker activity 'W_Handle leads' occurred with the lifecycle transition 'WITHDRAW', performed by User_1." .
+
+<https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Handle%20leads%27%20scheduled%20for%20User_1.> a aux:ObjectAttribute ;
+    aux:object_attribute "event_description" ;
+    aux:object_attribute_value "The Worker activity 'W_Handle leads' scheduled for User_1." .
+
+res:oa-org%3Aresource-User_1 a aux:ObjectAttribute ;
+    aux:object_attribute "org:resource" ;
+    aux:object_attribute_value "User_1" .
+
+res:oa-org%3Aresource-User_17 a aux:ObjectAttribute ;
+    aux:object_attribute "org:resource" ;
+    aux:object_attribute_value "User_17" .
+
+res:oa-org%3Aresource-User_19 a aux:ObjectAttribute ;
+    aux:object_attribute "org:resource" ;
+    aux:object_attribute_value "User_19" .
+
+res:oa-org%3Aresource-User_38 a aux:ObjectAttribute ;
+    aux:object_attribute "org:resource" ;
+    aux:object_attribute_value "User_38" .
+
+res:object-o_2017_0170e3dd927783790567b4462033b84b0d470513 a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-Offer_1967986467 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_04b8782cf3cf3717fb6ebe3e4b4816d53075f89a a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Complete%20application%27%20occurred%20with%20the%20lifecycle%20transition%20%27RESUME%27%2C%20performed%20by%20User_17.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_0de35d96557c582967897663e37e45ebb14c773e a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-OfferState_2048366699 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_157f3267f69ce5175542de5b557c74e19f60d2d5 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Complete%20application%27%20scheduled%20for%20User_1.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_158e88867acada3f8cb74bd51629fa9bbf9ae776 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Handle%20leads%27%20occurred%20with%20the%20lifecycle%20transition%20%27WITHDRAW%27%2C%20performed%20by%20User_1.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_1b9ae0c0945f3ea7b1f440c9958c631b3d497f39 a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-Workitem_725447429 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_290974dd39e25f1a44fa491e0011d30a6804cde9 a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-ApplState_594539727 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_29720b9407646dbff3d086686b8b77f080ebc480 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Complete%20application%27%20started%2C%20performed%20by%20User_38.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_2e1c6ad9a7fa9abb9a13133e944ffe3567e10fd0 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Call%20after%20offers%27%20started%2C%20performed%20by%20User_19.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_2e286774d6b01dcfd0831fe376802a1df655c29e a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-Workitem_1712514593 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_2e30271721767a6a657814326659a4c02194eeb9 a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-Workitem_398723910 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_3ab98b1639410aea9c2d637cf0247881e10d9b03 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Activity%20%27A_Concept%27%20completed%20by%20User_1.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_3b411c7e5c8fc85d21ff3bc0b542bfa0d6836112 a oced:Object ;
+    aux:hasObjectAttribute res:oa-Accepted-true ;
+    aux:instance_of res:otype-Accepted .
+
+res:object-o_2017_3f9928a9342b4e2238b360ad3947fd275ad65194 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Organizational%20event%20%27O_Sent%20%28mail%20and%20online%29%27%20completed%20by%20User_19.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_4490d2c21fa0b4f6898a447157c9b69d7aad10ae a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-Workitem_56311285 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_487d30de0d9631a14edead019ebc2b1a57ead446 a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-Workitem_486705867 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_4af01145e716cebe01c363d0818e057a3c5760e7 a oced:Object ;
+    aux:hasObjectAttribute res:oa-FirstWithdrawalAmount-0.0 ;
+    aux:instance_of res:otype-FirstWithdrawalAmount .
+
+res:object-o_2017_4fa218506c30bdacec35248452725ba0070c731c a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Complete%20application%27%20occurred%20with%20the%20lifecycle%20transition%20%27SUSPEND%27%2C%20performed%20by%20User_38.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_520b74d0304ba4b6e9e4c0471907bfeda1259715 a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-ApplState_921991742 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_52458d0fc60960c99177f05644888ebaa935038f a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-ApplState_1855507567 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_5484fd691199e252de2579e4fd59e68d6a8f1636 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Call%20after%20offers%27%20occurred%20with%20the%20lifecycle%20transition%20%27RESUME%27%2C%20performed%20by%20User_19.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_58fe0a2a5fa29053cb6141bce220d67fd0874ada a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-Workitem_1931724944 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_5e7a69e9d6f99eac9ca7a85f33cc11c8ff25b17f a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Call%20after%20offers%27%20scheduled%20for%20User_19.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_70424a36d2c8abaa37167e3c9a400fe4cc27bc4b a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-Workitem_908904121 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_707acd81b48bfef9869621a93ca67094ddbb3033 a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-Application_1966208034 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_71c5d3512e04aa5aa146cf8203d9cbea1990965b a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-Workitem_1074376093 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_7579aa30e5f50375ca56ec9204495a5751c588b0 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Complete%20application%27%20occurred%20with%20the%20lifecycle%20transition%20%27SUSPEND%27%2C%20performed%20by%20User_17.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_7d29734b15f5f494eed10a4411db3245df0b6fe2 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Organizational%20event%20%27O_Created%27%20completed%20by%20User_19.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_7f2ca85dc493eeea79235642f8ec163ff6d52100 a oced:Object ;
+    aux:hasObjectAttribute res:oa-Selected-false ;
+    aux:instance_of res:otype-Selected .
+
+res:object-o_2017_80f731b28d42cc3ae83191cf185138983ea39009 a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-Workitem_125509469 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_83137a35e82e93b05c3a3dab0902c9d2c6ad7c85 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Call%20after%20offers%27%20occurred%20with%20the%20lifecycle%20transition%20%27ATE_ABORT%27%2C%20performed%20by%20User_1.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_83ca100589dce5e4c2b489864b1c7266dc95a4ac a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Activity%20%27A_Create%20Application%27%20completed%20by%20User_1.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_87648db196afcb34271dd1f786630209d953c092 a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-ApplState_899826364 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_8878207cd509f24f4fc512476f73eff168fec2e2 a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-Workitem_104001810 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_90dba047e960f269832323f9bee3aa7dded36850 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Handle%20leads%27%20scheduled%20for%20User_1.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_995017b834a879515b6e1cd2aadc7672bd0b90a9 a oced:Object ;
+    aux:hasObjectAttribute res:oa-CreditScore-0 ;
+    aux:instance_of res:otype-CreditScore .
+
+res:object-o_2017_a3b2e428faa094386b7cee37bb1d49abf5e8fcc6 a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-OfferState_684087014 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_a766d4daedb8f01b1d117e5997bdbc02344d51be a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Activity%20%27A_Cancelled%27%20completed%20by%20User_1.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_a9320af06650fe9ae0480690c4be1fc8657ff838 a oced:Object ;
+    aux:hasObjectAttribute res:oa-OfferedAmount-40000.0 ;
+    aux:instance_of res:otype-OfferedAmount .
+
+res:object-o_2017_aa239535dc8808e1ffcd5c0741dd40811c3f982b a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-Workitem_2073874350 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_ba3a8e7b53da8f3e22e80aa82ddb4e3a01230832 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Complete%20application%27%20completed%20by%20User_19.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_bf846bb75095ca09e6261bc69ff7a767c849e352 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Complete%20application%27%20occurred%20with%20the%20lifecycle%20transition%20%27RESUME%27%2C%20performed%20by%20User_19.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_c06f6f4a372002b86ba7194c94f62ddb1c21b966 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Activity%20%27A_Submitted%27%20completed%20by%20User_1.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_ca5104c8c61b8b002817cbbfcda11f3129cce53f a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-ApplState_532616550 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_cf643108061daa42996e3803315ac74929732fa8 a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-OfferState_1205213001 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_db4a7719a2b1db935742c003455946d3defb168f a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-Workitem_1401591527 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_e2d7207cc7bcb773fe8468cd07fa930385b16391 a oced:Object ;
+    aux:hasObjectAttribute res:oa-NumberOfTerms-126 ;
+    aux:instance_of res:otype-NumberOfTerms .
+
+res:object-o_2017_e4c0e0f18173bfbc9a893927f2c9c352b374cd09 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Organizational%20event%20%27O_Create%20Offer%27%20completed%20by%20User_19.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_e5734d5ea734cc8f78196d5ee2fd186d48efaccd a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Organizational%20event%20%27O_Cancelled%27%20completed%20by%20User_1.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_ec70e0a2bf2d5e927a212e6ce74ba0cfd1c232d2 a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-Workitem_629680206 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_f064d7033b8919937d457f29985996f857cd3e8e a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-Workitem_1828222550 ;
+    aux:instance_of res:otype-EventID .
+
+res:object-o_2017_f093d408b3a0c3030c79b60e4f55e9560be1c1c4 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Activity%20%27A_Complete%27%20completed%20by%20User_19.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_f1bde6df913e6354911819b7840fcf5c19079f12 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Activity%20%27A_Accepted%27%20completed%20by%20User_19.> ;
+    aux:instance_of res:otype-event_description .
+
+res:object-o_2017_f370b98144e0c9bf96c877ff35417d69a2cf57ab a oced:Object ;
+    aux:hasObjectAttribute res:oa-MonthlyCost-400.0 ;
+    aux:instance_of res:otype-MonthlyCost .
+
+res:object-o_2017_f3a9c16ab42b8cb8d234f169f493d924ac5bfd16 a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventID-Workitem_2009413784 ;
+    aux:instance_of res:otype-EventID .
+
+res:otype-Accepted a aux:ObjectType ;
+    rdfs:label "Accepted" .
+
+res:otype-ApplicationType a aux:ObjectType ;
+    rdfs:label "ApplicationType" .
+
+res:otype-CreditScore a aux:ObjectType ;
+    rdfs:label "CreditScore" .
+
+res:otype-FirstWithdrawalAmount a aux:ObjectType ;
+    rdfs:label "FirstWithdrawalAmount" .
+
+res:otype-LoanGoal a aux:ObjectType ;
+    rdfs:label "LoanGoal" .
+
+res:otype-MonthlyCost a aux:ObjectType ;
+    rdfs:label "MonthlyCost" .
+
+res:otype-NumberOfTerms a aux:ObjectType ;
+    rdfs:label "NumberOfTerms" .
+
+res:otype-OfferID a aux:ObjectType ;
+    rdfs:label "OfferID" .
+
+res:otype-OfferedAmount a aux:ObjectType ;
+    rdfs:label "OfferedAmount" .
+
+res:otype-RequestedAmount a aux:ObjectType ;
+    rdfs:label "RequestedAmount" .
+
+res:otype-Selected a aux:ObjectType ;
+    rdfs:label "Selected" .
+
+res:otype-case a aux:ObjectType ;
+    rdfs:label "case" .
+
+res:ea-concept_name-W_Handle%20leads a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "W_Handle leads" .
+
+res:ea-lifecycle_transition-start a aux:EventAttribute ;
+    aux:event_attribute "lifecycle_transition" ;
+    aux:event_attribute_value "start" .
+
+res:etype-W_Call%20after%20offers%20suspend a aux:EventType ;
+    rdfs:label "W_Call after offers suspend" .
+
+res:etype-W_Complete%20application%20resume a aux:EventType ;
+    rdfs:label "W_Complete application resume" .
+
+res:etype-W_Complete%20application%20suspend a aux:EventType ;
+    rdfs:label "W_Complete application suspend" .
+
+res:object-o_2017_306a0c25c3a61151622015794f819f864169a8ed a oced:Object ;
+    aux:hasObjectAttribute res:oa-org%3Aresource-User_38 ;
+    aux:instance_of res:otype-org%3Aresource .
+
+res:object-o_2017_7d21735e0309de60b1b1962c2c88af06720c0f55 a oced:Object ;
+    aux:hasObjectAttribute res:oa-org%3Aresource-User_17 ;
+    aux:instance_of res:otype-org%3Aresource .
+
+res:object-o_2017_9717ac23926918b3f56bc00fa3cafc49bb13e3c1 a oced:Object ;
+    aux:hasObjectAttribute <https://w3id.org/ocedo/resource/oa-event_description-The%20Worker%20activity%20%27W_Call%20after%20offers%27%20occurred%20with%20the%20lifecycle%20transition%20%27SUSPEND%27%2C%20performed%20by%20User_19.> ;
+    aux:instance_of res:otype-event_description .
+
+res:ea-lifecycle_transition-resume a aux:EventAttribute ;
+    aux:event_attribute "lifecycle_transition" ;
+    aux:event_attribute_value "resume" .
+
+res:ea-lifecycle_transition-schedule a aux:EventAttribute ;
+    aux:event_attribute "lifecycle_transition" ;
+    aux:event_attribute_value "schedule" .
+
+res:object-o_2017_6ddcf195c236d01ea34db58d1d549977f3da4c45 a oced:Object ;
+    aux:hasObjectAttribute res:oa-OfferID-Offer_1967986467 ;
+    aux:instance_of res:otype-OfferID .
+
+res:object-o_2017_b879381733f8aec27f74e2c278c111fc760322c6 a oced:Object ;
+    aux:hasObjectAttribute res:oa-Action-Deleted ;
+    aux:instance_of res:otype-Action .
+
+res:otype-EventOrigin a aux:ObjectType ;
+    rdfs:label "EventOrigin" .
+
+res:ea-lifecycle_transition-suspend a aux:EventAttribute ;
+    aux:event_attribute "lifecycle_transition" ;
+    aux:event_attribute_value "suspend" .
+
+res:object-o_2017_09aa045da596386f42c2ae54ff904525bc988b1a a oced:Object ;
+    aux:hasObjectAttribute res:oa-Action-Released ;
+    aux:instance_of res:otype-Action .
+
+res:object-o_2017_dc0b6bb90fe2d51e62f2803655bf135fccc4d477 a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventOrigin-Offer ;
+    aux:instance_of res:otype-EventOrigin .
+
+res:otype-org%3Aresource a aux:ObjectType ;
+    rdfs:label "org:resource" .
+
+res:object-o_2017_5ab730b682ca6bada92ebbb2a654bcd42a9337b2 a oced:Object ;
+    aux:hasObjectAttribute res:oa-Action-Created ;
+    aux:instance_of res:otype-Action .
+
+res:object-o_2017_bcc0c3d38e71efbe13905a02b90d8557673429f9 a oced:Object ;
+    aux:hasObjectAttribute res:oa-Action-Obtained ;
+    aux:instance_of res:otype-Action .
+
+res:otype-Action a aux:ObjectType ;
+    rdfs:label "Action" .
+
+res:ea-concept_name-W_Call%20after%20offers a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "W_Call after offers" .
+
+res:event-e_2017_24c3543099000cb36646867a94a8f7c100d4720b a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Complete%20application,
+        res:ea-lifecycle_transition-suspend ;
+    aux:instance_of res:etype-W_Complete%20application%20suspend ;
+    oced:observed_at "2016-01-02T15:32:38.782000"^^xsd:dateTime .
+
+res:event-e_2017_2a6f5f40c0c0d3daa86770c6aa5b4d091ec71f3d a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Complete%20application,
+        res:ea-lifecycle_transition-complete ;
+    aux:instance_of res:etype-W_Complete%20application%20complete ;
+    oced:observed_at "2016-01-02T15:59:33.658000"^^xsd:dateTime .
+
+res:event-e_2017_2f7f92de051a65f24d4a57f70fb4556ee21ec29e a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Complete%20application,
+        res:ea-lifecycle_transition-schedule ;
+    aux:instance_of res:etype-W_Complete%20application%20schedule ;
+    oced:observed_at "2016-01-01T17:08:20.409000"^^xsd:dateTime .
+
+res:event-e_2017_31dba71be1cd0c732b3a8e57fe52089c9d77a747 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-A_Create%20Application,
+        res:ea-lifecycle_transition-complete ;
+    aux:instance_of res:etype-A_Create%20Application%20complete ;
+    oced:observed_at "2016-01-01T17:06:50.703000"^^xsd:dateTime .
+
+res:event-e_2017_3410df9042bb9830488655c483724842db78b72e a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Call%20after%20offers,
+        res:ea-lifecycle_transition-suspend ;
+    aux:instance_of res:etype-W_Call%20after%20offers%20suspend ;
+    oced:observed_at "2016-01-06T17:56:30.386000"^^xsd:dateTime .
+
+res:event-e_2017_3bb0d9425ac103744236c5a1dc5425f1e4fcda36 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Complete%20application,
+        res:ea-lifecycle_transition-resume ;
+    aux:instance_of res:etype-W_Complete%20application%20resume ;
+    oced:observed_at "2016-01-02T15:32:30.856000"^^xsd:dateTime .
+
+res:event-e_2017_40de9fa84687c8b960c2ef0607c96d5e39e4e8d0 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-A_Complete,
+        res:ea-lifecycle_transition-complete ;
+    aux:instance_of res:etype-A_Complete%20complete ;
+    oced:observed_at "2016-01-02T15:59:33.671000"^^xsd:dateTime .
+
+res:event-e_2017_57a71968b650a932b46e85a1b7658ff79ffc1069 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Handle%20leads,
+        res:ea-lifecycle_transition-schedule ;
+    aux:instance_of res:etype-W_Handle%20leads%20schedule ;
+    oced:observed_at "2016-01-01T17:06:51.139000"^^xsd:dateTime .
+
+res:event-e_2017_7680e94a9e58347b4cf789bfd3f1bcd2f929ebfe a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-A_Accepted,
+        res:ea-lifecycle_transition-complete ;
+    aux:instance_of res:etype-A_Accepted%20complete ;
+    oced:observed_at "2016-01-02T15:47:16.786000"^^xsd:dateTime .
+
+res:event-e_2017_782bf94aa609573b30df1a62a983577f59bf73b5 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Complete%20application,
+        res:ea-lifecycle_transition-suspend ;
+    aux:instance_of res:etype-W_Complete%20application%20suspend ;
+    oced:observed_at "2016-01-02T15:29:20.813000"^^xsd:dateTime .
+
+res:event-e_2017_7c2f2aa7b44472198c6b09184d8398251041be35 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Call%20after%20offers,
+        res:ea-lifecycle_transition-start ;
+    aux:instance_of res:etype-W_Call%20after%20offers%20start ;
+    oced:observed_at "2016-01-02T15:59:33.668000"^^xsd:dateTime .
+
+res:event-e_2017_7c7cba15580670157911ef33e68f16e51c38286a a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Complete%20application,
+        res:ea-lifecycle_transition-resume ;
+    aux:instance_of res:etype-W_Complete%20application%20resume ;
+    oced:observed_at "2016-01-02T15:37:21.106000"^^xsd:dateTime .
+
+res:event-e_2017_9e29441edbe3ddae1ba960bfce3deabed7653ede a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Handle%20leads,
+        res:ea-lifecycle_transition-withdraw ;
+    aux:instance_of res:etype-W_Handle%20leads%20withdraw ;
+    oced:observed_at "2016-01-01T17:08:20.399000"^^xsd:dateTime .
+
+res:event-e_2017_accc0da389bf416b161bc613ab256a5d2f3e21f4 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Call%20after%20offers,
+        res:ea-lifecycle_transition-schedule ;
+    aux:instance_of res:etype-W_Call%20after%20offers%20schedule ;
+    oced:observed_at "2016-01-02T15:59:33.666000"^^xsd:dateTime .
+
+res:event-e_2017_af5265e568f131711423d82c2cea7517f9115cc7 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Complete%20application,
+        res:ea-lifecycle_transition-start ;
+    aux:instance_of res:etype-W_Complete%20application%20start ;
+    oced:observed_at "2016-01-02T15:25:45.461000"^^xsd:dateTime .
+
+res:event-e_2017_b46339125f7f2d56252bf01b6c267cccf36e2043 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Call%20after%20offers,
+        res:ea-lifecycle_transition-ate_abort ;
+    aux:instance_of res:etype-W_Call%20after%20offers%20ate_abort ;
+    oced:observed_at "2016-02-02T07:00:21.973000"^^xsd:dateTime .
+
+res:event-e_2017_ccf25f148052488c96e58ad8b703284d447cf7cb a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-A_Cancelled,
+        res:ea-lifecycle_transition-complete ;
+    aux:instance_of res:etype-A_Cancelled%20complete ;
+    oced:observed_at "2016-02-02T07:00:21.918000"^^xsd:dateTime .
+
+res:event-e_2017_e004417163ab70c934b13982ecea84d7ee76eb02 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Call%20after%20offers,
+        res:ea-lifecycle_transition-resume ;
+    aux:instance_of res:etype-W_Call%20after%20offers%20resume ;
+    oced:observed_at "2016-01-06T17:55:53.756000"^^xsd:dateTime .
+
+res:event-e_2017_f5ac0c8eccf0cc375b9f24539c01251576717ea6 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-W_Call%20after%20offers,
+        res:ea-lifecycle_transition-suspend ;
+    aux:instance_of res:etype-W_Call%20after%20offers%20suspend ;
+    oced:observed_at "2016-01-02T16:04:36.801000"^^xsd:dateTime .
+
+res:event-e_2017_fa9514c81861aa0c9325a84d5884e596872a45a7 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-A_Submitted,
+        res:ea-lifecycle_transition-complete ;
+    aux:instance_of res:etype-A_Submitted%20complete ;
+    oced:observed_at "2016-01-01T17:06:50.748000"^^xsd:dateTime .
+
+res:event-e_2017_fbaf29e425b2cd2d76b55dacc189afa098568774 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-A_Concept,
+        res:ea-lifecycle_transition-complete ;
+    aux:instance_of res:etype-A_Concept%20complete ;
+    oced:observed_at "2016-01-01T17:08:20.419000"^^xsd:dateTime .
+
+res:object-o_2017_43bcda30c1c5960799221cfbc9fa9e97fb7be4eb a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventOrigin-Application ;
+    aux:instance_of res:otype-EventOrigin .
+
+res:ea-concept_name-W_Complete%20application a aux:EventAttribute ;
+    aux:event_attribute "concept_name" ;
+    aux:event_attribute_value "W_Complete application" .
+
+res:event-e_2017_2aa91cb6209e05815d7120002c97112ab0d301f5 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-O_Created,
+        res:ea-lifecycle_transition-complete ;
+    aux:instance_of res:etype-O_Created%20complete ;
+    oced:observed_at "2016-01-02T15:52:20.203000"^^xsd:dateTime .
+
+res:event-e_2017_a6b902f219de4a7694ab1a3543ccdc0d25f2737a a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-O_Cancelled,
+        res:ea-lifecycle_transition-complete ;
+    aux:instance_of res:etype-O_Cancelled%20complete ;
+    oced:observed_at "2016-02-02T07:00:21.963000"^^xsd:dateTime .
+
+res:event-e_2017_bbe1ad0043e3ab3e341b0f9cbfeb513226c2e9ec a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-O_Sent%20%28mail%20and%20online%29,
+        res:ea-lifecycle_transition-complete ;
+    aux:instance_of res:etype-O_Sent%20%28mail%20and%20online%29%20complete ;
+    oced:observed_at "2016-01-02T15:59:33.633000"^^xsd:dateTime .
+
+res:object-o_2017_bca0dd5b63fb2640dd1dbfb498fa77e64754ca4a a oced:Object ;
+    aux:hasObjectAttribute res:oa-Action-statechange ;
+    aux:instance_of res:otype-Action .
+
+res:object-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 a oced:Object ;
+    aux:hasObjectAttribute res:oa-org%3Aresource-User_1 ;
+    aux:instance_of res:otype-org%3Aresource .
+
+res:ea-lifecycle_transition-complete a aux:EventAttribute ;
+    aux:event_attribute "lifecycle_transition" ;
+    aux:event_attribute_value "complete" .
+
+res:object-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 a oced:Object ;
+    aux:hasObjectAttribute res:oa-org%3Aresource-User_19 ;
+    aux:instance_of res:otype-org%3Aresource .
+
+res:event-e_2017_21e41c26fb7539373dcd7849aa387e6a435ea2f6 a oced:Event ;
+    aux:hasEventAttribute res:ea-concept_name-O_Create%20Offer,
+        res:ea-lifecycle_transition-complete ;
+    aux:instance_of res:etype-O_Create%20Offer%20complete ;
+    oced:observed_at "2016-01-02T15:52:19.034000"^^xsd:dateTime .
+
+res:object-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a oced:Object ;
+    aux:hasObjectAttribute res:oa-EventOrigin-Workflow ;
+    aux:instance_of res:otype-EventOrigin .
+
+res:otype-event_description a aux:ObjectType ;
+    rdfs:label "event_description" .
+
+res:otype-EventID a aux:ObjectType ;
+    rdfs:label "EventID" .
+
+res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a oced:Object ;
+    aux:hasObjectAttribute res:oa-concept%3Aname-Application_1966208034 ;
+    aux:instance_of res:otype-case .
+
