@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<log xmlns="http://www.xes-standard.org/">
+<trace><string key="LoanGoal" value="Remaining debt home"></string>
+<string key="ApplicationType" value="New credit"></string>
+<string key="concept:name" value="Application_1966208034"></string><float key="RequestedAmount" value="40000.0"></float><event>
+<string key="Action" value="Created"></string>
+<string key="org:resource" value="User_1"></string>
+<string key="concept:name" value="A_Create Application"></string>
+<string key="EventOrigin" value="Application"></string>
+<string key="EventID" value="Application_1966208034"></string>
+<string key="lifecycle:transition" value="complete"></string><date key="time:timestamp" value="2016-01-01T17:06:50.703Z"></date>
+<string key="event_description" value="The Activity 'A_Create Application' completed by User_1." />
+</event>
+<event>
+<string key="Action" value="statechange"></string>
+<string key="org:resource" value="User_1"></string>
+<string key="concept:name" value="A_Submitted"></string>
+<string key="EventOrigin" value="Application"></string>
+<string key="EventID" value="ApplState_1855507567"></string>
+<string key="lifecycle:transition" value="complete"></string><date key="time:timestamp" value="2016-01-01T17:06:50.748Z"></date>
+<string key="event_description" value="The Activity 'A_Submitted' completed by User_1." />
+</event>
+<event>
+<string key="Action" value="Created"></string>
+<string key="org:resource" value="User_1"></string>
+<string key="concept:name" value="W_Handle leads"></string>
+<string key="EventOrigin" value="Workflow"></string>
+<string key="EventID" value="Workitem_908904121"></string>
+<string key="lifecycle:transition" value="schedule"></string><date key="time:timestamp" value="2016-01-01T17:06:51.139Z"></date>
+<string key="event_description" value="The Worker activity 'W_Handle leads' scheduled for User_1." />
+</event>
+<event>
+<string key="Action" value="Deleted"></string>
+<string key="org:resource" value="User_1"></string>
+<string key="concept:name" value="W_Handle leads"></string>
+<string key="EventOrigin" value="Workflow"></string>
+<string key="EventID" value="Workitem_1931724944"></string>
+<string key="lifecycle:transition" value="withdraw"></string><date key="time:timestamp" value="2016-01-01T17:08:20.399Z"></date>
+<string key="event_description" value="The Worker activity 'W_Handle leads' occurred with the lifecycle transition 'WITHDRAW', performed by User_1." />
+</event>
+<event>
+<string key="Action" value="Created"></string>
+<string key="org:resource" value="User_1"></string>
+<string key="concept:name" value="W_Complete application"></string>
+<string key="EventOrigin" value="Workflow"></string>
+<string key="EventID" value="Workitem_1828222550"></string>
+<string key="lifecycle:transition" value="schedule"></string><date key="time:timestamp" value="2016-01-01T17:08:20.409Z"></date>
+<string key="event_description" value="The Worker activity 'W_Complete application' scheduled for User_1." />
+</event>
+<event>
+<string key="Action" value="statechange"></string>
+<string key="org:resource" value="User_1"></string>
+<string key="concept:name" value="A_Concept"></string>
+<string key="EventOrigin" value="Application"></string>
+<string key="EventID" value="ApplState_594539727"></string>
+<string key="lifecycle:transition" value="complete"></string><date key="time:timestamp" value="2016-01-01T17:08:20.419Z"></date>
+<string key="event_description" value="The Activity 'A_Concept' completed by User_1." />
+</event>
+<event>
+<string key="Action" value="Obtained"></string>
+<string key="org:resource" value="User_38"></string>
+<string key="concept:name" value="W_Complete application"></string>
+<string key="EventOrigin" value="Workflow"></string>
+<string key="EventID" value="Workitem_398723910"></string>
+<string key="lifecycle:transition" value="start"></string><date key="time:timestamp" value="2016-01-02T15:25:45.461Z"></date>
+<string key="event_description" value="The Worker activity 'W_Complete application' started, performed by User_38." />
+</event>
+<event>
+<string key="Action" value="Released"></string>
+<string key="org:resource" value="User_38"></string>
+<string key="concept:name" value="W_Complete application"></string>
+<string key="EventOrigin" value="Workflow"></string>
+<string key="EventID" value="Workitem_125509469"></string>
+<string key="lifecycle:transition" value="suspend"></string><date key="time:timestamp" value="2016-01-02T15:29:20.813Z"></date>
+<string key="event_description" value="The Worker activity 'W_Complete application' occurred with the lifecycle transition 'SUSPEND', performed by User_38." />
+</event>
+<event>
+<string key="Action" value="Obtained"></string>
+<string key="org:resource" value="User_17"></string>
+<string key="concept:name" value="W_Complete application"></string>
+<string key="EventOrigin" value="Workflow"></string>
+<string key="EventID" value="Workitem_725447429"></string>
+<string key="lifecycle:transition" value="resume"></string><date key="time:timestamp" value="2016-01-02T15:32:30.856Z"></date>
+<string key="event_description" value="The Worker activity 'W_Complete application' occurred with the lifecycle transition 'RESUME', performed by User_17." />
+</event>
+<event>
+<string key="Action" value="Released"></string>
+<string key="org:resource" value="User_17"></string>
+<string key="concept:name" value="W_Complete application"></string>
+<string key="EventOrigin" value="Workflow"></string>
+<string key="EventID" value="Workitem_1074376093"></string>
+<string key="lifecycle:transition" value="suspend"></string><date key="time:timestamp" value="2016-01-02T15:32:38.782Z"></date>
+<string key="event_description" value="The Worker activity 'W_Complete application' occurred with the lifecycle transition 'SUSPEND', performed by User_17." />
+</event>
+<event>
+<string key="Action" value="Obtained"></string>
+<string key="org:resource" value="User_19"></string>
+<string key="concept:name" value="W_Complete application"></string>
+<string key="EventOrigin" value="Workflow"></string>
+<string key="EventID" value="Workitem_56311285"></string>
+<string key="lifecycle:transition" value="resume"></string><date key="time:timestamp" value="2016-01-02T15:37:21.106Z"></date>
+<string key="event_description" value="The Worker activity 'W_Complete application' occurred with the lifecycle transition 'RESUME', performed by User_19." />
+</event>
+<event>
+<string key="Action" value="statechange"></string>
+<string key="org:resource" value="User_19"></string>
+<string key="concept:name" value="A_Accepted"></string>
+<string key="EventOrigin" value="Application"></string>
+<string key="EventID" value="ApplState_532616550"></string>
+<string key="lifecycle:transition" value="complete"></string><date key="time:timestamp" value="2016-01-02T15:47:16.786Z"></date>
+<string key="event_description" value="The Activity 'A_Accepted' completed by User_19." />
+</event>
+<event>
+<string key="Action" value="Created"></string><float key="FirstWithdrawalAmount" value="0.0"></float><int key="NumberOfTerms" value="126"></int><boolean key="Accepted" value="true"></boolean><date key="time:timestamp" value="2016-01-02T15:52:19.034Z"></date><string key="org:resource" value="User_19"></string>
+<string key="concept:name" value="O_Create Offer"></string><float key="MonthlyCost" value="400.0"></float><string key="EventOrigin" value="Offer"></string>
+<string key="EventID" value="Offer_1967986467"></string><boolean key="Selected" value="false"></boolean><int key="CreditScore" value="0"></int><string key="lifecycle:transition" value="complete"></string><float key="OfferedAmount" value="40000.0"></float>
+<string key="event_description" value="The Organizational event 'O_Create Offer' completed by User_19." />
+</event>
+<event>
+<string key="OfferID" value="Offer_1967986467"></string>
+<string key="Action" value="statechange"></string>
+<string key="org:resource" value="User_19"></string>
+<string key="concept:name" value="O_Created"></string>
+<string key="EventOrigin" value="Offer"></string>
+<string key="EventID" value="OfferState_1205213001"></string>
+<string key="lifecycle:transition" value="complete"></string><date key="time:timestamp" value="2016-01-02T15:52:20.203Z"></date>
+<string key="event_description" value="The Organizational event 'O_Created' completed by User_19." />
+</event>
+<event>
+<string key="OfferID" value="Offer_1967986467"></string>
+<string key="Action" value="statechange"></string>
+<string key="org:resource" value="User_19"></string>
+<string key="concept:name" value="O_Sent (mail and online)"></string>
+<string key="EventOrigin" value="Offer"></string>
+<string key="EventID" value="OfferState_684087014"></string>
+<string key="lifecycle:transition" value="complete"></string><date key="time:timestamp" value="2016-01-02T15:59:33.633Z"></date>
+<string key="event_description" value="The Organizational event 'O_Sent (mail and online)' completed by User_19." />
+</event>
+<event>
+<string key="Action" value="Deleted"></string>
+<string key="org:resource" value="User_19"></string>
+<string key="concept:name" value="W_Complete application"></string>
+<string key="EventOrigin" value="Workflow"></string>
+<string key="EventID" value="Workitem_486705867"></string>
+<string key="lifecycle:transition" value="complete"></string><date key="time:timestamp" value="2016-01-02T15:59:33.658Z"></date>
+<string key="event_description" value="The Worker activity 'W_Complete application' completed by User_19." />
+</event>
+<event>
+<string key="Action" value="Created"></string>
+<string key="org:resource" value="User_19"></string>
+<string key="concept:name" value="W_Call after offers"></string>
+<string key="EventOrigin" value="Workflow"></string>
+<string key="EventID" value="Workitem_2009413784"></string>
+<string key="lifecycle:transition" value="schedule"></string><date key="time:timestamp" value="2016-01-02T15:59:33.666Z"></date>
+<string key="event_description" value="The Worker activity 'W_Call after offers' scheduled for User_19." />
+</event>
+<event>
+<string key="Action" value="Obtained"></string>
+<string key="org:resource" value="User_19"></string>
+<string key="concept:name" value="W_Call after offers"></string>
+<string key="EventOrigin" value="Workflow"></string>
+<string key="EventID" value="Workitem_629680206"></string>
+<string key="lifecycle:transition" value="start"></string><date key="time:timestamp" value="2016-01-02T15:59:33.668Z"></date>
+<string key="event_description" value="The Worker activity 'W_Call after offers' started, performed by User_19." />
+</event>
+<event>
+<string key="Action" value="statechange"></string>
+<string key="org:resource" value="User_19"></string>
+<string key="concept:name" value="A_Complete"></string>
+<string key="EventOrigin" value="Application"></string>
+<string key="EventID" value="ApplState_899826364"></string>
+<string key="lifecycle:transition" value="complete"></string><date key="time:timestamp" value="2016-01-02T15:59:33.671Z"></date>
+<string key="event_description" value="The Activity 'A_Complete' completed by User_19." />
+</event>
+<event>
+<string key="Action" value="Released"></string>
+<string key="org:resource" value="User_19"></string>
+<string key="concept:name" value="W_Call after offers"></string>
+<string key="EventOrigin" value="Workflow"></string>
+<string key="EventID" value="Workitem_1712514593"></string>
+<string key="lifecycle:transition" value="suspend"></string><date key="time:timestamp" value="2016-01-02T16:04:36.801Z"></date>
+<string key="event_description" value="The Worker activity 'W_Call after offers' occurred with the lifecycle transition 'SUSPEND', performed by User_19." />
+</event>
+<event>
+<string key="Action" value="Obtained"></string>
+<string key="org:resource" value="User_19"></string>
+<string key="concept:name" value="W_Call after offers"></string>
+<string key="EventOrigin" value="Workflow"></string>
+<string key="EventID" value="Workitem_2073874350"></string>
+<string key="lifecycle:transition" value="resume"></string><date key="time:timestamp" value="2016-01-06T17:55:53.756Z"></date>
+<string key="event_description" value="The Worker activity 'W_Call after offers' occurred with the lifecycle transition 'RESUME', performed by User_19." />
+</event>
+<event>
+<string key="Action" value="Released"></string>
+<string key="org:resource" value="User_19"></string>
+<string key="concept:name" value="W_Call after offers"></string>
+<string key="EventOrigin" value="Workflow"></string>
+<string key="EventID" value="Workitem_1401591527"></string>
+<string key="lifecycle:transition" value="suspend"></string><date key="time:timestamp" value="2016-01-06T17:56:30.386Z"></date>
+<string key="event_description" value="The Worker activity 'W_Call after offers' occurred with the lifecycle transition 'SUSPEND', performed by User_19." />
+</event>
+<event>
+<string key="Action" value="statechange"></string>
+<string key="org:resource" value="User_1"></string>
+<string key="concept:name" value="A_Cancelled"></string>
+<string key="EventOrigin" value="Application"></string>
+<string key="EventID" value="ApplState_921991742"></string>
+<string key="lifecycle:transition" value="complete"></string><date key="time:timestamp" value="2016-02-02T07:00:21.918Z"></date>
+<string key="event_description" value="The Activity 'A_Cancelled' completed by User_1." />
+ </event>
+<event>
+<string key="OfferID" value="Offer_1967986467"></string>
+<string key="Action" value="statechange"></string>
+<string key="org:resource" value="User_1"></string>
+<string key="concept:name" value="O_Cancelled"></string>
+<string key="EventOrigin" value="Offer"></string>
+<string key="EventID" value="OfferState_2048366699"></string>
+<string key="lifecycle:transition" value="complete"></string><date key="time:timestamp" value="2016-02-02T07:00:21.963Z"></date>
+<string key="event_description" value="The Organizational event 'O_Cancelled' completed by User_1." />
+</event>
+<event>
+<string key="Action" value="Deleted"></string>
+<string key="org:resource" value="User_1"></string>
+<string key="concept:name" value="W_Call after offers"></string>
+<string key="EventOrigin" value="Workflow"></string>
+<string key="EventID" value="Workitem_104001810"></string>
+<string key="lifecycle:transition" value="ate_abort"></string><date key="time:timestamp" value="2016-02-02T07:00:21.973Z"></date>
+<string key="event_description" value="The Worker activity 'W_Call after offers' occurred with the lifecycle transition 'ATE_ABORT', performed by User_1." />
+</event>
+</trace>
+
+</log>
