@@ -111,11 +111,6 @@ ext:origin_of_Event a owl:ObjectProperty ;
     rdfs:domain oced:Event ;
     rdfs:range ext:EventOrigin .
 
-ext:part_of a owl:ObjectProperty ;
-    rdfs:label "ext:part_of" ;
-    rdfs:domain ext:OrgTeamMember ;
-    rdfs:range ext:Case .
-
 ext:requested_loan_amount_by_resource a owl:ObjectProperty ;
     rdfs:label "ext:requested_loan_amount_by_resource" ;
     rdfs:domain ext:Amount_Req ;
@@ -758,6 +753,9 @@ oced:event_attribute a owl:DatatypeProperty ;
     rdfs:domain oced:Event ;
     rdfs:range xsd:string .
 
+ext:Case a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2017 .
+
 ext:W_Call_after_offers_suspend a owl:Class ;
     rdfs:subClassOf ext:EventBPIC2017 .
 
@@ -768,23 +766,16 @@ ext:W_Complete_application_suspend a owl:Class ;
     rdfs:subClassOf ext:EventBPIC2017 .
 
 res:object-o_2017_306a0c25c3a61151622015794f819f864169a8ed a oced:Object,
-        ext:OrgTeamMember,
         ext:Resource ;
-    ext:org_resource "User_38" ;
-    ext:part_of res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 .
+    ext:org_resource "User_38" .
 
 res:object-o_2017_7d21735e0309de60b1b1962c2c88af06720c0f55 a oced:Object,
-        ext:OrgTeamMember,
         ext:Resource ;
-    ext:org_resource "User_17" ;
-    ext:part_of res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 .
+    ext:org_resource "User_17" .
 
 res:object-o_2017_9717ac23926918b3f56bc00fa3cafc49bb13e3c1 a oced:Object,
         ext:Event_description ;
     ext:event_description "The Worker activity 'W_Call after offers' occurred with the lifecycle transition 'SUSPEND', performed by User_19." .
-
-ext:Case a owl:Class ;
-    rdfs:subClassOf ext:ObjectBPIC2017 .
 
 res:object-o_2017_b879381733f8aec27f74e2c278c111fc760322c6 a oced:Object,
         ext:Action ;
@@ -798,9 +789,6 @@ ext:EventOrigin a owl:Class,
         owl:datatypeProperty ;
     rdfs:subClassOf ext:ObjectBPIC2017 ;
     rdfs:subPropertyOf oced:object_attribute .
-
-ext:OrgTeamMember a owl:Class ;
-    rdfs:subClassOf ext:ObjectBPIC2017 .
 
 res:object-o_2017_5ab730b682ca6bada92ebbb2a654bcd42a9337b2 a oced:Object,
         ext:Action ;
@@ -830,20 +818,16 @@ res:object-o_2017_dc0b6bb90fe2d51e62f2803655bf135fccc4d477 a oced:Object,
     ext:EventOrigin "Offer" .
 
 res:object-o_2017_82e33e08f81a5ee444ed23a0f8080b1ebb503d37 a oced:Object,
-        ext:OrgTeamMember,
         ext:Resource ;
-    ext:org_resource "User_1" ;
-    ext:part_of res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 .
+    ext:org_resource "User_1" .
 
 res:object-o_2017_43bcda30c1c5960799221cfbc9fa9e97fb7be4eb a oced:Object,
         ext:EventOrigin ;
     ext:EventOrigin "Application" .
 
 res:object-o_2017_d8e5f030668b20250c4a95f58b468f3aa2e05007 a oced:Object,
-        ext:OrgTeamMember,
         ext:Resource ;
-    ext:org_resource "User_19" ;
-    ext:part_of res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 .
+    ext:org_resource "User_19" .
 
 oced:object_attribute a owl:DatatypeProperty ;
     rdfs:label "object_attribute" ;
@@ -857,14 +841,14 @@ ext:EventBPIC2017 a owl:Class ;
 ext:Event_description a owl:Class ;
     rdfs:subClassOf ext:ObjectBPIC2017 .
 
+res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a oced:Object,
+        ext:Case ;
+    ext:concept_name "Application_1966208034" .
+
 ext:EventID a owl:Class,
         owl:datatypeProperty ;
     rdfs:subClassOf ext:ObjectBPIC2017 ;
     rdfs:subPropertyOf oced:object_attribute .
-
-res:object-o_2017_9fe84d3830280a855ed19af4750906e2fa81ac38 a oced:Object,
-        ext:Case ;
-    ext:concept_name "Application_1966208034" .
 
 res:object-o_2017_ed8e603b5c68c6cc50cb3497fa30cf03c895c49f a oced:Object,
         ext:EventOrigin ;
