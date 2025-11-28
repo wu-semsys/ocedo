@@ -1,5 +1,7 @@
 object1_class,object2_class,object1_type,object2_type,ext_relation
-"ext:TeamMember","ext:Location","org:resource","resource country","ext:located_in"
-"ext:TeamMember","ext:SupportTeam","org:resource","org:group","ext:part_of"
-"ext:SupportTeam","ext:ServiceCenter","org:group","organization involved","ext:part_of"
+"ext:TeamMember","ext:SupportTeam","org:resource","org:group","ext:works_in"
+"ext:SupportTeam","ext:Function","org:group","org:role","ext:is_part_of"
+"ext:Function","ext:ServiceCenter","org:role","organization involved","ext:is_within"
 "ext:ServiceCenter","ext:Location","organization involved","organization country","ext:located_in"
+"ext:Incident","ext:Impact","case","impact","ext:has_impact"
+"ext:Incident","ext:Product","case","product","ext:is_about_product"

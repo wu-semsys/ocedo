@@ -1,8 +1,8 @@
 object_type,ext_class,ext_relation
+"case","ext:Incident","ext:pertains_to"
 "product","ext:Product","ext:is_about_product"
-"org:role","ext:ProductFunction","ext:is_about_function"
 "impact","ext:Impact","ext:has_impact"
 "org:resource","ext:TeamMember","ext:handled_by_team_member"
 "org:group","ext:SupportTeam","ext:handled_by_support_team"
+"org:role","ext:Function","ext:is_handled_by_support_team_function"
 "organization involved","ext:ServiceCenter","ext:handled_in_service_center"
-"case","ext:Case","ext:event_case"

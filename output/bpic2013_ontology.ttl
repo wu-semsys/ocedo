@@ -33,25 +33,13 @@ ext:Accepted_In_Progress a owl:Class ;
 ext:Accepted_Wait a owl:Class ;
     rdfs:subClassOf ext:EventBPIC2013 .
 
-ext:Accepted_Wait_-_Customer a owl:Class ;
-    rdfs:subClassOf ext:EventBPIC2013 .
-
 ext:Accepted_Wait_-_Implementation a owl:Class ;
     rdfs:subClassOf ext:EventBPIC2013 .
 
 ext:Accepted_Wait_-_User a owl:Class ;
     rdfs:subClassOf ext:EventBPIC2013 .
 
-ext:Accepted_Wait_-_Vendor a owl:Class ;
-    rdfs:subClassOf ext:EventBPIC2013 .
-
-ext:Completed_Cancelled a owl:Class ;
-    rdfs:subClassOf ext:EventBPIC2013 .
-
 ext:Completed_Closed a owl:Class ;
-    rdfs:subClassOf ext:EventBPIC2013 .
-
-ext:Completed_In_Call a owl:Class ;
     rdfs:subClassOf ext:EventBPIC2013 .
 
 ext:Completed_Resolved a owl:Class ;
@@ -60,17 +48,9 @@ ext:Completed_Resolved a owl:Class ;
 ext:Queued_Awaiting_Assignment a owl:Class ;
     rdfs:subClassOf ext:EventBPIC2013 .
 
-ext:Unmatched_Unmatched a owl:Class ;
-    rdfs:subClassOf ext:EventBPIC2013 .
-
 ext:concept_name a owl:datatypeProperty ;
     rdfs:subPropertyOf oced:event_attribute,
         oced:object_attribute .
-
-ext:event_case a owl:ObjectProperty ;
-    rdfs:label "ext:event_case" ;
-    rdfs:domain oced:Event ;
-    rdfs:range ext:Case .
 
 ext:handled_by_support_team a owl:ObjectProperty ;
     rdfs:label "ext:handled_by_support_team" ;
@@ -89,29 +69,40 @@ ext:handled_in_service_center a owl:ObjectProperty ;
 
 ext:has_impact a owl:ObjectProperty ;
     rdfs:label "ext:has_impact" ;
-    rdfs:domain oced:Event ;
+    rdfs:domain oced:Event,
+        ext:Incident ;
     rdfs:range ext:Impact .
 
 ext:impact a owl:datatypeProperty ;
     rdfs:subPropertyOf oced:object_attribute .
 
-ext:is_about_function a owl:ObjectProperty ;
-    rdfs:label "ext:is_about_function" ;
-    rdfs:domain oced:Event ;
-    rdfs:range ext:ProductFunction .
-
 ext:is_about_product a owl:ObjectProperty ;
     rdfs:label "ext:is_about_product" ;
-    rdfs:domain oced:Event ;
+    rdfs:domain oced:Event,
+        ext:Incident ;
     rdfs:range ext:Product .
+
+ext:is_handled_by_support_team_function a owl:ObjectProperty ;
+    rdfs:label "ext:is_handled_by_support_team_function" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:Function .
+
+ext:is_part_of a owl:ObjectProperty ;
+    rdfs:label "ext:is_part_of" ;
+    rdfs:domain ext:SupportTeam ;
+    rdfs:range ext:Function .
+
+ext:is_within a owl:ObjectProperty ;
+    rdfs:label "ext:is_within" ;
+    rdfs:domain ext:Function ;
+    rdfs:range ext:ServiceCenter .
 
 ext:lifecycle_transition a owl:datatypeProperty ;
     rdfs:subPropertyOf oced:event_attribute .
 
 ext:located_in a owl:ObjectProperty ;
     rdfs:label "ext:located_in" ;
-    rdfs:domain ext:ServiceCenter,
-        ext:TeamMember ;
+    rdfs:domain ext:ServiceCenter ;
     rdfs:range ext:Location .
 
 ext:org_group a owl:datatypeProperty ;
@@ -129,18 +120,21 @@ ext:organization_country a owl:datatypeProperty ;
 ext:organization_involved a owl:datatypeProperty ;
     rdfs:subPropertyOf oced:object_attribute .
 
-ext:part_of a owl:ObjectProperty ;
-    rdfs:label "ext:part_of" ;
-    rdfs:domain ext:SupportTeam,
-        ext:TeamMember ;
-    rdfs:range ext:ServiceCenter,
-        ext:SupportTeam .
+ext:pertains_to a owl:ObjectProperty ;
+    rdfs:label "ext:pertains_to" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:Incident .
 
 ext:product a owl:datatypeProperty ;
     rdfs:subPropertyOf oced:object_attribute .
 
 ext:resource_country a owl:datatypeProperty ;
     rdfs:subPropertyOf oced:object_attribute .
+
+ext:works_in a owl:ObjectProperty ;
+    rdfs:label "ext:works_in" ;
+    rdfs:domain ext:TeamMember ;
+    rdfs:range ext:SupportTeam .
 
 <https://w3id.org/semsys/ns/ocedo/core> a owl:Ontology ;
     dcterms:contributor "Claudio di Ciccio",
@@ -167,9 +161,6 @@ oced:Object a owl:Class ;
     rdfs:label "Object" ;
     rdfs:comment "Representation of the Object class/concept" .
 
-ext:Case a owl:Class ;
-    rdfs:subClassOf ext:ObjectBPIC2013 .
-
 ext:Impact a owl:Class ;
     rdfs:subClassOf ext:ObjectBPIC2013 .
 
@@ -179,22 +170,25 @@ ext:Location a owl:Class ;
 ext:Product a owl:Class ;
     rdfs:subClassOf ext:ObjectBPIC2013 .
 
-ext:ProductFunction a owl:Class ;
-    rdfs:subClassOf ext:ObjectBPIC2013 .
-
 oced:event_attribute a owl:DatatypeProperty ;
     rdfs:label "event_attribute" ;
     rdfs:comment "the super-property for all use-case specific event attributes" ;
     rdfs:domain oced:Event ;
     rdfs:range xsd:string .
 
+ext:TeamMember a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2013 .
+
+ext:Function a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2013 .
+
+ext:Incident a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2013 .
+
 ext:ServiceCenter a owl:Class ;
     rdfs:subClassOf ext:ObjectBPIC2013 .
 
 ext:SupportTeam a owl:Class ;
-    rdfs:subClassOf ext:ObjectBPIC2013 .
-
-ext:TeamMember a owl:Class ;
     rdfs:subClassOf ext:ObjectBPIC2013 .
 
 oced:object_attribute a owl:DatatypeProperty ;

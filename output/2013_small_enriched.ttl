@@ -29,11 +29,6 @@ ext:concept_name a owl:datatypeProperty ;
     rdfs:subPropertyOf oced:event_attribute,
         oced:object_attribute .
 
-ext:event_case a owl:ObjectProperty ;
-    rdfs:label "ext:event_case" ;
-    rdfs:domain oced:Event ;
-    rdfs:range ext:Case .
-
 ext:handled_by_support_team a owl:ObjectProperty ;
     rdfs:label "ext:handled_by_support_team" ;
     rdfs:domain oced:Event ;
@@ -51,29 +46,40 @@ ext:handled_in_service_center a owl:ObjectProperty ;
 
 ext:has_impact a owl:ObjectProperty ;
     rdfs:label "ext:has_impact" ;
-    rdfs:domain oced:Event ;
+    rdfs:domain oced:Event,
+        ext:Incident ;
     rdfs:range ext:Impact .
 
 ext:impact a owl:datatypeProperty ;
     rdfs:subPropertyOf oced:object_attribute .
 
-ext:is_about_function a owl:ObjectProperty ;
-    rdfs:label "ext:is_about_function" ;
-    rdfs:domain oced:Event ;
-    rdfs:range ext:ProductFunction .
-
 ext:is_about_product a owl:ObjectProperty ;
     rdfs:label "ext:is_about_product" ;
-    rdfs:domain oced:Event ;
+    rdfs:domain oced:Event,
+        ext:Incident ;
     rdfs:range ext:Product .
+
+ext:is_handled_by_support_team_function a owl:ObjectProperty ;
+    rdfs:label "ext:is_handled_by_support_team_function" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:Function .
+
+ext:is_part_of a owl:ObjectProperty ;
+    rdfs:label "ext:is_part_of" ;
+    rdfs:domain ext:SupportTeam ;
+    rdfs:range ext:Function .
+
+ext:is_within a owl:ObjectProperty ;
+    rdfs:label "ext:is_within" ;
+    rdfs:domain ext:Function ;
+    rdfs:range ext:ServiceCenter .
 
 ext:lifecycle_transition a owl:datatypeProperty ;
     rdfs:subPropertyOf oced:event_attribute .
 
 ext:located_in a owl:ObjectProperty ;
     rdfs:label "ext:located_in" ;
-    rdfs:domain ext:ServiceCenter,
-        ext:TeamMember ;
+    rdfs:domain ext:ServiceCenter ;
     rdfs:range ext:Location .
 
 ext:org_group a owl:datatypeProperty ;
@@ -91,12 +97,10 @@ ext:organization_country a owl:datatypeProperty ;
 ext:organization_involved a owl:datatypeProperty ;
     rdfs:subPropertyOf oced:object_attribute .
 
-ext:part_of a owl:ObjectProperty ;
-    rdfs:label "ext:part_of" ;
-    rdfs:domain ext:SupportTeam,
-        ext:TeamMember ;
-    rdfs:range ext:ServiceCenter,
-        ext:SupportTeam .
+ext:pertains_to a owl:ObjectProperty ;
+    rdfs:label "ext:pertains_to" ;
+    rdfs:domain oced:Event ;
+    rdfs:range ext:Incident .
 
 ext:product a owl:datatypeProperty ;
     rdfs:subPropertyOf oced:object_attribute .
@@ -104,746 +108,760 @@ ext:product a owl:datatypeProperty ;
 ext:resource_country a owl:datatypeProperty ;
     rdfs:subPropertyOf oced:object_attribute .
 
-res:event-e_168c4faf3aeb46f331336867073a148b33d8302f a oced:Event,
-        ext:Accepted_Assigned ;
-    oced:observed_at "2011-09-12T11:22:38+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_890d9c9402c98526c3e6c4393b168c5e2507ba9f ;
-    ext:handled_by_team_member res:object-o_01d7f32d6571ebdd66914e5b409868bc7745f914 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Assigned" .
+ext:works_in a owl:ObjectProperty ;
+    rdfs:label "ext:works_in" ;
+    rdfs:domain ext:TeamMember ;
+    rdfs:range ext:SupportTeam .
 
-res:event-e_1acfa581229ee9b40ce64fd3727fdcce7ca4ea15 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2012-05-03T11:10:10+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a ;
-    ext:handled_by_support_team res:object-o_b6f185307e97fff17e761c816ac4a30935de6430 ;
-    ext:handled_by_team_member res:object-o_a020565ada69b30358c2048ba9df65f7870a16f9 ;
-    ext:handled_in_service_center res:object-o_710d2b95926d93c6752803c2ba076f2172876602 ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_07efa7b8ed55631084959749f7aaef30b7f6c17f ;
-    ext:is_about_product res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_1fedbacc26ac6df032e62b7c04360aeb053aeb6f a oced:Event,
-        ext:Completed_Closed ;
-    oced:observed_at "2012-05-11T01:26:15+02:00"^^xsd:dateTime ;
-    ext:concept_name "Completed" ;
-    ext:event_case res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a ;
-    ext:handled_by_support_team res:object-o_b6f185307e97fff17e761c816ac4a30935de6430 ;
-    ext:handled_by_team_member res:object-o_ec0a6d4583441090d5624451406c7b9869c14011 ;
-    ext:handled_in_service_center res:object-o_710d2b95926d93c6752803c2ba076f2172876602 ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_07efa7b8ed55631084959749f7aaef30b7f6c17f ;
-    ext:is_about_product res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 ;
-    ext:lifecycle_transition "Closed" .
-
-res:event-e_2019106442a6f5463990c8125387d83dea1d9636 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2011-08-08T15:28:38+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_890d9c9402c98526c3e6c4393b168c5e2507ba9f ;
-    ext:handled_by_team_member res:object-o_01d7f32d6571ebdd66914e5b409868bc7745f914 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_215416065919726bbe5b5f52a542c65053df6cc1 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2012-04-11T17:11:17+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a ;
-    ext:handled_by_support_team res:object-o_b6f185307e97fff17e761c816ac4a30935de6430 ;
-    ext:handled_by_team_member res:object-o_127122a8963445e0c0b3cffa081f791aef51003c ;
-    ext:handled_in_service_center res:object-o_710d2b95926d93c6752803c2ba076f2172876602 ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_07efa7b8ed55631084959749f7aaef30b7f6c17f ;
-    ext:is_about_product res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_27b253e696fa4bda0cb47c8a061a67b1e08769e2 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2011-03-09T11:08:06+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_59eb4033203ab4becf36124326f8e686cef692da ;
-    ext:handled_by_team_member res:object-o_e05a43dc96de8584d0af66dcb9dd1688d06af052 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_5d553038f14cce49ce9b38b079c1c3bd9b3996ae ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_2be64f393e5a68a235c69e9eec11f0c50f6c581f a oced:Event,
-        ext:Accepted_Wait ;
-    oced:observed_at "2011-04-08T14:17:44+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_4f987b0921a9b990544b15a797b5107679af8569 ;
-    ext:handled_by_team_member res:object-o_5c1a1828aa3d21a9ec2059041bc9281f3e305438 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Wait" .
-
-res:event-e_30507e5f3d8ae67273241f56fd5d85105da505e0 a oced:Event,
-        ext:Accepted_Assigned ;
-    oced:observed_at "2011-03-10T11:53:22+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_59eb4033203ab4becf36124326f8e686cef692da ;
-    ext:handled_by_team_member res:object-o_f74e7fe0b3d0710c4a81622f4c552643f94a5053 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_5d553038f14cce49ce9b38b079c1c3bd9b3996ae ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Assigned" .
-
-res:event-e_309e739d7797173fd091362096d5e3585a560fcf a oced:Event,
-        ext:Queued_Awaiting_Assignment ;
-    oced:observed_at "2011-02-03T08:28:58+01:00"^^xsd:dateTime ;
-    ext:concept_name "Queued" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_6a7a54f6091b56a718946893d3c2018caeeb182f ;
-    ext:handled_by_team_member res:object-o_1c4f1e7feae5de94a232f9585d92095dc9fe8bb4 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_b973d7148a4ccb3b87840b8deeb8c5c9515113f8 ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Awaiting Assignment" .
-
-res:event-e_3862b2721df7a42e155ae73645eab2e7f78c8fc7 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2011-01-31T11:12:22+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_84985a629c6f4167bf273a71d9019c856edaeb32 ;
-    ext:handled_by_team_member res:object-o_724cc7360399d2bb8acb5cbba9565c3bff690494 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_3c9ca5d5daf840b7b69dbb5d9cd7183d527fa37b a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2011-04-06T10:32:07+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_4f987b0921a9b990544b15a797b5107679af8569 ;
-    ext:handled_by_team_member res:object-o_1c4f1e7feae5de94a232f9585d92095dc9fe8bb4 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_41fc765a62d79282fa67acfe9a4b7c3c5a1abdc3 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2010-04-08T12:52:23+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a ;
-    ext:handled_by_support_team res:object-o_acd826fa52dcb677f8e8718c223b0ce0823f1084 ;
-    ext:handled_by_team_member res:object-o_bf115ed95fe836b6fb6027b350e877c0334f5876 ;
-    ext:handled_in_service_center res:object-o_710d2b95926d93c6752803c2ba076f2172876602 ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_83b7782037583e41a1e6b4b8ad6fbb6b6195f3dd ;
-    ext:is_about_product res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_45696a7de8e54f3e17e79871c6402933d7896212 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2012-05-15T17:56:51+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_84985a629c6f4167bf273a71d9019c856edaeb32 ;
-    ext:handled_by_team_member res:object-o_e8b14c79f0c86023344b8a8a89b084ab818e5a03 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_4651a7df955454608c6bb9bd34efd69d83bcc77c a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2011-04-12T15:16:47+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_452845ad05a33724a284255bf2ba274b8bde9398 ;
-    ext:handled_by_team_member res:object-o_a02667834b459423cdf75974ed875db1ce700bf2 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_5d553038f14cce49ce9b38b079c1c3bd9b3996ae ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_4e745bca5c5fa14cac708f0853bdc76492498729 a oced:Event,
-        ext:Accepted_Wait ;
-    oced:observed_at "2011-03-14T07:58:55+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_59eb4033203ab4becf36124326f8e686cef692da ;
-    ext:handled_by_team_member res:object-o_e05a43dc96de8584d0af66dcb9dd1688d06af052 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_5d553038f14cce49ce9b38b079c1c3bd9b3996ae ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Wait" .
-
-res:event-e_4f5c1a256054db174ad0c7b35fdf8ecaceda78ba a oced:Event,
-        ext:Accepted_Wait_-_Implementation ;
-    oced:observed_at "2011-02-07T12:38:25+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_6a7a54f6091b56a718946893d3c2018caeeb182f ;
-    ext:handled_by_team_member res:object-o_1f745918e5c210fecb45e290cbb4ac11a1118a92 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_b973d7148a4ccb3b87840b8deeb8c5c9515113f8 ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Wait - Implementation" .
-
-res:event-e_567497628b68cdb1d6fd1e2e2bce063be45ac933 a oced:Event,
-        ext:Completed_Resolved ;
-    oced:observed_at "2010-04-06T16:44:51+02:00"^^xsd:dateTime ;
-    ext:concept_name "Completed" ;
-    ext:event_case res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a ;
-    ext:handled_by_support_team res:object-o_3fd7a541760432406179672a5c405514b0524262 ;
-    ext:handled_by_team_member res:object-o_c022fdda8f0ce4e21c4e0f50b56a294267a007d9 ;
-    ext:handled_in_service_center res:object-o_710d2b95926d93c6752803c2ba076f2172876602 ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_07efa7b8ed55631084959749f7aaef30b7f6c17f ;
-    ext:is_about_product res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 ;
-    ext:lifecycle_transition "Resolved" .
-
-res:event-e_581084b82252ddb04b112478b1894ca84bf926d1 a oced:Event,
-        ext:Accepted_Assigned ;
-    oced:observed_at "2011-03-14T07:56:20+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_59eb4033203ab4becf36124326f8e686cef692da ;
-    ext:handled_by_team_member res:object-o_52d6ebee802dc542e92285bb2cd21d463a7e15dd ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_5d553038f14cce49ce9b38b079c1c3bd9b3996ae ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Assigned" .
-
-res:event-e_5d57031af030f55623fdb6a726b091e63fb9ad39 a oced:Event,
-        ext:Queued_Awaiting_Assignment ;
-    oced:observed_at "2010-04-06T16:45:07+02:00"^^xsd:dateTime ;
-    ext:concept_name "Queued" ;
-    ext:event_case res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a ;
-    ext:handled_by_support_team res:object-o_acd826fa52dcb677f8e8718c223b0ce0823f1084 ;
-    ext:handled_by_team_member res:object-o_c022fdda8f0ce4e21c4e0f50b56a294267a007d9 ;
-    ext:handled_in_service_center res:object-o_710d2b95926d93c6752803c2ba076f2172876602 ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_83b7782037583e41a1e6b4b8ad6fbb6b6195f3dd ;
-    ext:is_about_product res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 ;
-    ext:lifecycle_transition "Awaiting Assignment" .
-
-res:event-e_62ba57e962af0af5f92d7a5bf1dc605a7ce5d388 a oced:Event,
-        ext:Completed_Closed ;
-    oced:observed_at "2012-05-23T01:22:25+02:00"^^xsd:dateTime ;
-    ext:concept_name "Completed" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_84985a629c6f4167bf273a71d9019c856edaeb32 ;
-    ext:handled_by_team_member res:object-o_ec0a6d4583441090d5624451406c7b9869c14011 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Closed" .
-
-res:event-e_68fd01b473cc377fc13f3fbeaae1262e97488b64 a oced:Event,
-        ext:Queued_Awaiting_Assignment ;
-    oced:observed_at "2010-04-08T12:53:35+02:00"^^xsd:dateTime ;
-    ext:concept_name "Queued" ;
-    ext:event_case res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a ;
-    ext:handled_by_support_team res:object-o_b6f185307e97fff17e761c816ac4a30935de6430 ;
-    ext:handled_by_team_member res:object-o_bf115ed95fe836b6fb6027b350e877c0334f5876 ;
-    ext:handled_in_service_center res:object-o_710d2b95926d93c6752803c2ba076f2172876602 ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_07efa7b8ed55631084959749f7aaef30b7f6c17f ;
-    ext:is_about_product res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 ;
-    ext:lifecycle_transition "Awaiting Assignment" .
-
-res:event-e_6c762eaf27dc716abaf4883bea781292be0d2425 a oced:Event,
-        ext:Queued_Awaiting_Assignment ;
-    oced:observed_at "2012-01-25T15:50:41+01:00"^^xsd:dateTime ;
-    ext:concept_name "Queued" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_8ea49fcddd3913adfb416ad4f5d4e416f0a65fd9 ;
-    ext:handled_by_team_member res:object-o_01d7f32d6571ebdd66914e5b409868bc7745f914 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_5d553038f14cce49ce9b38b079c1c3bd9b3996ae ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Awaiting Assignment" .
-
-res:event-e_7116528c0e61b9ecfd34c3b385836fdb3aa7fa1e a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2010-03-31T16:59:42+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a ;
-    ext:handled_by_support_team res:object-o_acd826fa52dcb677f8e8718c223b0ce0823f1084 ;
-    ext:handled_by_team_member res:object-o_b71e2f42d9f5ab0141fcde92423d5a4ab66087db ;
-    ext:handled_in_service_center res:object-o_710d2b95926d93c6752803c2ba076f2172876602 ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_83b7782037583e41a1e6b4b8ad6fbb6b6195f3dd ;
-    ext:is_about_product res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_711ca949acf10c18613b4bd394490a161494b5d2 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2011-01-31T12:59:46+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_4f987b0921a9b990544b15a797b5107679af8569 ;
-    ext:handled_by_team_member res:object-o_1c4f1e7feae5de94a232f9585d92095dc9fe8bb4 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_737104235146c02b3fe9ad27b92ccfd6e4142f74 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2010-04-20T11:07:11+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a ;
-    ext:handled_by_support_team res:object-o_b6f185307e97fff17e761c816ac4a30935de6430 ;
-    ext:handled_by_team_member res:object-o_c022fdda8f0ce4e21c4e0f50b56a294267a007d9 ;
-    ext:handled_in_service_center res:object-o_710d2b95926d93c6752803c2ba076f2172876602 ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_07efa7b8ed55631084959749f7aaef30b7f6c17f ;
-    ext:is_about_product res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_7a9902fa862c62cc97ba740b0b5f90cd87cc3693 a oced:Event,
-        ext:Accepted_Wait ;
-    oced:observed_at "2011-03-10T14:45:27+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_59eb4033203ab4becf36124326f8e686cef692da ;
-    ext:handled_by_team_member res:object-o_52d6ebee802dc542e92285bb2cd21d463a7e15dd ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_5d553038f14cce49ce9b38b079c1c3bd9b3996ae ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Wait" .
-
-res:event-e_7bb249b3506f556cb5ec833d529747d37fc7953e a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2011-04-08T14:10:59+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_4f987b0921a9b990544b15a797b5107679af8569 ;
-    ext:handled_by_team_member res:object-o_5c1a1828aa3d21a9ec2059041bc9281f3e305438 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_7cb44d20aff80b21d037b7aa2273a3d648034874 a oced:Event,
-        ext:Accepted_Wait_-_Implementation ;
-    oced:observed_at "2011-11-21T13:52:57+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_890d9c9402c98526c3e6c4393b168c5e2507ba9f ;
-    ext:handled_by_team_member res:object-o_01d7f32d6571ebdd66914e5b409868bc7745f914 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Wait - Implementation" .
-
-res:event-e_84f012857346846b3cc7716205d8c2ef3ed4bb68 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2011-03-14T07:58:01+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_59eb4033203ab4becf36124326f8e686cef692da ;
-    ext:handled_by_team_member res:object-o_e05a43dc96de8584d0af66dcb9dd1688d06af052 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_5d553038f14cce49ce9b38b079c1c3bd9b3996ae ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_8d1c84ca4e2b5678c457e1bac67f1f52d3562580 a oced:Event,
-        ext:Accepted_Assigned ;
-    oced:observed_at "2011-04-06T11:47:50+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_4f987b0921a9b990544b15a797b5107679af8569 ;
-    ext:handled_by_team_member res:object-o_1c4f1e7feae5de94a232f9585d92095dc9fe8bb4 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Assigned" .
-
-res:event-e_8d7083f7a0cea817c8b93793327cacfa3f52dd5b a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2011-02-07T12:37:33+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_6a7a54f6091b56a718946893d3c2018caeeb182f ;
-    ext:handled_by_team_member res:object-o_1f745918e5c210fecb45e290cbb4ac11a1118a92 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_b973d7148a4ccb3b87840b8deeb8c5c9515113f8 ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_974d5cb6662a90b3447768d4b0e3aa7e30e098c6 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2012-01-25T15:53:07+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_8ea49fcddd3913adfb416ad4f5d4e416f0a65fd9 ;
-    ext:handled_by_team_member res:object-o_91d4976099d727fe3cb005c5ff3014a011f51a87 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_5d553038f14cce49ce9b38b079c1c3bd9b3996ae ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_9c9854abc13fa3dd60b8baa1a198c8155bf78b28 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2011-11-21T13:52:19+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_890d9c9402c98526c3e6c4393b168c5e2507ba9f ;
-    ext:handled_by_team_member res:object-o_01d7f32d6571ebdd66914e5b409868bc7745f914 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_9db87c852f1a9ad9a33e0eb4adb3f9d94a9cf2d6 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2011-01-31T11:18:44+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_84985a629c6f4167bf273a71d9019c856edaeb32 ;
-    ext:handled_by_team_member res:object-o_724cc7360399d2bb8acb5cbba9565c3bff690494 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_a1d9eafd03eec19d0bb88e108a575f778a014037 a oced:Event,
-        ext:Accepted_Wait_-_Implementation ;
-    oced:observed_at "2011-03-09T11:27:05+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_59eb4033203ab4becf36124326f8e686cef692da ;
-    ext:handled_by_team_member res:object-o_e05a43dc96de8584d0af66dcb9dd1688d06af052 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_5d553038f14cce49ce9b38b079c1c3bd9b3996ae ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Wait - Implementation" .
-
-res:event-e_a20710b87df9a26a1af70068622d2937866e0a0e a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2010-03-31T17:00:56+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a ;
-    ext:handled_by_support_team res:object-o_acd826fa52dcb677f8e8718c223b0ce0823f1084 ;
-    ext:handled_by_team_member res:object-o_b71e2f42d9f5ab0141fcde92423d5a4ab66087db ;
-    ext:handled_in_service_center res:object-o_710d2b95926d93c6752803c2ba076f2172876602 ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_83b7782037583e41a1e6b4b8ad6fbb6b6195f3dd ;
-    ext:is_about_product res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_a3f0ea6093155f9249ad91878914d75d279e469b a oced:Event,
-        ext:Accepted_Wait_-_User ;
-    oced:observed_at "2011-04-06T12:08:47+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_4f987b0921a9b990544b15a797b5107679af8569 ;
-    ext:handled_by_team_member res:object-o_5c1a1828aa3d21a9ec2059041bc9281f3e305438 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Wait - User" .
-
-res:event-e_a90fc44c9e1fb35cda9b7d0daef87357ba7c7ccf a oced:Event,
-        ext:Accepted_Wait_-_User ;
-    oced:observed_at "2011-03-10T12:21:51+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_59eb4033203ab4becf36124326f8e686cef692da ;
-    ext:handled_by_team_member res:object-o_52d6ebee802dc542e92285bb2cd21d463a7e15dd ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_5d553038f14cce49ce9b38b079c1c3bd9b3996ae ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Wait - User" .
-
-res:event-e_b14d09f78e8f9311f9479d715a296e034c1e0f94 a oced:Event,
-        ext:Queued_Awaiting_Assignment ;
-    oced:observed_at "2012-01-25T15:54:00+01:00"^^xsd:dateTime ;
-    ext:concept_name "Queued" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_890d9c9402c98526c3e6c4393b168c5e2507ba9f ;
-    ext:handled_by_team_member res:object-o_91d4976099d727fe3cb005c5ff3014a011f51a87 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Awaiting Assignment" .
-
-res:event-e_b6bcb756fb2119a4443335ee478998cecf837bd8 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2011-03-10T11:53:10+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_59eb4033203ab4becf36124326f8e686cef692da ;
-    ext:handled_by_team_member res:object-o_f74e7fe0b3d0710c4a81622f4c552643f94a5053 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_5d553038f14cce49ce9b38b079c1c3bd9b3996ae ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_be89dc60de19d293372675624db2766c8c7b18ba a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2010-04-06T16:44:07+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a ;
-    ext:handled_by_support_team res:object-o_b6f185307e97fff17e761c816ac4a30935de6430 ;
-    ext:handled_by_team_member res:object-o_c022fdda8f0ce4e21c4e0f50b56a294267a007d9 ;
-    ext:handled_in_service_center res:object-o_710d2b95926d93c6752803c2ba076f2172876602 ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_07efa7b8ed55631084959749f7aaef30b7f6c17f ;
-    ext:is_about_product res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_c1d9b984ba87bcb268a4cef7dc7535ed51b020dd a oced:Event,
-        ext:Queued_Awaiting_Assignment ;
-    oced:observed_at "2010-04-06T16:44:38+02:00"^^xsd:dateTime ;
-    ext:concept_name "Queued" ;
-    ext:event_case res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a ;
-    ext:handled_by_support_team res:object-o_acd826fa52dcb677f8e8718c223b0ce0823f1084 ;
-    ext:handled_by_team_member res:object-o_c022fdda8f0ce4e21c4e0f50b56a294267a007d9 ;
-    ext:handled_in_service_center res:object-o_710d2b95926d93c6752803c2ba076f2172876602 ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_83b7782037583e41a1e6b4b8ad6fbb6b6195f3dd ;
-    ext:is_about_product res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 ;
-    ext:lifecycle_transition "Awaiting Assignment" .
-
-res:event-e_c24be54c84069b6e0e776989030a277dc4e60acd a oced:Event,
-        ext:Accepted_Assigned ;
-    oced:observed_at "2012-04-11T17:11:25+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a ;
-    ext:handled_by_support_team res:object-o_b6f185307e97fff17e761c816ac4a30935de6430 ;
-    ext:handled_by_team_member res:object-o_127122a8963445e0c0b3cffa081f791aef51003c ;
-    ext:handled_in_service_center res:object-o_710d2b95926d93c6752803c2ba076f2172876602 ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_07efa7b8ed55631084959749f7aaef30b7f6c17f ;
-    ext:is_about_product res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 ;
-    ext:lifecycle_transition "Assigned" .
-
-res:event-e_c6a9afaf83ba8f141634f21fe7044d017757a604 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2010-04-06T16:44:47+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a ;
-    ext:handled_by_support_team res:object-o_3fd7a541760432406179672a5c405514b0524262 ;
-    ext:handled_by_team_member res:object-o_c022fdda8f0ce4e21c4e0f50b56a294267a007d9 ;
-    ext:handled_in_service_center res:object-o_710d2b95926d93c6752803c2ba076f2172876602 ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_07efa7b8ed55631084959749f7aaef30b7f6c17f ;
-    ext:is_about_product res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_cab39be58cbe177945cb09638d8f54edb7f7d0b1 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2011-04-07T13:36:47+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_4f987b0921a9b990544b15a797b5107679af8569 ;
-    ext:handled_by_team_member res:object-o_5c1a1828aa3d21a9ec2059041bc9281f3e305438 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_cb8e546673554a42e91dab83c5261937b8539e55 a oced:Event,
-        ext:Accepted_Wait ;
-    oced:observed_at "2011-04-07T14:06:06+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_4f987b0921a9b990544b15a797b5107679af8569 ;
-    ext:handled_by_team_member res:object-o_5c1a1828aa3d21a9ec2059041bc9281f3e305438 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Wait" .
-
-res:event-e_cefd9493cdc28da072fbc995cdd4d2b7ff787a69 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2011-04-05T17:59:52+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_59eb4033203ab4becf36124326f8e686cef692da ;
-    ext:handled_by_team_member res:object-o_906abbca23cf67f23c1f186cccd13e3a912202af ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_5d553038f14cce49ce9b38b079c1c3bd9b3996ae ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
-
-res:event-e_cfe47db82bc9db85db80d045440664d18836f145 a oced:Event,
-        ext:Accepted_Assigned ;
-    oced:observed_at "2010-04-20T11:07:19+02:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a ;
-    ext:handled_by_support_team res:object-o_b6f185307e97fff17e761c816ac4a30935de6430 ;
-    ext:handled_by_team_member res:object-o_c022fdda8f0ce4e21c4e0f50b56a294267a007d9 ;
-    ext:handled_in_service_center res:object-o_710d2b95926d93c6752803c2ba076f2172876602 ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_07efa7b8ed55631084959749f7aaef30b7f6c17f ;
-    ext:is_about_product res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 ;
-    ext:lifecycle_transition "Assigned" .
-
-res:event-e_d425c0c113752801eba053ec53c4c24812bf8901 a oced:Event,
-        ext:Accepted_Wait_-_User ;
-    oced:observed_at "2011-01-31T14:37:55+01:00"^^xsd:dateTime ;
-    ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_4f987b0921a9b990544b15a797b5107679af8569 ;
-    ext:handled_by_team_member res:object-o_1c4f1e7feae5de94a232f9585d92095dc9fe8bb4 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Wait - User" .
-
-res:event-e_d50676010967d337ce32eb5b93f10ea60bbc235a a oced:Event,
-        ext:Queued_Awaiting_Assignment ;
-    oced:observed_at "2011-04-05T18:02:01+02:00"^^xsd:dateTime ;
-    ext:concept_name "Queued" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_4f987b0921a9b990544b15a797b5107679af8569 ;
-    ext:handled_by_team_member res:object-o_906abbca23cf67f23c1f186cccd13e3a912202af ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Awaiting Assignment" .
-
-res:event-e_d623f208e607619309df9addbacbe3a2edc86b35 a oced:Event,
+res:event-e_07f26fc5b2b845e2d6a572ac3fbce15e43ad1dad a oced:Event,
         ext:Completed_Resolved ;
     oced:observed_at "2012-05-15T17:57:39+02:00"^^xsd:dateTime ;
     ext:concept_name "Completed" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_84985a629c6f4167bf273a71d9019c856edaeb32 ;
-    ext:handled_by_team_member res:object-o_e8b14c79f0c86023344b8a8a89b084ab818e5a03 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Resolved" .
+    ext:handled_by_support_team res:object-o_00ab85e71e99b26633b6abc08526e90c47fef89f ;
+    ext:handled_by_team_member res:object-o_cb1627a30dccdc5972413eafc82bf4a739d2e657 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "Resolved" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
 
-res:event-e_d6453a7579c4fdb94096f9ce0f8eb4e7926989c8 a oced:Event,
+res:event-e_0bb699c06e1db4065347338ba316f0858f94ac5e a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2011-04-12T15:16:47+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_8567f835e3276ee2139eef5a5964ac5e0be0ae3e ;
+    ext:handled_by_team_member res:object-o_735fc2e9bb2335b8d3552f258724f73fdc23dd4e ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_0e0195149661cde401596f864a056a37e68d144c a oced:Event,
         ext:Queued_Awaiting_Assignment ;
-    oced:observed_at "2010-03-31T17:45:48+02:00"^^xsd:dateTime ;
+    oced:observed_at "2010-04-08T12:53:35+02:00"^^xsd:dateTime ;
     ext:concept_name "Queued" ;
-    ext:event_case res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a ;
-    ext:handled_by_support_team res:object-o_b6f185307e97fff17e761c816ac4a30935de6430 ;
-    ext:handled_by_team_member res:object-o_b71e2f42d9f5ab0141fcde92423d5a4ab66087db ;
-    ext:handled_in_service_center res:object-o_710d2b95926d93c6752803c2ba076f2172876602 ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_07efa7b8ed55631084959749f7aaef30b7f6c17f ;
-    ext:is_about_product res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 ;
-    ext:lifecycle_transition "Awaiting Assignment" .
+    ext:handled_by_support_team res:object-o_00d2da1ce3b7e656f478962fbb580b1544711f74 ;
+    ext:handled_by_team_member res:object-o_6c8d469e9894b7096bef01279d38fe44ee3ac071 ;
+    ext:handled_in_service_center res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a ;
+    ext:is_handled_by_support_team_function res:object-o_1b1302111f5879bfe04434b3072c52e5bd236fd4 ;
+    ext:lifecycle_transition "Awaiting Assignment" ;
+    ext:pertains_to res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 .
 
-res:event-e_dd7fb41cc48a208a35087a7300ea117a0f837258 a oced:Event,
+res:event-e_0e828008e2d8733f6ab3fb75652156fb03b5fb0b a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2010-04-20T11:07:11+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_00d2da1ce3b7e656f478962fbb580b1544711f74 ;
+    ext:handled_by_team_member res:object-o_585949f23cf0b0d82ba80b25596efb19920d21c1 ;
+    ext:handled_in_service_center res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a ;
+    ext:is_handled_by_support_team_function res:object-o_1b1302111f5879bfe04434b3072c52e5bd236fd4 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 .
+
+res:event-e_15a4055e7a36958b6d8b1caf4463e155d12d1e99 a oced:Event,
+        ext:Accepted_Wait_-_User ;
+    oced:observed_at "2011-01-31T14:37:55+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_ad119430ec1726ae1af7944ccaf04c6be9bd5da6 ;
+    ext:handled_by_team_member res:object-o_1c25a92ca96e386e946f289882abb4703e140955 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "Wait - User" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_1e12d00a06c6bc7713555b2ce6598ed862b948dc a oced:Event,
+        ext:Queued_Awaiting_Assignment ;
+    oced:observed_at "2010-04-06T16:44:38+02:00"^^xsd:dateTime ;
+    ext:concept_name "Queued" ;
+    ext:handled_by_support_team res:object-o_bbbc1730b0e8daffa386c45d324bba37818b0af7 ;
+    ext:handled_by_team_member res:object-o_585949f23cf0b0d82ba80b25596efb19920d21c1 ;
+    ext:handled_in_service_center res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a ;
+    ext:is_handled_by_support_team_function res:object-o_20b70760f04ac00d530f79d286311cf3242a4522 ;
+    ext:lifecycle_transition "Awaiting Assignment" ;
+    ext:pertains_to res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 .
+
+res:event-e_20631ca7b3604ffe70529925aa2a5384b53a10f5 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2010-03-31T16:59:42+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_bbbc1730b0e8daffa386c45d324bba37818b0af7 ;
+    ext:handled_by_team_member res:object-o_87fd5beb0bb96f55820c502f201ae69f26013bb1 ;
+    ext:handled_in_service_center res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a ;
+    ext:is_handled_by_support_team_function res:object-o_20b70760f04ac00d530f79d286311cf3242a4522 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 .
+
+res:event-e_29d1f5bedd0fd979fa493311d35ddc82a862186c a oced:Event,
         ext:Accepted_In_Progress ;
     oced:observed_at "2011-03-10T12:17:22+01:00"^^xsd:dateTime ;
     ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_59eb4033203ab4becf36124326f8e686cef692da ;
-    ext:handled_by_team_member res:object-o_52d6ebee802dc542e92285bb2cd21d463a7e15dd ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_5d553038f14cce49ce9b38b079c1c3bd9b3996ae ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
+    ext:handled_by_support_team res:object-o_e40f68cccd0e96a11e5e8a02f645b204be2638c0 ;
+    ext:handled_by_team_member res:object-o_4ac71989397aa7469ee98812f4a9b8b22302412a ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
 
-res:event-e_de680fb0963f155eaf7eee2df1f242c3b52b2501 a oced:Event,
-        ext:Accepted_In_Progress ;
-    oced:observed_at "2011-04-06T11:48:33+02:00"^^xsd:dateTime ;
+res:event-e_353312fcf2c623d3d8075ca022b3c65934af250a a oced:Event,
+        ext:Accepted_Assigned ;
+    oced:observed_at "2011-09-12T11:22:38+02:00"^^xsd:dateTime ;
     ext:concept_name "Accepted" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_4f987b0921a9b990544b15a797b5107679af8569 ;
-    ext:handled_by_team_member res:object-o_5c1a1828aa3d21a9ec2059041bc9281f3e305438 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "In Progress" .
+    ext:handled_by_support_team res:object-o_74652d9897349ccf3c249ff87bd05bb1bcfabf25 ;
+    ext:handled_by_team_member res:object-o_1ef533cf8e74d113414d62d477a0a4303ca929e5 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "Assigned" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
 
-res:event-e_e9f1f71ed6dbafe49436e556c8ba959b625682a4 a oced:Event,
+res:event-e_3c764b7707fd5064c4a8dca28403fabacc4d9136 a oced:Event,
+        ext:Accepted_Wait ;
+    oced:observed_at "2011-03-10T14:45:27+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_e40f68cccd0e96a11e5e8a02f645b204be2638c0 ;
+    ext:handled_by_team_member res:object-o_4ac71989397aa7469ee98812f4a9b8b22302412a ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:lifecycle_transition "Wait" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_3c9c6cf0840f7921551009550e553f4b8401b9cc a oced:Event,
         ext:Queued_Awaiting_Assignment ;
     oced:observed_at "2011-04-08T14:20:00+02:00"^^xsd:dateTime ;
     ext:concept_name "Queued" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_452845ad05a33724a284255bf2ba274b8bde9398 ;
-    ext:handled_by_team_member res:object-o_5c1a1828aa3d21a9ec2059041bc9281f3e305438 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_5d553038f14cce49ce9b38b079c1c3bd9b3996ae ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Awaiting Assignment" .
+    ext:handled_by_support_team res:object-o_8567f835e3276ee2139eef5a5964ac5e0be0ae3e ;
+    ext:handled_by_team_member res:object-o_4aa6497c1904722bab76c14d944ca54ffe2a79dd ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:lifecycle_transition "Awaiting Assignment" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
 
-res:event-e_ed332ee81e96f50bc15155263c292bce9a06e84e a oced:Event,
+res:event-e_3d23373098b64421a391ea64a30dee574915b334 a oced:Event,
+        ext:Completed_Closed ;
+    oced:observed_at "2012-05-23T01:22:25+02:00"^^xsd:dateTime ;
+    ext:concept_name "Completed" ;
+    ext:handled_by_support_team res:object-o_00ab85e71e99b26633b6abc08526e90c47fef89f ;
+    ext:handled_by_team_member res:object-o_50a2dc176b46d94ce124617b93cf8a137879d716 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "Closed" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_44427dec2fc60b66294104dd3c4c6040f8f39c40 a oced:Event,
         ext:Completed_Resolved ;
     oced:observed_at "2012-05-03T11:10:12+02:00"^^xsd:dateTime ;
     ext:concept_name "Completed" ;
-    ext:event_case res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a ;
-    ext:handled_by_support_team res:object-o_b6f185307e97fff17e761c816ac4a30935de6430 ;
-    ext:handled_by_team_member res:object-o_a020565ada69b30358c2048ba9df65f7870a16f9 ;
-    ext:handled_in_service_center res:object-o_710d2b95926d93c6752803c2ba076f2172876602 ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_07efa7b8ed55631084959749f7aaef30b7f6c17f ;
-    ext:is_about_product res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 ;
-    ext:lifecycle_transition "Resolved" .
+    ext:handled_by_support_team res:object-o_00d2da1ce3b7e656f478962fbb580b1544711f74 ;
+    ext:handled_by_team_member res:object-o_278043df43d8a5744e5bc9e3f0cae0b7a7254c49 ;
+    ext:handled_in_service_center res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a ;
+    ext:is_handled_by_support_team_function res:object-o_1b1302111f5879bfe04434b3072c52e5bd236fd4 ;
+    ext:lifecycle_transition "Resolved" ;
+    ext:pertains_to res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 .
 
-res:event-e_fc087c1e0a603ad9d7fbeb074907df1f87480913 a oced:Event,
+res:event-e_452e11af7164d138b9321f0f20e6167e4f6ea097 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2011-03-10T11:53:10+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_e40f68cccd0e96a11e5e8a02f645b204be2638c0 ;
+    ext:handled_by_team_member res:object-o_2d891288710f861d8f0b332851dbe969e54d98b8 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_49247589eea19f4dfa58e9a07e283225a29a8562 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2011-04-06T11:48:33+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_ad119430ec1726ae1af7944ccaf04c6be9bd5da6 ;
+    ext:handled_by_team_member res:object-o_4aa6497c1904722bab76c14d944ca54ffe2a79dd ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_4ae3c8b1a67108c2e4459b4076d87df7488ea76c a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2010-03-31T17:00:56+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_bbbc1730b0e8daffa386c45d324bba37818b0af7 ;
+    ext:handled_by_team_member res:object-o_87fd5beb0bb96f55820c502f201ae69f26013bb1 ;
+    ext:handled_in_service_center res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a ;
+    ext:is_handled_by_support_team_function res:object-o_20b70760f04ac00d530f79d286311cf3242a4522 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 .
+
+res:event-e_4e5452fd3dd88dd99ff25d00832c3e3a902e453c a oced:Event,
+        ext:Accepted_Wait ;
+    oced:observed_at "2011-04-07T14:06:06+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_ad119430ec1726ae1af7944ccaf04c6be9bd5da6 ;
+    ext:handled_by_team_member res:object-o_4aa6497c1904722bab76c14d944ca54ffe2a79dd ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "Wait" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_562b370f790b18af8c970655bc66a141fc473b25 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2012-01-25T15:53:07+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_12ae6d5976da97e2425d864a8305dfe2b7d1f93c ;
+    ext:handled_by_team_member res:object-o_6dc9cd41b7f1cfcd923e6249b156bf9a31d538cb ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_5876e01255355e89800a83f8a9bce2b767858bd3 a oced:Event,
+        ext:Accepted_Assigned ;
+    oced:observed_at "2010-04-20T11:07:19+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_00d2da1ce3b7e656f478962fbb580b1544711f74 ;
+    ext:handled_by_team_member res:object-o_585949f23cf0b0d82ba80b25596efb19920d21c1 ;
+    ext:handled_in_service_center res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a ;
+    ext:is_handled_by_support_team_function res:object-o_1b1302111f5879bfe04434b3072c52e5bd236fd4 ;
+    ext:lifecycle_transition "Assigned" ;
+    ext:pertains_to res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 .
+
+res:event-e_59efbe519a4c69fa52751bfde0e632cb3782b962 a oced:Event,
+        ext:Completed_Resolved ;
+    oced:observed_at "2010-04-06T16:44:51+02:00"^^xsd:dateTime ;
+    ext:concept_name "Completed" ;
+    ext:handled_by_support_team res:object-o_dab82e5b42227956bab3fa045906a7739e484923 ;
+    ext:handled_by_team_member res:object-o_585949f23cf0b0d82ba80b25596efb19920d21c1 ;
+    ext:handled_in_service_center res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a ;
+    ext:is_handled_by_support_team_function res:object-o_1b1302111f5879bfe04434b3072c52e5bd236fd4 ;
+    ext:lifecycle_transition "Resolved" ;
+    ext:pertains_to res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 .
+
+res:event-e_7191976b7b8c77f603d492a434cf2411b773614e a oced:Event,
+        ext:Accepted_Wait_-_Implementation ;
+    oced:observed_at "2011-03-09T11:27:05+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_e40f68cccd0e96a11e5e8a02f645b204be2638c0 ;
+    ext:handled_by_team_member res:object-o_5bfd1199bd684529b2c7e511bd14c006d4491a7b ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:lifecycle_transition "Wait - Implementation" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_72512d4806059210644d859341eec5d323ed0f1f a oced:Event,
+        ext:Accepted_Assigned ;
+    oced:observed_at "2011-04-06T11:47:50+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_ad119430ec1726ae1af7944ccaf04c6be9bd5da6 ;
+    ext:handled_by_team_member res:object-o_1c25a92ca96e386e946f289882abb4703e140955 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "Assigned" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_7b9f799d620e055381f0e47e934d12ef41c14c8d a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2011-04-08T14:10:59+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_ad119430ec1726ae1af7944ccaf04c6be9bd5da6 ;
+    ext:handled_by_team_member res:object-o_4aa6497c1904722bab76c14d944ca54ffe2a79dd ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_84163b5361a881fbf554015fd01a03ba3609c2a6 a oced:Event,
+        ext:Accepted_Assigned ;
+    oced:observed_at "2012-04-11T17:11:25+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_00d2da1ce3b7e656f478962fbb580b1544711f74 ;
+    ext:handled_by_team_member res:object-o_47746dbee8566eb569e31ebf592b3b8af6ac305d ;
+    ext:handled_in_service_center res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a ;
+    ext:is_handled_by_support_team_function res:object-o_1b1302111f5879bfe04434b3072c52e5bd236fd4 ;
+    ext:lifecycle_transition "Assigned" ;
+    ext:pertains_to res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 .
+
+res:event-e_844ce0dc90eb9d76e5ed69543264fc40094ba1a5 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2010-04-06T16:44:07+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_00d2da1ce3b7e656f478962fbb580b1544711f74 ;
+    ext:handled_by_team_member res:object-o_585949f23cf0b0d82ba80b25596efb19920d21c1 ;
+    ext:handled_in_service_center res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a ;
+    ext:is_handled_by_support_team_function res:object-o_1b1302111f5879bfe04434b3072c52e5bd236fd4 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 .
+
+res:event-e_8c7e395a8017fc84491bc0913bf4da798735de44 a oced:Event,
+        ext:Accepted_Assigned ;
+    oced:observed_at "2011-03-10T11:53:22+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_e40f68cccd0e96a11e5e8a02f645b204be2638c0 ;
+    ext:handled_by_team_member res:object-o_2d891288710f861d8f0b332851dbe969e54d98b8 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:lifecycle_transition "Assigned" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_94a5cb1b10659d2db12a2cc9ca1841e1a9c3d103 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2012-04-11T17:11:17+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_00d2da1ce3b7e656f478962fbb580b1544711f74 ;
+    ext:handled_by_team_member res:object-o_47746dbee8566eb569e31ebf592b3b8af6ac305d ;
+    ext:handled_in_service_center res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a ;
+    ext:is_handled_by_support_team_function res:object-o_1b1302111f5879bfe04434b3072c52e5bd236fd4 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 .
+
+res:event-e_97545d10faf0f65ca8cdca3fae1e72ba949d99ca a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2011-04-07T13:36:47+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_ad119430ec1726ae1af7944ccaf04c6be9bd5da6 ;
+    ext:handled_by_team_member res:object-o_4aa6497c1904722bab76c14d944ca54ffe2a79dd ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_9a46ac870745b2c2bdefcd6d3bd4aac312775e68 a oced:Event,
+        ext:Queued_Awaiting_Assignment ;
+    oced:observed_at "2011-04-05T18:02:01+02:00"^^xsd:dateTime ;
+    ext:concept_name "Queued" ;
+    ext:handled_by_support_team res:object-o_ad119430ec1726ae1af7944ccaf04c6be9bd5da6 ;
+    ext:handled_by_team_member res:object-o_0ac6c7024577bc6619c9eea6d04cb553c23b371e ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "Awaiting Assignment" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_9e39ffc84caa3dc58ae3cc8909bb45e3a9cc7e56 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2011-03-09T11:08:06+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_e40f68cccd0e96a11e5e8a02f645b204be2638c0 ;
+    ext:handled_by_team_member res:object-o_5bfd1199bd684529b2c7e511bd14c006d4491a7b ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_a5f14a9b85d7b29bba9ede74ca1a592cd6fe8273 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2011-01-31T11:12:22+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_00ab85e71e99b26633b6abc08526e90c47fef89f ;
+    ext:handled_by_team_member res:object-o_b7a60589959f09f3103eaae2ef0fbeabac4faae2 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_a802acea3b579c44f3fc413b66f79b3c93651be2 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2010-04-08T12:52:23+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_bbbc1730b0e8daffa386c45d324bba37818b0af7 ;
+    ext:handled_by_team_member res:object-o_6c8d469e9894b7096bef01279d38fe44ee3ac071 ;
+    ext:handled_in_service_center res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a ;
+    ext:is_handled_by_support_team_function res:object-o_20b70760f04ac00d530f79d286311cf3242a4522 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 .
+
+res:event-e_aba54071a30df6472dd632b528870066598da42e a oced:Event,
+        ext:Queued_Awaiting_Assignment ;
+    oced:observed_at "2010-04-06T16:45:07+02:00"^^xsd:dateTime ;
+    ext:concept_name "Queued" ;
+    ext:handled_by_support_team res:object-o_bbbc1730b0e8daffa386c45d324bba37818b0af7 ;
+    ext:handled_by_team_member res:object-o_585949f23cf0b0d82ba80b25596efb19920d21c1 ;
+    ext:handled_in_service_center res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a ;
+    ext:is_handled_by_support_team_function res:object-o_20b70760f04ac00d530f79d286311cf3242a4522 ;
+    ext:lifecycle_transition "Awaiting Assignment" ;
+    ext:pertains_to res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 .
+
+res:event-e_abb547307b417b9e91636d074ac01d1c54f362e4 a oced:Event,
+        ext:Accepted_Wait_-_User ;
+    oced:observed_at "2011-03-10T12:21:51+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_e40f68cccd0e96a11e5e8a02f645b204be2638c0 ;
+    ext:handled_by_team_member res:object-o_4ac71989397aa7469ee98812f4a9b8b22302412a ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:lifecycle_transition "Wait - User" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_b0416802de7ba73e87ad802f0fc607418ae3fda3 a oced:Event,
+        ext:Accepted_Assigned ;
+    oced:observed_at "2011-03-14T07:56:20+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_e40f68cccd0e96a11e5e8a02f645b204be2638c0 ;
+    ext:handled_by_team_member res:object-o_4ac71989397aa7469ee98812f4a9b8b22302412a ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:lifecycle_transition "Assigned" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_b12060ddfadb85bf7238bfb26de503c5df0d0a39 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2011-01-31T12:59:46+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_ad119430ec1726ae1af7944ccaf04c6be9bd5da6 ;
+    ext:handled_by_team_member res:object-o_1c25a92ca96e386e946f289882abb4703e140955 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_b199196a4dce3230d94f84fb362011959b4c57fb a oced:Event,
+        ext:Accepted_Wait_-_Implementation ;
+    oced:observed_at "2011-11-21T13:52:57+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_74652d9897349ccf3c249ff87bd05bb1bcfabf25 ;
+    ext:handled_by_team_member res:object-o_1ef533cf8e74d113414d62d477a0a4303ca929e5 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "Wait - Implementation" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_b24cad7544ea4a7fa080ebfcd07e9a701ddfa8c0 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2012-05-03T11:10:10+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_00d2da1ce3b7e656f478962fbb580b1544711f74 ;
+    ext:handled_by_team_member res:object-o_278043df43d8a5744e5bc9e3f0cae0b7a7254c49 ;
+    ext:handled_in_service_center res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a ;
+    ext:is_handled_by_support_team_function res:object-o_1b1302111f5879bfe04434b3072c52e5bd236fd4 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 .
+
+res:event-e_b39da91fae4749af38b82c9240ec0a42686ec7d3 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2012-05-15T17:56:51+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_00ab85e71e99b26633b6abc08526e90c47fef89f ;
+    ext:handled_by_team_member res:object-o_cb1627a30dccdc5972413eafc82bf4a739d2e657 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_b41ef94c284819e9e46f06484cd7fc60e5e2e996 a oced:Event,
+        ext:Completed_Closed ;
+    oced:observed_at "2012-05-11T01:26:15+02:00"^^xsd:dateTime ;
+    ext:concept_name "Completed" ;
+    ext:handled_by_support_team res:object-o_00d2da1ce3b7e656f478962fbb580b1544711f74 ;
+    ext:handled_by_team_member res:object-o_50a2dc176b46d94ce124617b93cf8a137879d716 ;
+    ext:handled_in_service_center res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a ;
+    ext:is_handled_by_support_team_function res:object-o_1b1302111f5879bfe04434b3072c52e5bd236fd4 ;
+    ext:lifecycle_transition "Closed" ;
+    ext:pertains_to res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 .
+
+res:event-e_b7250120487abb951e371e2e2688e67a4b1a597b a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2011-08-08T15:28:38+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_74652d9897349ccf3c249ff87bd05bb1bcfabf25 ;
+    ext:handled_by_team_member res:object-o_1ef533cf8e74d113414d62d477a0a4303ca929e5 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_b8e21e1180637f92453cccb498330b0104b2f4bd a oced:Event,
+        ext:Accepted_Wait ;
+    oced:observed_at "2011-04-08T14:17:44+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_ad119430ec1726ae1af7944ccaf04c6be9bd5da6 ;
+    ext:handled_by_team_member res:object-o_4aa6497c1904722bab76c14d944ca54ffe2a79dd ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "Wait" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_b951ce2a3cdc17650d04f231b410de128a60d917 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2011-04-06T10:32:07+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_ad119430ec1726ae1af7944ccaf04c6be9bd5da6 ;
+    ext:handled_by_team_member res:object-o_1c25a92ca96e386e946f289882abb4703e140955 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_cd816ea2240a1426b9b2990d765d165044b7bf6b a oced:Event,
+        ext:Accepted_Wait_-_User ;
+    oced:observed_at "2011-04-06T12:08:47+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_ad119430ec1726ae1af7944ccaf04c6be9bd5da6 ;
+    ext:handled_by_team_member res:object-o_4aa6497c1904722bab76c14d944ca54ffe2a79dd ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "Wait - User" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_d04fb5ed35f7796dd5f50b6ca542e4958d917651 a oced:Event,
+        ext:Queued_Awaiting_Assignment ;
+    oced:observed_at "2012-01-25T15:54:00+01:00"^^xsd:dateTime ;
+    ext:concept_name "Queued" ;
+    ext:handled_by_support_team res:object-o_74652d9897349ccf3c249ff87bd05bb1bcfabf25 ;
+    ext:handled_by_team_member res:object-o_6dc9cd41b7f1cfcd923e6249b156bf9a31d538cb ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "Awaiting Assignment" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_d0d72da0181b5b69cd0f96d03bd51a10431dc5ce a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2011-11-21T13:52:19+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_74652d9897349ccf3c249ff87bd05bb1bcfabf25 ;
+    ext:handled_by_team_member res:object-o_1ef533cf8e74d113414d62d477a0a4303ca929e5 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_d248d933997280a52a05dc955426215efaeaedc1 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2010-04-06T16:44:47+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_dab82e5b42227956bab3fa045906a7739e484923 ;
+    ext:handled_by_team_member res:object-o_585949f23cf0b0d82ba80b25596efb19920d21c1 ;
+    ext:handled_in_service_center res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a ;
+    ext:is_handled_by_support_team_function res:object-o_1b1302111f5879bfe04434b3072c52e5bd236fd4 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 .
+
+res:event-e_d29f9e25f7cd750cdff531386ca0cd02a3726244 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2011-03-14T07:58:01+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_e40f68cccd0e96a11e5e8a02f645b204be2638c0 ;
+    ext:handled_by_team_member res:object-o_5bfd1199bd684529b2c7e511bd14c006d4491a7b ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_db03b3c24062216dca1fa0d55b2be3bf44711041 a oced:Event,
         ext:Queued_Awaiting_Assignment ;
     oced:observed_at "2011-01-31T11:19:05+01:00"^^xsd:dateTime ;
     ext:concept_name "Queued" ;
-    ext:event_case res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 ;
-    ext:handled_by_support_team res:object-o_4f987b0921a9b990544b15a797b5107679af8569 ;
-    ext:handled_by_team_member res:object-o_724cc7360399d2bb8acb5cbba9565c3bff690494 ;
-    ext:handled_in_service_center res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d ;
-    ext:has_impact res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 ;
-    ext:is_about_function res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c ;
-    ext:is_about_product res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 ;
-    ext:lifecycle_transition "Awaiting Assignment" .
+    ext:handled_by_support_team res:object-o_ad119430ec1726ae1af7944ccaf04c6be9bd5da6 ;
+    ext:handled_by_team_member res:object-o_b7a60589959f09f3103eaae2ef0fbeabac4faae2 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "Awaiting Assignment" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_e50f721113a2931626937da23f01eaa8dc3137b6 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2011-02-07T12:37:33+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_61c0fc959502006721a2cbea58c529db0e6cdfc2 ;
+    ext:handled_by_team_member res:object-o_971f5b4d65fd3d540faa9f8f7abc1b7b5f15a56c ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_80f365bd5d3a42072f987f68dc707872c17bfa09 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_e6d56f61baeb218054021cd4a3a1f8837e243b7e a oced:Event,
+        ext:Queued_Awaiting_Assignment ;
+    oced:observed_at "2012-01-25T15:50:41+01:00"^^xsd:dateTime ;
+    ext:concept_name "Queued" ;
+    ext:handled_by_support_team res:object-o_12ae6d5976da97e2425d864a8305dfe2b7d1f93c ;
+    ext:handled_by_team_member res:object-o_1ef533cf8e74d113414d62d477a0a4303ca929e5 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:lifecycle_transition "Awaiting Assignment" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_e7bd1b54d05935febfc8c0227846c27896b49115 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2011-04-05T17:59:52+02:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_e40f68cccd0e96a11e5e8a02f645b204be2638c0 ;
+    ext:handled_by_team_member res:object-o_0ac6c7024577bc6619c9eea6d04cb553c23b371e ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_ead44818cd6ffa412959f23cc098c537a01cfce1 a oced:Event,
+        ext:Accepted_Wait ;
+    oced:observed_at "2011-03-14T07:58:55+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_e40f68cccd0e96a11e5e8a02f645b204be2638c0 ;
+    ext:handled_by_team_member res:object-o_5bfd1199bd684529b2c7e511bd14c006d4491a7b ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:lifecycle_transition "Wait" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_eb610afaaddd57bd998ac9a7e643edc403781eb5 a oced:Event,
+        ext:Queued_Awaiting_Assignment ;
+    oced:observed_at "2010-03-31T17:45:48+02:00"^^xsd:dateTime ;
+    ext:concept_name "Queued" ;
+    ext:handled_by_support_team res:object-o_00d2da1ce3b7e656f478962fbb580b1544711f74 ;
+    ext:handled_by_team_member res:object-o_87fd5beb0bb96f55820c502f201ae69f26013bb1 ;
+    ext:handled_in_service_center res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a ;
+    ext:is_handled_by_support_team_function res:object-o_1b1302111f5879bfe04434b3072c52e5bd236fd4 ;
+    ext:lifecycle_transition "Awaiting Assignment" ;
+    ext:pertains_to res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 .
+
+res:event-e_f2b68d4c892629954f3efb892a1c965ce00e23d0 a oced:Event,
+        ext:Accepted_In_Progress ;
+    oced:observed_at "2011-01-31T11:18:44+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_00ab85e71e99b26633b6abc08526e90c47fef89f ;
+    ext:handled_by_team_member res:object-o_b7a60589959f09f3103eaae2ef0fbeabac4faae2 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:lifecycle_transition "In Progress" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_f7869eda35cf85e9fafc3d81b24dfc33fc089140 a oced:Event,
+        ext:Queued_Awaiting_Assignment ;
+    oced:observed_at "2011-02-03T08:28:58+01:00"^^xsd:dateTime ;
+    ext:concept_name "Queued" ;
+    ext:handled_by_support_team res:object-o_61c0fc959502006721a2cbea58c529db0e6cdfc2 ;
+    ext:handled_by_team_member res:object-o_1c25a92ca96e386e946f289882abb4703e140955 ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_80f365bd5d3a42072f987f68dc707872c17bfa09 ;
+    ext:lifecycle_transition "Awaiting Assignment" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:event-e_fd2006f2c701cb84ccbd8b274bc1f3a8a63b0ba4 a oced:Event,
+        ext:Accepted_Wait_-_Implementation ;
+    oced:observed_at "2011-02-07T12:38:25+01:00"^^xsd:dateTime ;
+    ext:concept_name "Accepted" ;
+    ext:handled_by_support_team res:object-o_61c0fc959502006721a2cbea58c529db0e6cdfc2 ;
+    ext:handled_by_team_member res:object-o_971f5b4d65fd3d540faa9f8f7abc1b7b5f15a56c ;
+    ext:handled_in_service_center res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab ;
+    ext:is_handled_by_support_team_function res:object-o_80f365bd5d3a42072f987f68dc707872c17bfa09 ;
+    ext:lifecycle_transition "Wait - Implementation" ;
+    ext:pertains_to res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb .
+
+res:object-o_411f803f3553c28a882cf0d5ba9d21fb11d3b3a9 a oced:Object ;
+    ext:resource_country "France" .
+
+res:object-o_69931edd4abe88415b892ae5b746025e7c3036d5 a oced:Object ;
+    ext:resource_country "0" .
+
+res:object-o_7d6be646214f42c9dc406f7471108945223745d7 a oced:Object ;
+    ext:resource_country "Sweden" .
 
 <https://w3id.org/semsys/ns/ocedo/core> a owl:Ontology ;
     dcterms:contributor "Claudio di Ciccio",
@@ -866,21 +884,16 @@ res:event-e_fc087c1e0a603ad9d7fbeb074907df1f87480913 a oced:Event,
     vann:preferredNamespacePrefix "oced" ;
     vann:preferredNamespaceUri "https://w3id.org/semsys/ns/ocedo/core#" .
 
-res:object-o_8804013a0263452eb3bd3fa5d1dfb5fa84dd2a4d a oced:Object,
-        ext:Location ;
-    ext:resource_country "0" .
-
-res:object-o_a02667834b459423cdf75974ed875db1ce700bf2 a oced:Object,
-        ext:TeamMember ;
-    ext:located_in res:object-o_7f487e30ead848576587bb5af1ef1b17b06d9a2c ;
-    ext:org_resource "Gustav" ;
-    ext:part_of res:object-o_452845ad05a33724a284255bf2ba274b8bde9398 .
-
-res:object-o_c908a91ddade75102fc0e5230d958af36e07646b a oced:Object,
+res:object-o_0d6102a7822e4b3e1776528c555db3017a458582 a oced:Object,
         ext:Location ;
     ext:organization_country "fr" .
 
-res:object-o_f8b921d036ab29ffd297d7f1cd4eb44fc2d79fe1 a oced:Object,
+res:object-o_735fc2e9bb2335b8d3552f258724f73fdc23dd4e a oced:Object,
+        ext:TeamMember ;
+    ext:org_resource "Gustav" ;
+    ext:works_in res:object-o_8567f835e3276ee2139eef5a5964ac5e0be0ae3e .
+
+res:object-o_92aeba63c6cc52f4ea662a8b0475e9ec6ff4195e a oced:Object,
         ext:Location ;
     ext:organization_country "se" .
 
@@ -896,63 +909,54 @@ ext:Completed_Closed a owl:Class ;
 ext:Impact a owl:Class ;
     rdfs:subClassOf ext:ObjectBPIC2013 .
 
-res:object-o_127122a8963445e0c0b3cffa081f791aef51003c a oced:Object,
+res:object-o_0ac6c7024577bc6619c9eea6d04cb553c23b371e a oced:Object,
         ext:TeamMember ;
-    ext:located_in res:object-o_180fec2ce3b4930879079e82dcd22c82c7fdf3aa ;
-    ext:org_resource "Sarah" ;
-    ext:part_of res:object-o_b6f185307e97fff17e761c816ac4a30935de6430 .
-
-res:object-o_1f745918e5c210fecb45e290cbb4ac11a1118a92 a oced:Object,
-        ext:TeamMember ;
-    ext:located_in res:object-o_7f487e30ead848576587bb5af1ef1b17b06d9a2c ;
-    ext:org_resource "Paul" ;
-    ext:part_of res:object-o_6a7a54f6091b56a718946893d3c2018caeeb182f .
-
-res:object-o_906abbca23cf67f23c1f186cccd13e3a912202af a oced:Object,
-        ext:TeamMember ;
-    ext:located_in res:object-o_7f487e30ead848576587bb5af1ef1b17b06d9a2c ;
     ext:org_resource "Suliman" ;
-    ext:part_of res:object-o_4f987b0921a9b990544b15a797b5107679af8569,
-        res:object-o_59eb4033203ab4becf36124326f8e686cef692da .
+    ext:works_in res:object-o_ad119430ec1726ae1af7944ccaf04c6be9bd5da6,
+        res:object-o_e40f68cccd0e96a11e5e8a02f645b204be2638c0 .
 
-res:object-o_91d4976099d727fe3cb005c5ff3014a011f51a87 a oced:Object,
+res:object-o_278043df43d8a5744e5bc9e3f0cae0b7a7254c49 a oced:Object,
         ext:TeamMember ;
-    ext:located_in res:object-o_7f487e30ead848576587bb5af1ef1b17b06d9a2c ;
-    ext:org_resource "Andreas" ;
-    ext:part_of res:object-o_890d9c9402c98526c3e6c4393b168c5e2507ba9f,
-        res:object-o_8ea49fcddd3913adfb416ad4f5d4e416f0a65fd9 .
-
-res:object-o_a020565ada69b30358c2048ba9df65f7870a16f9 a oced:Object,
-        ext:TeamMember ;
-    ext:located_in res:object-o_180fec2ce3b4930879079e82dcd22c82c7fdf3aa ;
     ext:org_resource "Loic" ;
-    ext:part_of res:object-o_b6f185307e97fff17e761c816ac4a30935de6430 .
+    ext:works_in res:object-o_00d2da1ce3b7e656f478962fbb580b1544711f74 .
 
-res:object-o_bf115ed95fe836b6fb6027b350e877c0334f5876 a oced:Object,
+res:object-o_2d891288710f861d8f0b332851dbe969e54d98b8 a oced:Object,
         ext:TeamMember ;
-    ext:located_in res:object-o_180fec2ce3b4930879079e82dcd22c82c7fdf3aa ;
-    ext:org_resource "Eric" ;
-    ext:part_of res:object-o_acd826fa52dcb677f8e8718c223b0ce0823f1084,
-        res:object-o_b6f185307e97fff17e761c816ac4a30935de6430 .
-
-res:object-o_e8b14c79f0c86023344b8a8a89b084ab818e5a03 a oced:Object,
-        ext:TeamMember ;
-    ext:located_in res:object-o_7f487e30ead848576587bb5af1ef1b17b06d9a2c ;
-    ext:org_resource "Torbjörn" ;
-    ext:part_of res:object-o_84985a629c6f4167bf273a71d9019c856edaeb32 .
-
-res:object-o_ec0a6d4583441090d5624451406c7b9869c14011 a oced:Object,
-        ext:TeamMember ;
-    ext:located_in res:object-o_8804013a0263452eb3bd3fa5d1dfb5fa84dd2a4d ;
-    ext:org_resource "Siebel" ;
-    ext:part_of res:object-o_84985a629c6f4167bf273a71d9019c856edaeb32,
-        res:object-o_b6f185307e97fff17e761c816ac4a30935de6430 .
-
-res:object-o_f74e7fe0b3d0710c4a81622f4c552643f94a5053 a oced:Object,
-        ext:TeamMember ;
-    ext:located_in res:object-o_7f487e30ead848576587bb5af1ef1b17b06d9a2c ;
     ext:org_resource "Joseph" ;
-    ext:part_of res:object-o_59eb4033203ab4becf36124326f8e686cef692da .
+    ext:works_in res:object-o_e40f68cccd0e96a11e5e8a02f645b204be2638c0 .
+
+res:object-o_47746dbee8566eb569e31ebf592b3b8af6ac305d a oced:Object,
+        ext:TeamMember ;
+    ext:org_resource "Sarah" ;
+    ext:works_in res:object-o_00d2da1ce3b7e656f478962fbb580b1544711f74 .
+
+res:object-o_50a2dc176b46d94ce124617b93cf8a137879d716 a oced:Object,
+        ext:TeamMember ;
+    ext:org_resource "Siebel" ;
+    ext:works_in res:object-o_00ab85e71e99b26633b6abc08526e90c47fef89f,
+        res:object-o_00d2da1ce3b7e656f478962fbb580b1544711f74 .
+
+res:object-o_6c8d469e9894b7096bef01279d38fe44ee3ac071 a oced:Object,
+        ext:TeamMember ;
+    ext:org_resource "Eric" ;
+    ext:works_in res:object-o_00d2da1ce3b7e656f478962fbb580b1544711f74,
+        res:object-o_bbbc1730b0e8daffa386c45d324bba37818b0af7 .
+
+res:object-o_6dc9cd41b7f1cfcd923e6249b156bf9a31d538cb a oced:Object,
+        ext:TeamMember ;
+    ext:org_resource "Andreas" ;
+    ext:works_in res:object-o_12ae6d5976da97e2425d864a8305dfe2b7d1f93c,
+        res:object-o_74652d9897349ccf3c249ff87bd05bb1bcfabf25 .
+
+res:object-o_971f5b4d65fd3d540faa9f8f7abc1b7b5f15a56c a oced:Object,
+        ext:TeamMember ;
+    ext:org_resource "Paul" ;
+    ext:works_in res:object-o_61c0fc959502006721a2cbea58c529db0e6cdfc2 .
+
+res:object-o_cb1627a30dccdc5972413eafc82bf4a739d2e657 a oced:Object,
+        ext:TeamMember ;
+    ext:org_resource "Torbjörn" ;
+    ext:works_in res:object-o_00ab85e71e99b26633b6abc08526e90c47fef89f .
 
 ext:Accepted_Wait_-_Implementation a owl:Class ;
     rdfs:subClassOf ext:EventBPIC2013 .
@@ -960,137 +964,127 @@ ext:Accepted_Wait_-_Implementation a owl:Class ;
 ext:Accepted_Wait_-_User a owl:Class ;
     rdfs:subClassOf ext:EventBPIC2013 .
 
-ext:Case a owl:Class ;
-    rdfs:subClassOf ext:ObjectBPIC2013 .
-
 ext:Completed_Resolved a owl:Class ;
-    rdfs:subClassOf ext:EventBPIC2013 .
-
-ext:Product a owl:Class ;
-    rdfs:subClassOf ext:ObjectBPIC2013 .
-
-res:object-o_3fd7a541760432406179672a5c405514b0524262 a oced:Object,
-        ext:SupportTeam ;
-    ext:org_group "V13 2nd 3rd" ;
-    ext:part_of res:object-o_710d2b95926d93c6752803c2ba076f2172876602 .
-
-res:object-o_724cc7360399d2bb8acb5cbba9565c3bff690494 a oced:Object,
-        ext:TeamMember ;
-    ext:located_in res:object-o_7f487e30ead848576587bb5af1ef1b17b06d9a2c ;
-    ext:org_resource "Adam" ;
-    ext:part_of res:object-o_4f987b0921a9b990544b15a797b5107679af8569,
-        res:object-o_84985a629c6f4167bf273a71d9019c856edaeb32 .
-
-res:object-o_b71e2f42d9f5ab0141fcde92423d5a4ab66087db a oced:Object,
-        ext:TeamMember ;
-    ext:located_in res:object-o_180fec2ce3b4930879079e82dcd22c82c7fdf3aa ;
-    ext:org_resource "Frederic" ;
-    ext:part_of res:object-o_acd826fa52dcb677f8e8718c223b0ce0823f1084,
-        res:object-o_b6f185307e97fff17e761c816ac4a30935de6430 .
-
-res:object-o_b973d7148a4ccb3b87840b8deeb8c5c9515113f8 a oced:Object,
-        ext:ProductFunction ;
-    ext:org_role "C_6" .
-
-ext:Accepted_Wait a owl:Class ;
-    rdfs:subClassOf ext:EventBPIC2013 .
-
-res:object-o_452845ad05a33724a284255bf2ba274b8bde9398 a oced:Object,
-        ext:SupportTeam ;
-    ext:org_group "G137 2nd" ;
-    ext:part_of res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d .
-
-res:object-o_52d6ebee802dc542e92285bb2cd21d463a7e15dd a oced:Object,
-        ext:TeamMember ;
-    ext:located_in res:object-o_7f487e30ead848576587bb5af1ef1b17b06d9a2c ;
-    ext:org_resource "Björn T" ;
-    ext:part_of res:object-o_59eb4033203ab4becf36124326f8e686cef692da .
-
-res:object-o_8ea49fcddd3913adfb416ad4f5d4e416f0a65fd9 a oced:Object,
-        ext:SupportTeam ;
-    ext:org_group "G142 2nd" ;
-    ext:part_of res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d .
-
-res:object-o_e05a43dc96de8584d0af66dcb9dd1688d06af052 a oced:Object,
-        ext:TeamMember ;
-    ext:located_in res:object-o_7f487e30ead848576587bb5af1ef1b17b06d9a2c ;
-    ext:org_resource "Åse" ;
-    ext:part_of res:object-o_59eb4033203ab4becf36124326f8e686cef692da .
-
-ext:ServiceCenter a owl:Class ;
-    rdfs:subClassOf ext:ObjectBPIC2013 .
-
-res:object-o_01d7f32d6571ebdd66914e5b409868bc7745f914 a oced:Object,
-        ext:TeamMember ;
-    ext:located_in res:object-o_7f487e30ead848576587bb5af1ef1b17b06d9a2c ;
-    ext:org_resource "Magnus" ;
-    ext:part_of res:object-o_890d9c9402c98526c3e6c4393b168c5e2507ba9f,
-        res:object-o_8ea49fcddd3913adfb416ad4f5d4e416f0a65fd9 .
-
-res:object-o_180fec2ce3b4930879079e82dcd22c82c7fdf3aa a oced:Object,
-        ext:Location ;
-    ext:resource_country "France" .
-
-res:object-o_1c4f1e7feae5de94a232f9585d92095dc9fe8bb4 a oced:Object,
-        ext:TeamMember ;
-    ext:located_in res:object-o_7f487e30ead848576587bb5af1ef1b17b06d9a2c ;
-    ext:org_resource "Denny" ;
-    ext:part_of res:object-o_4f987b0921a9b990544b15a797b5107679af8569,
-        res:object-o_6a7a54f6091b56a718946893d3c2018caeeb182f .
-
-res:object-o_6a7a54f6091b56a718946893d3c2018caeeb182f a oced:Object,
-        ext:SupportTeam ;
-    ext:org_group "O3 3rd" ;
-    ext:part_of res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d .
-
-res:object-o_83b7782037583e41a1e6b4b8ad6fbb6b6195f3dd a oced:Object,
-        ext:ProductFunction ;
-    ext:org_role "A2_4" .
-
-ext:Accepted_Assigned a owl:Class ;
     rdfs:subClassOf ext:EventBPIC2013 .
 
 ext:Location a owl:Class ;
     rdfs:subClassOf ext:ObjectBPIC2013 .
 
-ext:ProductFunction a owl:Class ;
+ext:Product a owl:Class ;
     rdfs:subClassOf ext:ObjectBPIC2013 .
 
-res:object-o_5c1a1828aa3d21a9ec2059041bc9281f3e305438 a oced:Object,
+res:object-o_87fd5beb0bb96f55820c502f201ae69f26013bb1 a oced:Object,
         ext:TeamMember ;
-    ext:located_in res:object-o_7f487e30ead848576587bb5af1ef1b17b06d9a2c ;
-    ext:org_resource "Jon" ;
-    ext:part_of res:object-o_452845ad05a33724a284255bf2ba274b8bde9398,
-        res:object-o_4f987b0921a9b990544b15a797b5107679af8569 .
+    ext:org_resource "Frederic" ;
+    ext:works_in res:object-o_00d2da1ce3b7e656f478962fbb580b1544711f74,
+        res:object-o_bbbc1730b0e8daffa386c45d324bba37818b0af7 .
 
-res:object-o_890d9c9402c98526c3e6c4393b168c5e2507ba9f a oced:Object,
+res:object-o_b7a60589959f09f3103eaae2ef0fbeabac4faae2 a oced:Object,
+        ext:TeamMember ;
+    ext:org_resource "Adam" ;
+    ext:works_in res:object-o_00ab85e71e99b26633b6abc08526e90c47fef89f,
+        res:object-o_ad119430ec1726ae1af7944ccaf04c6be9bd5da6 .
+
+res:object-o_dab82e5b42227956bab3fa045906a7739e484923 a oced:Object,
         ext:SupportTeam ;
-    ext:org_group "M25" ;
-    ext:part_of res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d .
+    ext:is_part_of res:object-o_1b1302111f5879bfe04434b3072c52e5bd236fd4 ;
+    ext:org_group "V13 2nd 3rd" .
 
-res:object-o_c022fdda8f0ce4e21c4e0f50b56a294267a007d9 a oced:Object,
+ext:Accepted_Wait a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2013 .
+
+res:object-o_12ae6d5976da97e2425d864a8305dfe2b7d1f93c a oced:Object,
+        ext:SupportTeam ;
+    ext:is_part_of res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:org_group "G142 2nd" .
+
+res:object-o_4ac71989397aa7469ee98812f4a9b8b22302412a a oced:Object,
         ext:TeamMember ;
-    ext:located_in res:object-o_180fec2ce3b4930879079e82dcd22c82c7fdf3aa ;
+    ext:org_resource "Björn T" ;
+    ext:works_in res:object-o_e40f68cccd0e96a11e5e8a02f645b204be2638c0 .
+
+res:object-o_5bfd1199bd684529b2c7e511bd14c006d4491a7b a oced:Object,
+        ext:TeamMember ;
+    ext:org_resource "Åse" ;
+    ext:works_in res:object-o_e40f68cccd0e96a11e5e8a02f645b204be2638c0 .
+
+res:object-o_80f365bd5d3a42072f987f68dc707872c17bfa09 a oced:Object,
+        ext:Function ;
+    ext:is_within res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
+    ext:org_role "C_6" .
+
+res:object-o_8567f835e3276ee2139eef5a5964ac5e0be0ae3e a oced:Object,
+        ext:SupportTeam ;
+    ext:is_part_of res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:org_group "G137 2nd" .
+
+ext:Incident a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2013 .
+
+ext:ServiceCenter a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2013 .
+
+res:object-o_1c25a92ca96e386e946f289882abb4703e140955 a oced:Object,
+        ext:TeamMember ;
+    ext:org_resource "Denny" ;
+    ext:works_in res:object-o_61c0fc959502006721a2cbea58c529db0e6cdfc2,
+        res:object-o_ad119430ec1726ae1af7944ccaf04c6be9bd5da6 .
+
+res:object-o_1ef533cf8e74d113414d62d477a0a4303ca929e5 a oced:Object,
+        ext:TeamMember ;
+    ext:org_resource "Magnus" ;
+    ext:works_in res:object-o_12ae6d5976da97e2425d864a8305dfe2b7d1f93c,
+        res:object-o_74652d9897349ccf3c249ff87bd05bb1bcfabf25 .
+
+res:object-o_61c0fc959502006721a2cbea58c529db0e6cdfc2 a oced:Object,
+        ext:SupportTeam ;
+    ext:is_part_of res:object-o_80f365bd5d3a42072f987f68dc707872c17bfa09 ;
+    ext:org_group "O3 3rd" .
+
+ext:Accepted_Assigned a owl:Class ;
+    rdfs:subClassOf ext:EventBPIC2013 .
+
+res:object-o_20b70760f04ac00d530f79d286311cf3242a4522 a oced:Object,
+        ext:Function ;
+    ext:is_within res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:org_role "A2_4" .
+
+res:object-o_4aa6497c1904722bab76c14d944ca54ffe2a79dd a oced:Object,
+        ext:TeamMember ;
+    ext:org_resource "Jon" ;
+    ext:works_in res:object-o_8567f835e3276ee2139eef5a5964ac5e0be0ae3e,
+        res:object-o_ad119430ec1726ae1af7944ccaf04c6be9bd5da6 .
+
+res:object-o_585949f23cf0b0d82ba80b25596efb19920d21c1 a oced:Object,
+        ext:TeamMember ;
     ext:org_resource "Anne Claire" ;
-    ext:part_of res:object-o_3fd7a541760432406179672a5c405514b0524262,
-        res:object-o_acd826fa52dcb677f8e8718c223b0ce0823f1084,
-        res:object-o_b6f185307e97fff17e761c816ac4a30935de6430 .
+    ext:works_in res:object-o_00d2da1ce3b7e656f478962fbb580b1544711f74,
+        res:object-o_bbbc1730b0e8daffa386c45d324bba37818b0af7,
+        res:object-o_dab82e5b42227956bab3fa045906a7739e484923 .
+
+res:object-o_74652d9897349ccf3c249ff87bd05bb1bcfabf25 a oced:Object,
+        ext:SupportTeam ;
+    ext:is_part_of res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:org_group "M25" .
 
 ext:EventBPIC2013 a owl:Class ;
     rdfs:subClassOf oced:Event .
 
+ext:Function a owl:Class ;
+    rdfs:subClassOf ext:ObjectBPIC2013 .
+
 ext:ObjectBPIC2013 a owl:Class ;
     rdfs:subClassOf oced:Object .
 
-res:object-o_84985a629c6f4167bf273a71d9019c856edaeb32 a oced:Object,
+res:object-o_00ab85e71e99b26633b6abc08526e90c47fef89f a oced:Object,
         ext:SupportTeam ;
-    ext:org_group "S42" ;
-    ext:part_of res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d .
+    ext:is_part_of res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:org_group "S42" .
 
-res:object-o_acd826fa52dcb677f8e8718c223b0ce0823f1084 a oced:Object,
+res:object-o_bbbc1730b0e8daffa386c45d324bba37818b0af7 a oced:Object,
         ext:SupportTeam ;
-    ext:org_group "V30" ;
-    ext:part_of res:object-o_710d2b95926d93c6752803c2ba076f2172876602 .
+    ext:is_part_of res:object-o_20b70760f04ac00d530f79d286311cf3242a4522 ;
+    ext:org_group "V30" .
 
 oced:object_attribute a owl:DatatypeProperty ;
     rdfs:label "object_attribute" ;
@@ -1101,77 +1095,80 @@ oced:object_attribute a owl:DatatypeProperty ;
 ext:Queued_Awaiting_Assignment a owl:Class ;
     rdfs:subClassOf ext:EventBPIC2013 .
 
-res:object-o_07efa7b8ed55631084959749f7aaef30b7f6c17f a oced:Object,
-        ext:ProductFunction ;
-    ext:org_role "A2_5" .
-
-res:object-o_7f487e30ead848576587bb5af1ef1b17b06d9a2c a oced:Object,
-        ext:Location ;
-    ext:resource_country "Sweden" .
-
 ext:SupportTeam a owl:Class ;
     rdfs:subClassOf ext:ObjectBPIC2013 .
 
-res:object-o_59eb4033203ab4becf36124326f8e686cef692da a oced:Object,
-        ext:SupportTeam ;
-    ext:org_group "G140 2nd" ;
-    ext:part_of res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d .
+res:object-o_1b1302111f5879bfe04434b3072c52e5bd236fd4 a oced:Object,
+        ext:Function ;
+    ext:is_within res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc ;
+    ext:org_role "A2_5" .
 
-res:object-o_5d553038f14cce49ce9b38b079c1c3bd9b3996ae a oced:Object,
-        ext:ProductFunction ;
+res:object-o_e40f68cccd0e96a11e5e8a02f645b204be2638c0 a oced:Object,
+        ext:SupportTeam ;
+    ext:is_part_of res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 ;
+    ext:org_group "G140 2nd" .
+
+res:object-o_00d2da1ce3b7e656f478962fbb580b1544711f74 a oced:Object,
+        ext:SupportTeam ;
+    ext:is_part_of res:object-o_1b1302111f5879bfe04434b3072c52e5bd236fd4 ;
+    ext:org_group "V5 3rd" .
+
+res:object-o_ad119430ec1726ae1af7944ccaf04c6be9bd5da6 a oced:Object,
+        ext:SupportTeam ;
+    ext:is_part_of res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 ;
+    ext:org_group "N52 2nd" .
+
+res:object-o_63c25eab50477d9e2632dfbb8fecad54acc05f32 a oced:Object,
+        ext:Incident ;
+    ext:concept_name "1-364285768" ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a .
+
+res:object-o_39f2a5b9dc6089ebf7a9e764332c5afdae94cf34 a oced:Object,
+        ext:Function ;
+    ext:is_within res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
     ext:org_role "E_10" .
 
-res:object-o_4f987b0921a9b990544b15a797b5107679af8569 a oced:Object,
-        ext:SupportTeam ;
-    ext:org_group "N52 2nd" ;
-    ext:part_of res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d .
-
-res:object-o_b6f185307e97fff17e761c816ac4a30935de6430 a oced:Object,
-        ext:SupportTeam ;
-    ext:org_group "V5 3rd" ;
-    ext:part_of res:object-o_710d2b95926d93c6752803c2ba076f2172876602 .
-
-res:object-o_5d247b178f76db607a0d9772032c2f548d9b537a a oced:Object,
-        ext:Case ;
-    ext:concept_name "1-364285768" .
-
-res:object-o_7cb5c41b1041559e8f4b2d1286c58459145ac846 a oced:Object,
+res:object-o_aeff217fcbadc1052850699c86b45a7d199b022a a oced:Object,
         ext:Product ;
     ext:product "PROD582" .
 
-res:object-o_710d2b95926d93c6752803c2ba076f2172876602 a oced:Object,
+res:object-o_c07827ae2a7119ad7e36778f3c9e64792258e5dc a oced:Object,
         ext:ServiceCenter ;
-    ext:located_in res:object-o_c908a91ddade75102fc0e5230d958af36e07646b ;
+    ext:located_in res:object-o_0d6102a7822e4b3e1776528c555db3017a458582 ;
     ext:organization_involved "Org line A2" .
 
 ext:TeamMember a owl:Class ;
     rdfs:subClassOf ext:ObjectBPIC2013 .
 
-res:object-o_1b46aadfe98d0ce86c5aa92b921065d5f2327e1c a oced:Object,
-        ext:ProductFunction ;
+res:object-o_5fcfed92d4b360c0a3724c9da9250929bbfd8195 a oced:Object,
+        ext:Function ;
+    ext:is_within res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b ;
     ext:org_role "V3_2" .
 
 ext:Accepted_In_Progress a owl:Class ;
     rdfs:subClassOf ext:EventBPIC2013 .
 
-res:object-o_39c458d49e053cd630c275fdf64a6fb4ec92b337 a oced:Object,
-        ext:Case ;
-    ext:concept_name "1-467153946" .
+res:object-o_71ce7600299434c03302c1907aaaafd8de9438bb a oced:Object,
+        ext:Incident ;
+    ext:concept_name "1-467153946" ;
+    ext:has_impact res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 ;
+    ext:is_about_product res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab .
 
-res:object-o_60454697f8af53b972474d753bcff1a4a18f5136 a oced:Object,
+res:object-o_844cc09d6e52630c9fa0cc22aa34e56555b7f8ab a oced:Object,
         ext:Product ;
     ext:product "PROD453" .
+
+res:object-o_67f6f5e83cc2860ad09ff830b3e6d1dd2479903b a oced:Object,
+        ext:ServiceCenter ;
+    ext:located_in res:object-o_92aeba63c6cc52f4ea662a8b0475e9ec6ff4195e ;
+    ext:organization_involved "Org line C" .
 
 oced:Object a owl:Class ;
     rdfs:label "Object" ;
     rdfs:comment "Representation of the Object class/concept" .
 
-res:object-o_c4784334635f8a8e16d204a303ebb00e2dca835d a oced:Object,
-        ext:ServiceCenter ;
-    ext:located_in res:object-o_f8b921d036ab29ffd297d7f1cd4eb44fc2d79fe1 ;
-    ext:organization_involved "Org line C" .
-
-res:object-o_5d0f62d7392548fd562121bc856d62746eebcce2 a oced:Object,
+res:object-o_c5ac840ddd2666ad63d2f928ec3ca9830612f2a2 a oced:Object,
         ext:Impact ;
     ext:impact "Medium" .
 

@@ -35,7 +35,7 @@
 	</global>
 	<classifier name="Activity classifier" keys="concept:name lifecycle:transition"/>
 	<classifier name="Resource classifier" keys="org:resource"/>
-    	<trace>
+    <trace>
 		<string key="concept:name" value="1-364285768"/>
 		<event>
 			<string key="org:group" value="V30"/>
