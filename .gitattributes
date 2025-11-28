@@ -1,0 +1,4 @@
+output/2013_full-mod.json filter=lfs diff=lfs merge=lfs -text
+output/2013_full.json filter=lfs diff=lfs merge=lfs -text
+output/2013_full_enriched.ttl filter=lfs diff=lfs merge=lfs -text
+output/2013_full.ttl filter=lfs diff=lfs merge=lfs -text
